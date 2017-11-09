@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 		resources :keywords
 	end
 
+	root "categories#index"
 
 end
 
