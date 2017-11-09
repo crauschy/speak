@@ -3,7 +3,7 @@ class CreateKeywords < ActiveRecord::Migration[5.1]
     create_table :keywords do |t|
       t.string :word, null: false
       t.string :img_src, null: false
-      t.integer :user_id, default: null
+      t.integer :user_id, default: nil
 
       t.timestamps
     end
