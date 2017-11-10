@@ -1,6 +1,6 @@
 AWS.config.region = 'us-east-2';
-AWS.config.accessKeyId = 'AKIAIQXPH53GUOFAQA7Q';
-AWS.config.secretAccessKey = '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';
+AWS.config.accessKeyId = 'AKIAJ3QPH4QTKKKGNQCA';
+AWS.config.secretAccessKey = '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';
 
 
 //////////MODEL FUNCTIONS///////
