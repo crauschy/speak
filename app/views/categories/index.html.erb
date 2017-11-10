@@ -9,26 +9,28 @@
 		<div class="col-md-10 navbar-empty-space well navbar-item">
 			Other content
 		</div>
-		<div class="col-md-1 navbar-keyboard well navbar-item">
-			Keyboard
+		<div class="populate-me">
+			<div class="col-md-1 navbar-keyboard categories-col">
+				<img src="/assets/icons/Keyboard.svg", alt="Keyboard", height="100px">
+				Keyboard
+			</div>
 		</div>
 	</div>
 	<div class="row sentence">
 		<div class="col-md-1 speak">
-			speak
+			<img src="/assets/icons/speak.png", alt="Keyboard", height="100px">
 		</div>
 		<div class="col-md-10 sentence-bar well">
-			sentence-bar
 		</div>
 		<div class="col-md-1 delete-button">
-			backspace
+			<img src="/assets/icons/backspace.png", alt="Backspace", height="75px">
 		</div>
 	</div>
 	<div class="row empty-row">
 
 	</div>
-	<div class="populate-me">
-		<!-- <%= @html %> -->
+	<div class="populate-me last">
+		<%= raw @html %>
 		<%= render "partials/words_row" %>
 		<%= render "partials/words_row" %>
 		<%= render "partials/words_row" %>

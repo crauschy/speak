@@ -23,15 +23,15 @@ ActiveRecord::Schema.define(version: 20171109215536) do
   end
 
   create_table "categories_keywords", force: :cascade do |t|
-    t.bigint "categories_id"
-    t.bigint "keywords_id"
-    t.index ["categories_id"], name: "index_categories_keywords_on_categories_id"
-    t.index ["keywords_id"], name: "index_categories_keywords_on_keywords_id"
+    t.bigint "category_id"
+    t.bigint "keyword_id"
+    t.index ["category_id"], name: "index_categories_keywords_on_category_id"
+    t.index ["keyword_id"], name: "index_categories_keywords_on_keyword_id"
   end
 
   create_table "keywords", force: :cascade do |t|
     t.string "word", null: false
-    t.string "img_src", null: false
+    t.string "img_src"
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

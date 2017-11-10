@@ -616,7 +616,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-
   aws-sdk (~> 3)
   bcrypt
   byebug
