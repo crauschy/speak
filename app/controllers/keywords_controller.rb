@@ -13,7 +13,7 @@ class KeywordsController < ApplicationController
 			end
 			@html += "<div class='col-md-1 col-#{cols} words-col keywords-col'>"
 			@html += "#{keyword.word}"
-			# @html += "IMAGE PATH HERE"
+			@html += "<img src='/assets/icons/#{keyword.img_src}', alt='Icon', height='40px'>"
 			@html += "</div>"
 
 			if cols == 12

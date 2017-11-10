@@ -5,7 +5,7 @@ data.each do |category, keyword|
 	category_object = Category.create(name: category, img_src: "pizza.png")
 	i = 0
 	while i < keyword.length
-		keyword_object = Keyword.create(word: keyword[i])
+		keyword_object = Keyword.create(word: keyword[i], img_src: "pizza.png")
 		keyword_object.categories << category_object
 		i += 1
 	end

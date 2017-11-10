@@ -39,7 +39,8 @@ $(document).ready(function() {
 		var html = ""
 			html = html + "<div class='col-md-1 words-col keywords-col sentence-col'>"
 			html = html + $(this).text()
-			// # @html += "IMAGE PATH HERE"
+			// # @html += "<img src='/assets/icons/" + $(this).text() + ".png', alt='Icon', height='40px'>"
+			html = html + "<img src='/assets/icons/pizza.png', alt='Icon', height='40px'>"
 			html = html + "</div>"
 			$(".sentence-bar").append(html)
 	})
