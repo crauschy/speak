@@ -14,8 +14,26 @@ $(document).ready(function() {
 
 	$(".speak").on("click", function(event) {
 		event.preventDefault()
-		alert("this speaks the sentence!")
-	})
+
+		var sentence = $(".sentence-bar .sentence-col")
+		var compiled= ""
+		for(i=0;i<sentence.length;i++) {
+			compiled = compiled + $(sentence[i]).text() + " "
+		}
+		 var polly = new AWS.Polly()
+
+    var params = {
+        OutputFormat: 'mp3', /* required */
+        Text: compiled, /* required */
+        VoiceId: 'Justin', /* required */
+        SampleRate: '22050',
+        TextType: 'text'
+    };
+
+     polly.synthesizeSpeech(params, callBack);
+
+  });
+
 
 	$(".delete-button").on("click", function(event) {
 		event.preventDefault()
@@ -39,7 +57,8 @@ $(document).ready(function() {
 		var html = ""
 			html = html + "<div class='col-md-1 words-col keywords-col sentence-col'>"
 			html = html + $(this).text()
-			// # @html += "IMAGE PATH HERE"
+			html += "<img src='/assets/icons/" + $(this).text() + ".png', alt='Icon', height='40px'>"
+			// html = html + "<img src='/assets/icons/pizza.png', alt='Icon', height='40px'>"
 			html = html + "</div>"
 			$(".sentence-bar").append(html)
 	})

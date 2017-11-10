@@ -1,5 +1,7 @@
+
 Rails.application.routes.draw do
 
+  resources :speak
 	resources :users
   get "/signup", to: "users#new"
 	get "/login", to: "sessions#new"
@@ -11,4 +13,8 @@ Rails.application.routes.draw do
 	end
 
 	root "categories#index"
+
 end
+
+
+
