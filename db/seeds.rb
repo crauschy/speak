@@ -2,7 +2,7 @@ data = {Food: ["pizza", "banana", "carrot", "burger", "bread", "breakfast", "jui
 
 data.each do |category, keyword|
 
-	category_object = Category.create(name: category, img_src: "../png/pizza.png")
+	category_object = Category.create(name: category, img_src: "pizza.png")
 	i = 0
 	while i < keyword.length
 		keyword_object = Keyword.create(word: keyword[i])
