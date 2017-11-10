@@ -1,16 +1,18 @@
 class SessionsController < ApplicationController
 
   def new
+    @user = User.new
   end
 
   def create
-    user = User.find_by username: params[:username]
-    if user && user.authenticate(params[:password])
+    @user = User.find_by username: params[:username] || User.new
+
+    if @user && @user.authenticate(params[:password])
       session[:user_id] = user.id
-      p session
       redirect_to root_path
     else
-      flash[:danger] = "Invalid email or password"
+      @user.invalid_login
+      flash[:danger] = "Invalid username or password"
       render "new"
     end
   end

@@ -1,6 +1,19 @@
 <div>
     <%= form_with url: '/login', local: true do |f| %>
 
+      <% if @user.errors.any? %>
+        <div class="#">
+          <h4>
+            <%=pluralize(@user.errors.count, "error") %> prohibited you from signing up:
+          </h4>
+          <ul>
+            <% @user.errors.full_messages.each do |msg| %>
+              <li><%= msg  %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+
         <div class="#">
             <%= f.text_field :username %>
             <%= f.label :username, "Username" %>

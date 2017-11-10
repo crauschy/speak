@@ -14,4 +14,8 @@ class User < ApplicationRecord
   has_secure_password
   validates :password, presence: true
 
+def invalid_login
+  errors.add(:login, "Invalid username or password")
+end
+
 end
