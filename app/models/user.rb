@@ -11,7 +11,11 @@ class User < ApplicationRecord
   #   format: { with: VALID_EMAIL_REGEX },
   #   uniqueness: { case_sensitive: false }
 
-  # has_secure_password
-  # validates :password, presence: true
+  has_secure_password
+  validates :password, presence: true
+
+def invalid_login
+  errors.add(:login, "Invalid username or password")
+end
 
 end

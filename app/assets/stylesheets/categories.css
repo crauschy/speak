@@ -73,3 +73,18 @@ body {
 .sentence-col {
 	margin-top: -1.5%;
 }
+
+.favor {
+	height: 100px;
+	margin: 20px 0 0 20px;
+}
+
+.favor-div {
+	font-size: 25px;
+}
+
+.navbar-controls-text {
+	text-align: right;
+	margin-top: -35px;
+	margin-right: 10px;
+}
