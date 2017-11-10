@@ -12,7 +12,7 @@ class CategoriesController < ApplicationController
 				end
 				@html += "<div class='col-md-1 col-#{cols} words-col categories-col'>"
 				@html += "#{category.name}"
-				# @html += "<img src='#{category.img_src}' alt='Icon'/>"
+				@html += "<img src='/assets/icons/#{category.img_src}', alt='Icon', height='40px'>"
 				@html += "</div>"
 			end
 			if (cols == 12 || @categories.last.name == category.name)
