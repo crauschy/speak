@@ -1,6 +1,3 @@
-AWS.config.region = 'us-east-2';
-AWS.config.accessKeyId = 'AKIAJU3RZQPBVXFGFKFQ';
-AWS.config.secretAccessKey = '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';
 
 
 
