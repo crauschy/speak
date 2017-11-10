@@ -51,11 +51,21 @@ body {
 }
 
 .speak {
-	border: 1px solid black;
-	border-style: dotted;
+	margin-left: -30px;
+	margin-right: 40px;
 }
 
-.delete-button {
+.navbar-keyboard {
+	margin-top: -20px;
+	margin-right: -80px;
+	color: rgba(0, 0, 0, 0);
+}
+
+/*.delete-button {
 	border: 1px solid black;
 	border-style: dotted;
+}*/
+
+.sentence-col {
+	margin-top: -1.5%;
 }
