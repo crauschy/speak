@@ -6,13 +6,15 @@ class CategoriesController < ApplicationController
 		rows = 1
 		@html = ""
 		@categories.each do |category|
-			if cols == 1
-				@html = "<div class='row words-row categores-row row-#{rows}'>"
+			if category.name != "Keyboard"
+				if cols == 1
+					@html = "<div class='row words-row categories-row row-#{rows}'>"
+				end
+				@html += "<div class='col-md-1 col-#{cols} words-col categories-col'>"
+				@html += "#{category.name}"
+				# @html += "<img src='#{category.img_src}' alt='Icon'/>"
+				@html += "</div>"
 			end
-			@html += "<div class='col-md-1 col-#{cols} words-col categories-col'>"
-			@html += "#{category.name}"
-			# @html += "<br>IMAGE PATH"
-			@html += "</div>"
 			if (cols == 12 || @categories.last.name == category.name)
 				@html += "</div>"
 				cols = 0

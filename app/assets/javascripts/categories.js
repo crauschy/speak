@@ -8,7 +8,7 @@ $(document).ready(function() {
 		})
 		.done(function(response) {
 			html = response.HTML
-			$(".populate-me").html(html)
+			$(".populate-me.last").html(html)
 		})
 	})
 
@@ -17,14 +17,9 @@ $(document).ready(function() {
 		alert("this speaks the sentence!")
 	})
 
-	$(".navbar-keyboard").on("click", function(event) {
-		event.preventDefault()
-		alert("this opens the keyboard!")
-	})
-
 	$(".delete-button").on("click", function(event) {
 		event.preventDefault()
-		alert("this deletes an item!")
+		$(".sentence-bar").children(".sentence-col").last().remove()
 	})
 
 	$(".populate-me").on("click", ".categories-col", function(event) {
@@ -35,7 +30,7 @@ $(document).ready(function() {
 		})
 		.done(function(response) {
 			html = response.HTML
-			$(".populate-me").html(html)
+			$(".populate-me.last").html(html)
 		})
 	})
 
@@ -47,15 +42,5 @@ $(document).ready(function() {
 			// # @html += "IMAGE PATH HERE"
 			html = html + "</div>"
 			$(".sentence-bar").append(html)
-
-
-		// $.ajax({
-		// 	url: "/categories/" + $(this).text() + "/keywords",
-		// 	type: "GET"
-		// })
-		// .done(function(response) {
-		// 	html = response.HTML
-		// 	$(".populate-me").html(html)
-		// })
 	})
 })

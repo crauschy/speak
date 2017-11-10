@@ -6,8 +6,10 @@
 		<div class="col-md-10 navbar-empty-space well navbar-item">
 			Other content
 		</div>
-		<div class="col-md-1 navbar-keyboard well navbar-item">
-			Keyboard
+		<div class="populate-me">
+			<div class="col-md-1 navbar-keyboard well navbar-item categories-col">
+				Keyboard
+			</div>
 		</div>
 	</div>
 	<div class="row sentence">
@@ -15,7 +17,6 @@
 			speak
 		</div>
 		<div class="col-md-10 sentence-bar well">
-			<p>sentence-bar</p>
 		</div>
 		<div class="col-md-1 delete-button">
 			backspace
@@ -24,7 +25,7 @@
 	<div class="row empty-row">
 
 	</div>
-	<div class="populate-me">
+	<div class="populate-me last">
 		<%= raw @html %>
 		<%= render "partials/words_row" %>
 		<%= render "partials/words_row" %>
