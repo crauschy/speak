@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :keywords, optional: true
+  has_many :keywords
   has_many :phrases
 
   # validates :name, presence: true
