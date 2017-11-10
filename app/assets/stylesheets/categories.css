@@ -1,49 +1,58 @@
-
-
-body {
-	background-color: #fce8bf;
+* {
+	font-family: 'Open Sans', sans-serif;
 }
 
-#content-box {
-	width: 1100px;
-	margin: auto;
-	border: 4px solid black;
-	padding: 4px 40px 4px 40px;
-	text-align: center;
-}
+	body {
+		background-color: #D9F3F7;
+	}
 
-.navbar-item {
-	height: 40px;
-	border: 4px solid black;
-	border-radius: 10px;
-	margin: 0 2px 0 2px;
-}
+	div {
+		border: 1px solid red;
+	}
 
-.sentence {
-	display: flex;
-}
+	#content-box {
+		width: 1100px;
+		margin: auto;
+		border: 3px solid #37445B;
+		padding: 4px 40px 4px 40px;
+		text-align: center;
+	}
 
-.sentence-bar {
-	border: 4px solid black;
-	height: 90px;
-	border-radius: 10px;
-	margin: .5%;
-}
+	.navbar-item {
+		height: 40px;
+		border: 3px solid #37445B;
+		border-radius: 10px;
+		margin: 0 2px 0 2px;
+	}
 
-.empty-row {
-	height: 50px;
-	border-radius: 10px;
-}
+	.sentence {
+		display: flex;
+	}
+
+	.sentence-bar {
+		border: 3px solid #37445B;
+		height: 90px;
+		border-radius: 10px;
+		margin: .5%;
+	}
+
+	.empty-row {
+		height: 50px;
+		border-radius: 10px;
+	}
 
 .words-col {
-	border: 2px solid black;
+	border: 2px solid #37445B;
 	height: 70px;
 	border-radius: 10px;
 	margin: .3%;
+	text-align: center;
 }
 
 .words-row {
     display: flex;
+		border: 1px solid red;
+
 }
 
 .navbar {
@@ -72,4 +81,9 @@ body {
 
 .sentence-col {
 	margin-top: -1.5%;
+}
+
+
+.keyboard-grid {
+	font-size: 25px;
 }

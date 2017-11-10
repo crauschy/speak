@@ -10,9 +10,8 @@
 			Other content
 		</div>
 		<div class="populate-me">
-			<div class="col-md-1 navbar-keyboard categories-col">
+			<div class="col-md-1 navbar-keyboard categories-col" data-category="Keyboard">
 				<img src="/assets/icons/Keyboard.svg", alt="Keyboard", height="100px">
-				Keyboard
 			</div>
 		</div>
 	</div>
@@ -30,16 +29,6 @@
 
 	</div>
 	<div class="populate-me last">
-		<%= raw @html %>
-		<%= render "partials/words_row" %>
-		<%= render "partials/words_row" %>
-		<%= render "partials/words_row" %>
-		<%= render "partials/words_row" %>
-		<%= render "partials/words_row" %>
-		<%= render "partials/words_row" %>
-		<%= render "partials/words_row" %>
-		<%= render "partials/words_row" %>
-		<%= render "partials/words_row" %>
-		<%= render "partials/words_row" %>
+		<%= render "partials/categories_render" %>
 	</div>
 </div>
