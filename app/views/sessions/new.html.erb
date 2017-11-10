@@ -1,0 +1,26 @@
+<div>
+    <%= form_with url: '/login', local: true do |f| %>
+
+        <div class="#">
+            <%= f.text_field :username %>
+            <%= f.label :username, "Username" %>
+        </div>
+
+        <div class="#">
+            <%= f.password_field :password %>
+            <%= f.label :password, "Your password" %>
+        </div>
+
+        <%= f.submit "Boom!"%>
+        <!-- <button class="btn btn-indigo">Sign up</button> -->
+
+
+        <div class="inline-ul text-center d-flex justify-content-center">
+            <a class="icons-sm tw-ic"><i class="fa fa-twitter white-text"></i></a>
+            <a class="icons-sm li-ic"><i class="fa fa-linkedin white-text"> </i></a>
+            <a class="icons-sm ins-ic"><i class="fa fa-instagram white-text"> </i></a>
+        </div>
+
+        <p><%= link_to "Create an account", new_user_path %></p>
+    <% end %>
+</div>
