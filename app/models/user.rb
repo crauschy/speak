@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :keywords, optional: true
+  has_many :keywords
   has_many :phrases
 
   # validates :name, presence: true
@@ -11,7 +11,11 @@ class User < ApplicationRecord
   #   format: { with: VALID_EMAIL_REGEX },
   #   uniqueness: { case_sensitive: false }
 
-  # has_secure_password
-  # validates :password, presence: true
+  has_secure_password
+  validates :password, presence: true
+
+def invalid_login
+  errors.add(:login, "Invalid username or password")
+end
 
 end

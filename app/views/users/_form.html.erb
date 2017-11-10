@@ -1,0 +1,67 @@
+<div class="#">
+    <%= form_for @user do |f| %>
+
+      <% if @user.errors.any? %>
+        <div class="#">
+          <h4>
+            <%=pluralize(@user.errors.count, "error") %> prohibited you from signing up:
+          </h4>
+          <ul>
+            <% @user.errors.full_messages.each do |msg| %>
+              <li><%= msg  %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+    <div class="#">
+      <%= f.text_field :name  %>
+      <%= f.label :name, "Name" %>
+    </div>
+
+
+    <div class="#">
+      <%= f.text_field :email  %>
+      <%= f.label :email, "Email" %>
+    </div>
+
+    <div class="#">
+      <%= f.text_field :username  %>
+      <%= f.label :username, "Username" %>
+    </div>
+
+    <div class="#">
+      <%= f.password_field :password %>
+      <%= f.label :password, "Password" %>
+    </div>
+
+    <div class="#">
+      <%= f.password_field :password_confirmation %>
+      <%= f.label :password_confirmation, "Confirm password" %>
+    </div>
+
+    <div class="#">
+      <%= f.label :gender, "I am..." %>
+      <br>
+      <%= f.radio_button(:gender, "female") %>
+      <%= f.label(:gender, "a girl.") %><br>
+      <%= f.radio_button(:gender, "male") %>
+      <%= f.label(:gender, "a boy.") %><br>
+      <%= f.radio_button(:gender, "non-binary") %>
+      <%= f.label(:gender, "non-binary.") %><br>
+      <%= f.radio_button(:gender, "agender") %>
+      <%= f.label(:gender, "agender.") %><br>
+      <%= f.radio_button(:gender, "not-represented") %>
+      <%= f.label(:gender, "none of these.") %><br>
+      <%= f.radio_button(:gender, "undisclosed") %>
+      <%= f.label(:gender, "(prefer not to say)") %>
+    </div>
+
+    <div class="#">
+      <%= f.submit "Submit" %>
+    </div>
+
+    <p>Already have an account? <%= link_to "Log in", new_user_path %></p>
+
+    <% end %>
+  </div>
