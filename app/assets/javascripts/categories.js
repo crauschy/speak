@@ -14,8 +14,26 @@ $(document).ready(function() {
 
 	$(".speak").on("click", function(event) {
 		event.preventDefault()
-		alert("this speaks the sentence!")
-	})
+
+		var sentence = $(".sentence-bar .sentence-col")
+		var compiled= ""
+		for(i=0;i<sentence.length;i++) {
+			compiled = compiled + $(sentence[i]).text() + " "
+		}
+		 var polly = new AWS.Polly()
+
+    var params = {
+        OutputFormat: 'mp3', /* required */
+        Text: compiled, /* required */
+        VoiceId: 'Justin', /* required */
+        SampleRate: '22050',
+        TextType: 'text'
+    };
+
+     polly.synthesizeSpeech(params, callBack);
+
+  });
+
 
 	$(".delete-button").on("click", function(event) {
 		event.preventDefault()
