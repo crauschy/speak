@@ -15,24 +15,46 @@
       <% end %>
 
     <div class="#">
-      Name:<%= f.text_field :name  %>
+      <%= f.text_field :name  %>
+      <%= f.label :name, "Name" %>
     </div>
 
 
     <div class="#">
-      Email: <%= f.text_field :email  %>
+      <%= f.text_field :email  %>
+      <%= f.label :email, "Email" %>
     </div>
 
     <div class="#">
-      Username:<%= f.text_field :username  %>
+      <%= f.text_field :username  %>
+      <%= f.label :username, "Username" %>
     </div>
 
     <div class="#">
-      Password: <%= f.password_field :password %>
+      <%= f.password_field :password %>
+      <%= f.label :password, "Password" %>
     </div>
 
     <div class="#">
-      Confirm Password: <%= f.password_field :password_confirmation %>
+      <%= f.password_field :password_confirmation %>
+      <%= f.label :password_confirmation, "Confirm password" %>
+    </div>
+
+    <div class="#">
+      <%= f.label :gender, "I am..." %>
+      <br>
+      <%= f.radio_button(:gender, "female") %>
+      <%= f.label(:gender, "a girl.") %><br>
+      <%= f.radio_button(:gender, "male") %>
+      <%= f.label(:gender, "a boy.") %><br>
+      <%= f.radio_button(:gender, "non-binary") %>
+      <%= f.label(:gender, "non-binary.") %><br>
+      <%= f.radio_button(:gender, "agender") %>
+      <%= f.label(:gender, "agender.") %><br>
+      <%= f.radio_button(:gender, "not-represented") %>
+      <%= f.label(:gender, "none of these.") %><br>
+      <%= f.radio_button(:gender, "undisclosed") %>
+      <%= f.label(:gender, "(prefer not to say)") %>
     </div>
 
     <div class="#">
