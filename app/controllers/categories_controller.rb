@@ -7,11 +7,11 @@ class CategoriesController < ApplicationController
 		@html = ""
 		@categories.each do |category|
 			if cols == 1
-				@html = "<div class='row words-row row-#{rows}'>"
+				@html = "<div class='row words-row categores-row row-#{rows}'>"
 			end
-			@html += "<div class='col-md-1 col-#{cols} words-col'>"
+			@html += "<div class='col-md-1 col-#{cols} words-col categories-col'>"
 			@html += "#{category.name}"
-			@html += "<br>IMAGE PATH"
+			# @html += "<br>IMAGE PATH"
 			@html += "</div>"
 			if (cols == 12 || @categories.last.name == category.name)
 				@html += "</div>"
@@ -20,7 +20,11 @@ class CategoriesController < ApplicationController
 			end
 			cols += 1
 		end
-		@html
+		if request.xhr?
+			render json: { HTML: @html }
+		else
+			@html
+		end
 	end
 
 
