@@ -1,0 +1,10 @@
+<% @categories.in_groups_of(6, false).each do |group| %>
+  <div class='row words-row categories-row'>
+    <% group.each_with_index do |category, index| %>
+      <div class='col-md-2 words-col categories-col' data-category="<%= category.name %>">
+        <p><%= category.name %></p>
+        <img src='/assets/icons/<%= category.img_src %>' height='40px'>
+      </div>
+    <% end %>
+  </div>
+<% end %>

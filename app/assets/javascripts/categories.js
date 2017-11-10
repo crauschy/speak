@@ -7,8 +7,7 @@ $(document).ready(function() {
 			type: "GET"
 		})
 		.done(function(response) {
-			html = response.HTML
-			$(".populate-me.last").html(html)
+			$(".populate-me.last").html(response.html)
 		})
 	})
 
@@ -42,22 +41,23 @@ $(document).ready(function() {
 
 	$(".populate-me").on("click", ".categories-col", function(event) {
 		event.preventDefault()
+		var category = $(this).data('category');
 		$.ajax({
-			url: "/categories/" + $(this).text() + "/keywords",
+			url: "/categories/" + category + "/keywords",
 			type: "GET"
 		})
 		.done(function(response) {
-			html = response.HTML
-			$(".populate-me.last").html(html)
+			$(".populate-me.last").html(response.html)
 		})
 	})
 
 	$(".populate-me").on("click", ".keywords-col", function(event) {
 		event.preventDefault()
+		var text = $(this).data('category')
 		var html = ""
 			html = html + "<div class='col-md-1 words-col keywords-col sentence-col'>"
-			html = html + $(this).text()
-			html += "<img src='/assets/icons/" + $(this).text() + ".png', alt='Icon', height='40px'>"
+			html = html + text
+			html += "<img src='/assets/icons/" + text + ".png', alt='Icon', height='40px'>"
 			// html = html + "<img src='/assets/icons/pizza.png', alt='Icon', height='40px'>"
 			html = html + "</div>"
 			$(".sentence-bar").append(html)
