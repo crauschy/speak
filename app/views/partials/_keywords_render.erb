@@ -8,7 +8,7 @@
       <% else %>
         <div class='col-md-2 words-col keywords-col' data-category="<%= keyword.word %>">
           <p><%= keyword.word %></p>
-          <img src='/assets/icons/<%= keyword.img_src %>' height='40px' >
+           <%= image_tag 'icons/'+ keyword.img_src, height: "40px" %>
         </div>
       <% end %>
     <% end %>

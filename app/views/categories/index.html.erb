@@ -1,16 +1,19 @@
-<div class="favor-div">
-	<a href="//www.favordelivery.com"><img src="/assets/icons/favor.png", alt="favor", class="favor"></a>
-	!!!!!!!!!!!!Order from Favor!!!!!!!!!!!!
-</div>
 
-<div id="content-box">
+
+<div id="container">
+
 	<audio id="sound" controls>
   	<source id="sound-src" src="" type="audio/mpeg">
 	</audio>
+
+
+
 	<div class="row navbar">
+
 		<div class="col-md-1 navbar-home-button well navbar-item">
-			Home
+			home
 		</div>
+
 		<div class="col-md-10 navbar-controls well navbar-item">
 			<div class="navbar-controls navbar-controls-text">
 				<h3>
@@ -23,25 +26,33 @@
 				</h3>
 			</div>
 		</div>
+
 		<div class="populate-me">
 			<div class="col-md-1 navbar-keyboard categories-col" data-category="Keyboard">
 				<img src="/assets/icons/Keyboard.svg", alt="Keyboard", height="100px">
 			</div>
 		</div>
 	</div>
+
+
+
 	<div class="row sentence">
+
 		<div class="col-md-1 speak">
 			<%= image_tag 'icons/speak.png'%>
 		</div>
-		<div class="col-md-10 sentence-bar well">
-		</div>
+
+		<div class="col-md-10 sentence-bar well"></div>
+
 		<div class="col-md-1 delete-button">
 			<img src="/assets/icons/backspace.png", alt="Backspace", height="75px">
 		</div>
 	</div>
-	<div class="row empty-row">
 
-	</div>
+
+
+	<div class="row empty-row"></div>
+
 	<div class="populate-me last">
 		<%= render "partials/categories_render" %>
 	</div>
