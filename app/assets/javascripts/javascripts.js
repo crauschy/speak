@@ -1,8 +1,8 @@
 
 // heroku config:set AWS_ACCESS_KEY_ID='AKIAJQYN4XFRSQJJI3QA' AWS_SECRET_ACCESS_KEY=yyy
 AWS.config.region = 'us-east-2';
-AWS.config.accessKeyId = 'AKIAIR2UXYLVWMXTTAPQ';
-AWS.config.secretAccessKey = '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';
+AWS.config.accessKeyId = 'AKIAIUPEIU3QITOYXAUQ';
+AWS.config.secretAccessKey = '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';
 
 
 
