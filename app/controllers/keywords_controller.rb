@@ -8,10 +8,15 @@ class KeywordsController < ApplicationController
 	end
 
   def show
-    @keyword = Keyword.find_by(word: params[:id])
+  	@html = ""
+  	words = params[:id].split(",")
+  	words.each do |word|
+	    @keyword = Keyword.find_by(word: word)
+	    @category = @keyword.categories
 
-    @html = render_to_string("partials/_keyword_render", layout: false)
-    render json: { html: @html }
+	    @html += render_to_string("partials/_keyword_render", layout: false)
+	end
+	render json: { html: @html }
   end
 
 
