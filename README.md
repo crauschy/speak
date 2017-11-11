@@ -24,12 +24,6 @@ Things you may want to cover:
 * ...
 
 
-Access key ID = ENV['AWS_ACCESS_KEY_ID'] AKIAIQXPH53GUOFAQA7Q
-
-
-Secret access key = ENV['AWS_SECRET_ACCESS_KEY'] d4Sc7tZXAFAJwn6nyW+he4+mMaHGfNBPdX7fBXvR
-
-
 https://688612166558.signin.aws.amazon.com/console
 
 

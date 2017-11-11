@@ -1,0 +1,15 @@
+<% @most.each do |phrase| %>
+	<% phrase.sentence.in_groups_of(11, false).each do |group| %>
+		<div class="row words-row most-row">
+			<% group.each_with_index do |keyword, index| %>
+				<div class='col-md-1 words-col most-col' data-keyword="<%= keyword %>">
+	 				<p><%= keyword %></p>
+	  				<%= image_tag "icons/" + keyword + ".png", height: "40px" %>
+				</div>
+			<% end %>
+			<div class='col-md-1 words-col most-col most-click'>
+				<p>Click to sentence-me</p>
+			</div>
+		</div>
+	<% end %>
+<% end %>

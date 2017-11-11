@@ -1,3 +1,5 @@
+/*-----------------entire file--------------------------*/
+
 * {
 	font-family: 'Open Sans', sans-serif;
 }
@@ -6,23 +8,45 @@
 		background-color: #D9F3F7;
 	}
 
-	div {
-		border: 1px solid red;
-	}
+/*----------------head container---------------------*/
 
-	#content-box {
-		width: 1100px;
+	#container{
+		width: 1500px;
 		margin: auto;
 		border: 3px solid #37445B;
 		padding: 4px 40px 4px 40px;
 		text-align: center;
 	}
 
+
+/*--------------------top navigation bar-----------------*/
+
 	.navbar-item {
 		height: 40px;
 		border: 3px solid #37445B;
 		border-radius: 10px;
 		margin: 0 2px 0 2px;
+	}
+
+	.navbar {
+		display: flex;
+	}
+
+	.navbar-keyboard {
+		margin-top: -20px;
+		margin-right: -80px;
+		color: rgba(0, 0, 0, 0);
+	}
+
+	.navbar-controls-text {
+		text-align: right;
+		margin-top: -35px;
+		margin-right: 10px;
+		/*border: 2px solid red;*/
+	}
+/*----------------sentence-bar -------------------------*/
+	#sound{
+		display: none;
 	}
 
 	.sentence {
@@ -36,71 +60,55 @@
 		margin: .5%;
 	}
 
+	.speak {
+		margin-left: -30px;
+		margin-right: 40px;
+		/*border: 2px solid red;*/
+	}
+
+	.delete-button {
+		display:block;
+		margin:auto;
+	}
+
+	/*images in the sentance bar*/
+	.sentence-col {
+		margin-top: -1.1%;
+		/*border: 2px solid red;*/
+		height: 70px;
+		width: 70px;
+	}
+
+/*----------------------grid system-----------------*/
+
+/*this is the empty row above the first row of icons*/
 	.empty-row {
 		height: 50px;
 		border-radius: 10px;
 	}
 
-.words-col {
-	border: 2px solid #37445B;
-	height: 70px;
-	border-radius: 10px;
-	margin: .3%;
-	text-align: center;
-}
+/*each individual tile*/
+	.words-col {
+		border: 2px solid #37445B;
+		height: 120px;
+		border-radius: 10px;
+		margin: .1%;
+		text-align: center;
+		display: block;
+		margin:auto;
 
-.words-row {
-    display: flex;
-		border: 1px solid red;
+	}
 
-}
-
-.navbar {
-	display: flex;
-}
-
-.speak {
-	margin-left: -30px;
-	margin-right: 40px;
-}
-
-.navbar-keyboard {
-	margin-top: -20px;
-	margin-right: -80px;
-	color: rgba(0, 0, 0, 0);
-}
-
-#sound{
-	display: none;
-}
-
-/*.delete-button {
-	border: 1px solid black;
-	border-style: dotted;
-}*/
-
-.sentence-col {
-	margin-top: -1.5%;
-}
+/*a row of tiles*/
+	.words-row {
+	    display: flex;
+			/*border: 1px solid red;*/
+			/*height: 100px;*/
+	}
 
 
 
+/*---------------------keyboard page------------------*/
 .keyboard-grid {
 	font-size: 25px;
 }
-
-.favor {
-	height: 100px;
-	margin: 20px 0 0 20px;
-}
-
-.favor-div {
-	font-size: 25px;
-}
-
-.navbar-controls-text {
-	text-align: right;
-	margin-top: -35px;
-	margin-right: 10px;
-}
-
