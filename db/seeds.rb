@@ -11,3 +11,29 @@ data.each do |category, keyword|
 	end
 
 end
+
+vinnie = User.create(name: "Vinnie", username: "VinnieLu", email: "lu.vinnie@gmail.com", password: "password", gender: "male")
+Phrase.create(sentence: ["home", "school", "playground", "outside", "hospital"], count: 1, user_id: 1)
+Phrase.create(sentence: ["see", "hear", "get", "go", "stop", "eat"], count: 1, user_id: 1)
+Phrase.create(sentence: ["yellow", "blue", "red", "green", "orange"], count: 1, user_id: 1)
+Phrase.create(sentence: ["cloud", "leaves", "grass", "stars", "rain"], count: 1, user_id: 1)
+
+chris = User.create(name: "Chris", username: "ChrisFriedman", email: "friedman.chris@gmail.com", password: "password", gender: "male")
+Phrase.create(sentence: ["pizza", "banana", "carrot", "burger", "bread"], count: 1, user_id: 2)
+Phrase.create(sentence: ["dad", "family", "friends", "grandparents"], count: 1, user_id: 2)
+Phrase.create(sentence: ["green", "orange", "purple", "white", "black"], count: 1, user_id: 2)
+Phrase.create(sentence: ["toilet", "play", "open", "close", "touch"], count: 1, user_id: 2)
+
+gaby = User.create(name: "Gaby", username: "GabyRamirez", email: "ramirez.gaby@gmail.com", password: "password", gender: "female")
+Phrase.create(sentence: ["pizza", "banana", "carrot", "burger", "bread"], count: 1, user_id: 3)
+Phrase.create(sentence: ["dad", "family", "friends", "grandparents"], count: 1, user_id: 3)
+Phrase.create(sentence: ["green", "orange", "purple", "white", "black"], count: 1, user_id: 3)
+Phrase.create(sentence: ["pizza", "banana", "carrot", "burger", "bread"], count: 1, user_id: 3)
+
+cate = User.create(name: "Cate", username: "CateRauschenberger", email: "rauschenberger.cate@gmail.com", password: "password", gender: "female")
+Phrase.create(sentence: ["pizza", "banana", "carrot", "burger", "bread"], count: 1, user_id: 3)
+Phrase.create(sentence: ["dad", "family", "friends", "grandparents"], count: 1, user_id: 3)
+Phrase.create(sentence: ["green", "orange", "purple", "white", "black"], count: 1, user_id: 3)
+Phrase.create(sentence: ["bunny", "pig", "chicken", "horse"], count: 1, user_id: 4)
+
+
