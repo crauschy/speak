@@ -13,6 +13,34 @@ $(document).ready(function() {
 
 
 
+// $(".speak").on("click", function(event) {
+// 		event.preventDefault()
+// 		$.ajax({
+// 			url: "/speak",
+// 			type: "GET"
+// 		})
+// 		.done(function(response) {
+// 			console.log(response)
+// 			debugger;
+// 		  var sentence = $(".sentence-bar .sentence-col")
+// 		  var compiled= ""
+// 		  for(i=0;i<sentence.length;i++) {
+// 			 compiled = compiled + $(sentence[i]).text() + " "
+// 		}
+// 	  var polly = new AWS.Polly()
+//     var params = {
+//         OutputFormat: 'mp3', /* required */
+//         Text: compiled, /* required */
+//         VoiceId: 'Justin', /* required */
+//         SampleRate: '22050',
+//         TextType: 'text'
+//     };
+
+//      polly.synthesizeSpeech(params, callBack);
+// 		})
+
+// })
+
 
 
 
@@ -48,7 +76,6 @@ $(document).ready(function() {
         SampleRate: '22050',
         TextType: 'text'
     };
-
      polly.synthesizeSpeech(params, callBack);
 
   });

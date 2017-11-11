@@ -1,4 +1,4 @@
 Aws.config.update({
   region: 'us-east-2',
-  credentials: Aws::Credentials.new('AKIAJ3QPH4QTKKKGNQCA', '13ufr1Xbt8fVgP3tPXlv26dAVS3KiVKeBw+040o4')
+  credentials: Aws::Credentials.new('AKIAIR2UXYLVWMXTTAPQ', 'JwGI9Hfc8z8A1Qr4Iiodfy5SQxHxwGp/W5StM/AW')
   })

@@ -22,9 +22,9 @@ class SessionsController < ApplicationController
     redirect_to root_path
   end
 
-  def keys
-    render json: {AWS_ACCESS_KEY_ID: ENV["AWS_accessKeyID"], AWS_SECRET_ACCESS_KEY: ENV["AWS_secretAccessKey"]}
-  end
+  # def keys
+  #   render json: {AWS_ACCESS_KEY_ID: ENV["AWS_accessKeyID"], AWS_SECRET_ACCESS_KEY: ENV["AWS_secretAccessKey"]}
+  # end
 
 
 end
