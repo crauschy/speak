@@ -8,7 +8,9 @@ class SpeakController < ActionController::Base
   })
   speech = "potato"
   # binding.pry
+   binding.pry
   speech = Aws::Polly::Client.new(region: 'us-east-2').synthesize_speech(output_format: 'mp3', text:'Hello world', voice_id: 'Joanna').audio_stream
+
 
   end
 
