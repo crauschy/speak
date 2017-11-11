@@ -14,7 +14,8 @@
 		<div class="col-md-10 navbar-controls well navbar-item">
 			<div class="navbar-controls navbar-controls-text">
 				<h3>
-					<% if session[:user_id] %>
+					<% if current_user %>
+						<%= link_to current_user.username, user_path(current_user.id) %>
 						<%= link_to "Logout", logout_path, method: "delete" %>
 					<% else %>
 						<%= link_to "Login", login_path %> |
