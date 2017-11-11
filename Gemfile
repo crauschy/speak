@@ -18,13 +18,9 @@ gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-gem 'rails_serve_static_assets'
 # gem 'therubyracer', platforms: :ruby
-<<<<<<< HEAD
-gem 'rails_12factor', group: :production
-=======
+gem 'dotenv-rails', :groups => [:development, :test]
 # gem 'rails_12factor', group: :production
->>>>>>> 9f2c3045f763418feba408336d90e80a5b20c7a2
 
 # gem 'aws-sdk-rails'
 # gem 'watson-api-client', '~> 0.0.1'
