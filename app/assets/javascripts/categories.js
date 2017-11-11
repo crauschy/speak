@@ -79,7 +79,6 @@ $(document).ready(function() {
 			type: "GET"
 		})
 		.done(function(response) {
-			console.log(response)
 			$(".sentence-bar").append(response.html)
 		})
 

@@ -1,5 +1,7 @@
 
 <div class='col-md-1 words-col keywords-col sentence-col'>
   <p><%= @keyword.word %></p>
-  <%= image_tag "icons/" + @keyword.word + ".png", height: "40px" %>
+  <% if @category.first.name != "Keyboard" %>
+  	<%= image_tag "icons/" + @keyword.word + ".png", height: "40px" %>
+  <% end %>
 </div>
