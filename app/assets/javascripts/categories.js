@@ -11,6 +11,26 @@ $(document).ready(function() {
 		})
 	})
 
+
+
+
+
+
+	// $.ajax({
+	// 	url: "/sessions/keys",
+	// 	type: "GET"
+	// })
+	// .done(function(response) {
+	// 	console.log(response);
+	// AWS.config.region = 'us-east-2';
+	// AWS.config.accessKeyId = response.AWS_ACCESS_KEY_ID;
+	// AWS.config.secretAccessKey = response.AWS_SECRET_ACCESS_KEY;
+
+	// })
+
+
+
+
 	$(".speak").on("click", function(event) {
 		event.preventDefault()
 
@@ -54,12 +74,16 @@ $(document).ready(function() {
 	$(".populate-me").on("click", ".keywords-col", function(event) {
 		event.preventDefault()
 		var text = $(this).data('category')
-		var html = ""
-			html = html + "<div class='col-md-1 words-col keywords-col sentence-col'>"
-			html = html + text
-			html += "<img src='/assets/icons/" + text + ".png', alt='Icon', height='40px'>"
-			// html = html + "<img src='/assets/icons/pizza.png', alt='Icon', height='40px'>"
-			html = html + "</div>"
-			$(".sentence-bar").append(html)
+		$.ajax({
+			url: "/categories/" + text + "/keywords/" + text,
+			type: "GET"
+		})
+		.done(function(response) {
+			console.log(response)
+			$(".sentence-bar").append(response.html)
+		})
+
+
+
 	})
 })

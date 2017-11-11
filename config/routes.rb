@@ -1,6 +1,9 @@
 
 Rails.application.routes.draw do
 
+
+	get "/sessions/keys", to: "sessions#keys"
+	#sessions_keys
   resources :speak
 	resources :users
   get "/signup", to: "users#new"
