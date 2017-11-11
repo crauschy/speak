@@ -100,11 +100,10 @@ $(document).ready(function() {
      	data: { phrase: compiled }
      })
      .done(function(response) {
-     	// var most_new = "<div class='row words-row most-row'>"
-     	// most_new = most_new + response.html
-     	// most_new = most_new + "<div class='col-md-1 words-col most-col most-click'><p>Click to sentence-me</p></div></div>"
-     	$(".most-recent-populate-me").prepend(response.html)
-     	$(".most-recent-populate-me .most-row").last().remove()
+     	if(response) {
+     		$(".most-recent-populate-me").prepend(response.html)
+     		$(".most-recent-populate-me .most-row").last().remove()
+     	}
      })
 
   });
@@ -142,6 +141,17 @@ $(document).ready(function() {
 		.done(function(response) {
 			$(".sentence-bar").append(response.html)
 		})
+
+		var polly = new AWS.Polly()
+
+		var params = {
+        OutputFormat: 'mp3', /* required */
+        Text: text, /* required */
+        VoiceId: 'Justin', /* required */
+        SampleRate: '22050',
+        TextType: 'text'
+    };
+     	polly.synthesizeSpeech(params, callBack);
 
 
 
