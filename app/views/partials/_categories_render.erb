@@ -3,7 +3,7 @@
     <% group.each_with_index do |category, index| %>
       <div class='col-md-2 words-col categories-col' data-category="<%= category.name %>">
         <p><%= category.name %></p>
-        <img src='/assets/icons/<%= category.img_src %>' height='40px'>
+        <%= image_tag 'icons/'+ category.img_src, height: "40px" %>
       </div>
     <% end %>
   </div>
