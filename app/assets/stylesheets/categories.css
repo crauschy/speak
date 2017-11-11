@@ -107,17 +107,8 @@
 	}
 
 
+
 /*---------------------keyboard page------------------*/
 .keyboard-grid {
-	font-size: 25px;
-}
-
-/*--------------------favor stuff------------------*/
-.favor {
-	height: 100px;
-	margin: 20px 0 0 20px;
-}
-
-.favor-div {
 	font-size: 25px;
 }

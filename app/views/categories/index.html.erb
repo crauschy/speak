@@ -54,6 +54,20 @@
 	<div class="row empty-row"></div>
 
 	<div class="populate-me last">
-		<%= render "partials/categories_render" %>
+		<div class="main-populate-me">
+			<%= render "partials/categories_render" %>
+		</div>
+		<% if session[:user_id] && @most_used %>
+			<h1>Most Used</h1>
+			<div class="most-used-populate-me">
+				<% @most = @most_used %>
+				<%= render "partials/most" %>
+			</div>
+			<h1>Most Recent</h1>
+			<div class="most-recent-populate-me">
+				<% @most = @most_recent %>
+				<%= render "partials/most" %>
+			</div>
+		<% end %>
 	</div>
 </div>

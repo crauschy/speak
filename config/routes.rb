@@ -4,9 +4,9 @@ Rails.application.routes.draw do
 
 	get "/sessions/keys", to: "sessions#keys"
 	#sessions_keys
-  resources :speak
+  	resources :speak
 	resources :users
-  get "/signup", to: "users#new"
+  	get "/signup", to: "users#new"
 	get "/login", to: "sessions#new"
 	post "/login", to: "sessions#create"
 	delete "/logout", to: "sessions#destroy"
@@ -14,6 +14,8 @@ Rails.application.routes.draw do
 	resources :categories do
 		resources :keywords
 	end
+
+	resources :phrases
 
 	root "categories#index"
 

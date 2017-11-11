@@ -4,6 +4,7 @@
       <% if @category.name == "Keyboard" %>
         <div class='col-md-2 words-col keywords-col keyboard-grid' data-category="<%= keyword.word %>">
           <p><%= keyword.word %></p>
+          <%= image_tag 'icons/'+ keyword.img_src, height: "40px" %>
         </div>
       <% else %>
         <div class='col-md-2 words-col keywords-col' data-category="<%= keyword.word %>">
