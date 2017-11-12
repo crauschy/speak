@@ -3,6 +3,7 @@
 ////// App Client ID:    7h12v8aqg6j23j00b3ocg54vss /////
 
 
+
 // Set the region where your identity pool exists (us-east-1, eu-west-1)
 AWS.config.region = 'us-east-1';
 
@@ -17,9 +18,6 @@ var creds = new AWS.CognitoIdentityCredentials({
 AWS.config.credentials = creds;
 
 
-
-// AWS.config.accessKeyId = 'AKIAJ4DJ7X2MGGB2KZGA';
-// AWS.config.secretAccessKey = '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';
 
 
 
