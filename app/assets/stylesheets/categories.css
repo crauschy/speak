@@ -11,7 +11,7 @@
 /*----------------head container---------------------*/
 
 	#container{
-		width: 1500px;
+		width: 90%;
 		margin: auto;
 		border: 3px solid #37445B;
 		padding: 4px 40px 4px 40px;
@@ -44,40 +44,6 @@
 		margin-right: 10px;
 		/*border: 2px solid red;*/
 	}
-/*----------------sentence-bar -------------------------*/
-	#sound{
-		display: none;
-	}
-
-	.sentence {
-		display: flex;
-	}
-
-	.sentence-bar {
-		border: 3px solid #37445B;
-		height: 90px;
-		border-radius: 10px;
-		margin: .5%;
-	}
-
-	.speak {
-		margin-left: -30px;
-		margin-right: 40px;
-		/*border: 2px solid red;*/
-	}
-
-	.delete-button {
-		display:block;
-		margin:auto;
-	}
-
-	/*images in the sentance bar*/
-	.sentence-col {
-		margin-top: -1.1%;
-		/*border: 2px solid red;*/
-		height: 70px;
-		width: 70px;
-	}
 
 /*----------------------grid system-----------------*/
 
@@ -90,9 +56,8 @@
 /*each individual tile*/
 	.words-col {
 		border: 2px solid #37445B;
-		height: 120px;
+		min-height: 120px;
 		border-radius: 10px;
-		margin: .1%;
 		text-align: center;
 		display: block;
 		margin:auto;
@@ -112,3 +77,45 @@
 .keyboard-grid {
 	font-size: 25px;
 }
+
+/*----------------sentence-bar -------------------------*/
+	#sound{
+		display: none;
+	}
+
+	.sentence {
+		display: flex;
+	}
+
+	.sentence-bar {
+		border: 3px solid #37445B;
+		min-height: 95px;
+		border-radius: 10px;
+		margin: .5%;
+		padding: 0 0 15px 34px;
+		/*overflow: scroll;*/
+	}
+
+	.speak {
+		margin-left: -30px;
+		margin-right: 40px;
+		/*border: 2px solid red;*/
+	}
+
+	.delete-button {
+		display:block;
+		margin:auto;
+	}
+
+	/*sentence columns*/
+	.sentence-col {
+		/*border: 2px solid red;*/
+		/*height: 10px;*/
+		width: 70px;
+		margin: 12px 5px 0 0;
+	}
+
+	/*images in the sentence bar*/
+	.sentence-col img {
+		height: 30px;
+	}
