@@ -56,9 +56,8 @@
 /*each individual tile*/
 	.words-col {
 		border: 2px solid #37445B;
-		height: 120px;
+		min-height: 120px;
 		border-radius: 10px;
-		margin: .1%;
 		text-align: center;
 		display: block;
 		margin:auto;
@@ -111,7 +110,7 @@
 	/*sentence columns*/
 	.sentence-col {
 		/*border: 2px solid red;*/
-		height: 80px;
+		/*height: 10px;*/
 		width: 70px;
 		margin: 12px 5px 0 0;
 	}
