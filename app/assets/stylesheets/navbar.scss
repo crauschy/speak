@@ -1,0 +1,70 @@
+nav.navbar {
+  height: 55px;
+  display: block;
+}
+
+.navbar-collapse {
+    position: absolute;
+    width: 100%;
+    left: 0;
+/*    text-align: right;
+*/    margin:0 auto;
+}
+
+/*a.navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: left;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 30px;
+    margin: 0 auto 0 0
+}*/
+
+.navbar-toggle {
+    z-index:3;
+}
+
+div.speak-logo {
+    position: absolute;
+    max-width: 200px;
+    margin: 0 0 0 100px;
+}
+
+.speak-logo a , :hover {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+
+@media (min-width: 768px){
+  .navbar-nav {
+      float: right;
+      margin-right: 10px;
+  }
+
+/*  .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+      margin-left: 20px;
+  }*/
+
+div.speak-logo {
+    position: absolute;
+    max-width: 200px;
+    margin: 0 0 0 100px;
+}
+
+.speak-logo a , :hover {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+  a.dropdown-toggle {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 20px;
+  }
+
+
+}
