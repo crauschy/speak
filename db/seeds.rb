@@ -28,6 +28,7 @@ end
 
 
 words_list = [
+["me", "I.png", "Common"],
 ["I", "I.png", "Common"],
 ["you", "you.png", "Common"],
 ["us", "us.png", "Common"],
@@ -193,10 +194,10 @@ words_list = [
 ["or", "$.png", "Little Words"],
 ["as", "$.png", "Little Words"],
 ["with", "$.png", "Little Words"],
-["be", "$.png", "Little Words"],
 ["am", "$.png", "Little Words"],
 ["at", "$.png", "Little Words"],
 ["be", "$.png", "Little Words"],
+["but", "$.png", "Little Words"],
 ["was", "$.png", "Little Words"],
 ["do", "$.png", "Little Words"],
 ["can", "$.png", "Little Words"],
