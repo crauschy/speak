@@ -3,14 +3,18 @@ Category.create(name: "People", img_src: "food.png")
 Category.create(name: "Actions", img_src: "Actions.png")
 Category.create(name: "Feelings", img_src: "Feelings.png")
 Category.create(name: "Animals", img_src: "Animals.png")
+Category.create(name: "Bathroom", img_src: "$.png")
 Category.create(name: "Nature", img_src: "Nature.png")
+Category.create(name: "Play", img_src: "play.png")
 Category.create(name: "Sense", img_src: "common.png")
 Category.create(name: "Food", img_src: "food.png")
 Category.create(name: "Places", img_src: "places.png")
 Category.create(name: "Describe", img_src: "describe.png")
 Category.create(name: "Colors", img_src: "Colors.png")
+Category.create(name: "Prepositions", img_src: "common.png")
 # Category.create(name: "Chat", img_src: "chat.png")
 Category.create(name: "Actions", img_src: "food.png")
+Category.create(name: "Little Words", img_src: "Q.png")
 
 
 def create_keyword(word_data)
@@ -78,7 +82,63 @@ words_list = [
 ["I am", "I_am.png", "Common"],
 ["left", "left.png", "Common"],
 ["little", "little.png", "Describe"],
-[""]
+["loud", "lound.png", "Describe"],
+["love", "love.png", "Feelings"],
+["milk", "milk.png", "Food"],
+["mom", "mom.png", "People"],
+["need", "need.png", "Common"],
+["need", "need.png", "Little Words"],
+["nervous", "nervous.png", "Feelings"],
+["no", "no.png", "Common"],
+["on top of", "on_top_of.png", "Prepositions"],
+["open", "open.png", "Common"],
+["open", "open.png", "Prepositions"],
+["orange", "orange.png", "Colors"],
+["outside", "outside.png", "Places"],
+["outside of", "outside_of.png", "Prepositions"],
+["parents", "parents.png", "People"],
+["park", "park.png", "Places"],
+["pig", "pig.png", "Animals"],
+["pizza", "pizza.png", "Food"],
+["playground", "playground.png", "Places"],
+["please", "please.png", "Common"],
+["thank you", "thank_you.png", "Common"],
+["purple", "purple.png", "Colors"],
+["quiet", "quiet.png", "Describe"],
+["red", "red.png", "Colors"],
+["restaurant", "restaurant.png", "Places"],
+["right", "right.png", "Common"],
+["sad", "sad.png", "Feelings"],
+["scared", "scared.png", "Feelings"],
+["school", "school.png", "Places"],
+["see", "see.png", "Sense"],
+["sick", "sick.png", "Sense"],
+["sister", "sister.png", "People"],
+["sleepy", "sleepy.png", "Feelings"],
+["soft", "soft.png", "Describe"],
+["stop", "stop.png", "Common"],
+["teacher", "teacher.png", "People"],
+["there", "there.png", "Common"],
+["there", "there.png", "Prepositions"],
+["toilet", "toilet.png", "Bathroom"],
+["touch", "touch.png", "Sense"],
+["turtle", "turtle.png", "Animals"],
+["under", "under.png", "Prepositions"],
+["up", "up.png", "Common"],
+["us", "us.png", "People"],
+["walk", "walk.png", "Actions"],
+["want", "want.png", "Common"],
+["wash", "wash.png", "Actions"],
+["wash", "wash.png", "Bathroom"],
+["water", "water.png", "Food"],
+["wet", "wet.png", "Describe"],
+["what", "what.png", "Common"],
+["when", "when.png", "Common"],
+["where", "where.png", "Common"],
+["white", "white.png", "Colors"],
+["yellow", "yellow.png", "Colors"],
+["you are", "you_are.png", "Little Words"],
+["you", "you.png", "People"]
 
 ]
 
