@@ -1,90 +1,98 @@
-def create_keyword(word, image_source, category)
- new_word = Keyword.create(word: word, img_src: image_source)
+Category.create(name: "Common", img_src: "common.png")
+Category.create(name: "People", img_src: "food.png")
+Category.create(name: "Actions", img_src: "Actions.png")
+Category.create(name: "Feelings", img_src: "Feelings.png")
+Category.create(name: "Animals", img_src: "Animals.png")
+Category.create(name: "Nature", img_src: "Nature.png")
+Category.create(name: "Sense", img_src: "common.png")
+Category.create(name: "Food", img_src: "food.png")
+Category.create(name: "Places", img_src: "places.png")
+Category.create(name: "Describe", img_src: "describe.png")
+Category.create(name: "Colors", img_src: "Colors.png")
+# Category.create(name: "Chat", img_src: "chat.png")
+Category.create(name: "Actions", img_src: "food.png")
+
+
+def create_keyword(word_data)
+ new_word = Keyword.create(word: word_data[0], img_src: word_data[1])
+ category = Category.find_by(name: word_data[2])
  new_word.categories << category
 end
 
 
-def create_category(category_name, category_image_source)
-common = Category.create(name: "Common", img_src: "common.png")
-  common_list = {
-  I: "i.png",
-  me: "i.png"
-  you: "you.png",
-  us: "us.png",
-  we: "",
-  he: "",
-  she: "",
-  it: "",
-  this: "",
-  they: "",
-  that: "",
-  the: "",
-  a: "",
-  my: "",
-  your: "",
-  be: "",
-  is: "",
-  can: "",
-  will: "",
-  do: "",
-  have: "",
-  want: "",
-  like: "",
-  need: "",
-  get: "",
-  stop: "",
-  go: "",
-  come: "",
-  take: "",
-  see: "",
-  look: "",
-  put: "",
-  make: "",
-  think: "",
-  know: "",
-  say: "",
-  give: "",
-  eat: "",
-  help: "",
-  play: "",
-  what: "",
-  where: "",
-  who: "",
-  to: "",
-  with: "",
-  in: "",
-  for: "",
-  here: "",
-  out: "",
-  of: "",
-  there: "",
-  up: "",
-  on: "",
-  off: "",
-  down: "",
-  not: "",
-  more: "",
-  finished: "",
-  now: "",
-  good: "",
-  bad: "",
-  all: "",
-  different: "",
-  and: "",
-  some: "",
-  but: "",
-  because: ""
-  }
-  common_list.each do |key, value|
-     create_keyword(key, value, common)
-  end
+words_list = [
+["I", "I.png", "Common"],
+["you", "you.png", "Common"],
+["us", "us.png", "Common"],
+["angry", "angry.png", "Feelings"],
+["banana", "banana.png", "Food"],
+["bathroom", "bathhroom.png", "Places"],
+["big", "big.png", "Describe"],
+["bird", "bird.png", "Animals"],
+["black", "black.png", "Colors"],
+["blue", "blue.png", "Colors"],
+["bread", "bread.png", "Food"],
+["breakfast", "breakfast.png", "Food"],
+["brother", "brother.png", "People"],
+["brown", "brown.png", "Colors"],
+["rabbit", "bunny.png", "Animals"],
+["burger", "burger.png", "Food"],
+["carrot", "carrot.png", "Food"],
+["cat", "cat.png", "Animals"],
+["chicken", "chicken.png", "Animals"],
+["clean", "clean.png", "Describe"],
+["closed", "closed.png", "Common"],
+["cold", "cold.png", "Common"],
+["dad", "dad.png", "People"],
+["dirty", "dirty.png", "Common"],
+["dog", "dog.png", "Animals"],
+["down", "down.png", "Common"],
+["draw", "draw.png", "Actions"],
+["drink", "drink.png", "Common"],
+["dry", "dry.png", "Describe"],
+["eat", "eat.png", "Common"],
+["excited", "excited.png", "Feelings"],
+["family", "family.png", "People"],
+["far", "far.png", "Describe"],
+["fish", "fish.png", "Animals"],
+["food", "food.png", "Food"],
+["friends", "friends.png", "People"],
+["get", "get.png", "Common"],
+["get", "get.png", "Actions"],
+["go", "go.png", "Common"],
+["go", "go.png", "Actions"],
+["grandparents", "grandparents.png", "People"],
+["green", "green.png", "Colors"],
+["happy", "happy.png", "Feelings"],
+["hard", "hard.png", "Describe"],
+["hear", "hear.png", "Sense"],
+["help", "help.png", "Common"],
+["here", "here.png", "Common"],
+["home", "home.png", "Places"],
+["horse", "horse.png", "Animals"],
+["hospital", "hospital.png", "Places"],
+["hot", "hot.png", "Common"],
+["hot", "hot.png", "Describe"],
+["hotdog", "hotdog.png", "Food"],
+["juice", "juice.png", "Food"],
+["I am", "I_am.png", "Common"],
+["left", "left.png", "Common"],
+["little", "little.png", "Describe"],
+[""]
+
+]
+
+
+words_list.each do |word|
+  create_keyword(word)
 end
 
 
-
-
-
 # data = Food: ["pizza", "banana", "carrot", "burger", "bread", "breakfast", "juice", "hotdog", "water", "milk"], People: ["i", "you", "us", "sister", "teacher", "brother", "mom", "dad", "family", "friends", "grandparents"], Emotions: ["happy", "sad", "angry", "scared", "excited", "sick", "love", "nervous", "sleepy"], Colors: ["yellow", "blue", "red", "green", "orange", "purple", "white", "black", "brown", "pink"], Location_Helpers: ["right", "left", "up", "down", "closed", "far", "under", "there", "here", "inside_of", "outside_of", "on_top_of"], Action: ["see", "hear", "get", "go", "stop", "eat", "drink", "walk", "stop", "wash", "toilet", "play", "open", "close", "touch", "brush", "draw"], Places: ["home", "school", "playground", "outside", "hospital", "restaurant", "park", "room", "bathroom"], Animals: ["dog", "cat", "horse", "fish", "turtle", "bird", "bunny", "pig", "chicken", "horse"], Adjectives: ["hot", "cold", "loud", "quiet", "wet", "dry", "hard", "soft", "dirty", "clean", "big", "little"], Nature: ["trees", "flower", "sun", "moon", "cloud", "leaves", "grass", "stars", "rain"], Text: ["want", "help", "need", "I_am", "please", "thank_you", "you_are", "what", "where", "when", "yes", "no"], Keyboard: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "$", "!", "Q", "W", "E", "R", "T", "Y", "U", "I_", "O", "P", "%", "A", "S", "D", "F", "G", "H", "J", "K", "L", "&", "Z", "X", "C", "V", "B", "N", "M"]}
+
+
+
+
 
 # data.each do |category, keyword|
 

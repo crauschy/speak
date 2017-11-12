@@ -128,6 +128,7 @@ $(document).ready(function() {
 			type: "GET"
 		})
 		.done(function(response) {
+      console.log("hrer")
 			$(".main-populate-me").html(response.html)
 		})
 	})
