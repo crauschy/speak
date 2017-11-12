@@ -4,7 +4,7 @@ def create_keyword(word, image_source, category)
 end
 
 
-
+def create_category(category_name, category_image_source)
 common = Category.create(name: "Common", img_src: "common.png")
   common_list = {
   I: "i.png",
@@ -75,8 +75,9 @@ common = Category.create(name: "Common", img_src: "common.png")
   but: "",
   because: ""
   }
-common_list.each do |key, value|
-   create_keyword(key, value, common)
+  common_list.each do |key, value|
+     create_keyword(key, value, common)
+  end
 end
 
 
