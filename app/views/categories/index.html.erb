@@ -12,7 +12,7 @@
 			<%= image_tag 'icons/speak.png'%>
 		</div>
 
-		<div class="col-md-10 sentence-bar well"></div>
+		<div class="col-md-10 sentence-bar"></div>
 
 		<div class="col-md-1 delete-button">
 			<img src="/assets/icons/backspace.png", alt="Backspace", height="75px">
@@ -24,13 +24,11 @@
 	<div class="row navbar">
 
 		<div class="col-md-4">
-			<div class="navbar-controls navbar-controls-text">
-
-			</div>
+			<div class="navbar-controls navbar-controls-text"></div>
 		</div>
 
 		<div class="col-md-2 navbar-home-button">
-			<button type="button" class="btn btn-info">Home</button>
+			<button type="button" class="btn btn-primary">Home</button>
 		</div>
 
 
@@ -52,6 +50,7 @@
 	<!-- <div class="row empty-row"></div> -->
 
 	<div class="populate-me last">
+
 		<div class="main-populate-me">
 			<%= render "partials/categories_render" %>
 		</div>

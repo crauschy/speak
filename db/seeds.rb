@@ -106,6 +106,7 @@ words_list = [
 ["open", "open.png", "Prepositions"],
 ["orange", "orange.png", "Colors"],
 ["outside", "outside.png", "Places"],
+["favor", "favor.png", "Food"]
 ["outside of", "outside_of.png", "Prepositions"],
 ["parents", "parents.png", "People"],
 ["park", "park.png", "Places"],
