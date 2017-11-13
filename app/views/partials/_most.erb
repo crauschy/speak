@@ -4,7 +4,7 @@
 			<% group.each_with_index do |keyword, index| %>
 				<div class='col-md-1 words-col most-col' data-keyword="<%= keyword %>">
 	 				<p><%= keyword %></p>
-	  				<%= image_tag "icons/" + keyword + ".png" %>
+	  				<%= image_tag "icons/" + keyword.img_src %>
 				</div>
 			<% end %>
 			<div class='col-md-1 words-col most-col most-click'>
