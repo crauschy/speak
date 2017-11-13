@@ -1,8 +1,3 @@
-////// Identity Pool ID: us-east-1:1666f9f4-9298-4444-8b27-aac0ce62ce2d /////
-////// User Pool ID:     us-east-1_Cp7WDLCqS  /////
-////// App Client ID:    7h12v8aqg6j23j00b3ocg54vss /////
-
-
 
 // Set the region where your identity pool exists (us-east-1, eu-west-1)
 AWS.config.region = 'us-east-1';
@@ -43,9 +38,6 @@ function showSpeech(audioStream) {
   audioElement.play();
 
  }
-
-
-
 
 
 ////////////////Test Functions//////////
