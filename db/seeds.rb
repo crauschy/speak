@@ -2,7 +2,7 @@
 Category.create(name: "Common", img_src: "common.png")
 Category.create(name: "Little Words", img_src: "$.png")
 Category.create(name: "Question Words", img_src: "$.png")
-Category.create(name: "People", img_src: "food.png")
+Category.create(name: "People", img_src: "People.png")
 Category.create(name: "Actions", img_src: "Actions.png")
 Category.create(name: "Feelings", img_src: "Feelings.png")
 Category.create(name: "Possession", img_src: "$.png")
@@ -12,7 +12,7 @@ Category.create(name: "Things", img_src: "$.png")
 Category.create(name: "Nature", img_src: "Nature.png")
 Category.create(name: "Play", img_src: "play.png")
 Category.create(name: "Sense", img_src: "$.png")
-Category.create(name: "Food", img_src: "food.png")
+Category.create(name: "Food", img_src: "foody.png")
 Category.create(name: "Places", img_src: "places.png")
 Category.create(name: "Colors", img_src: "Colors.png")
 Category.create(name: "Prepositions", img_src: "$.png")
@@ -69,7 +69,7 @@ words_list = [
 ["family", "family.png", "People"],
 ["far", "far.png", "Describe"],
 ["fish", "fish.png", "Animals"],
-["food", "food.png", "Food"],
+["food", "foody.png", "Food"],
 ["friends", "friends.png", "People"],
 ["get", "get.png", "Common"],
 ["get", "get.png", "Actions"],
