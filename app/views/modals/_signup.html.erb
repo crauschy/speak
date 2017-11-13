@@ -9,7 +9,7 @@
 
       <div class="modal-body">
         <% @user = User.new %> <!-- TODO I know this shouldn't be here... but where?-->
-        <%= form_for @user, class: 'form-horizontal' do |f| %>
+        <%= form_for @user, remote: true, class: 'form-horizontal' do |f| %>
 
         <% if @user.errors.any? %>
         <div id="error_explanation">
@@ -83,7 +83,7 @@
 
       <div class="modal-footer">
         <div class="get-to-login">
-          <p>Already have an account? <%= link_to "Log in", new_user_path %></p>
+          <p>Already have an account? <a data-dismiss="modal" data-toggle="modal" href="#loginModal">Log in!</a></p>
         </div>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <%= f.submit "Submit", class: "btn btn-primary" %>
