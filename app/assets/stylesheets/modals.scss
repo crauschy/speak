@@ -1,0 +1,45 @@
+.modal-header{
+  padding-bottom: 0;
+}
+
+.modal-title{
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 30px;
+  padding-left: 20px;
+}
+
+.gender-field{
+  display: inline-block;
+}
+
+.gender-group{
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.gender-label{
+  margin-bottom: 0;
+}
+
+.get-to-login{
+  float: left;
+  margin-left: 15px;
+}
+
+@media (min-width: 768px){
+  .modal-title{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 30px;
+    padding-left: 20px;
+  }
+
+  .gender-field{
+  display: inline-block;
+  }
+
+  .gender-group{
+    max-width: 60%;
+    margin: 0 auto;
+  }
+
+}

@@ -1,0 +1,62 @@
+
+
+nav.navbar {
+  height: 55px;
+  display: block;
+}
+
+.navbar-collapse {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    margin:0 auto;
+}
+
+
+.navbar-toggle {
+    z-index:3;
+}
+
+div.speak-box {
+    position: absolute;
+    max-width: 200px;
+    margin: 0 0 0 100px;
+    z-index: 1;
+}
+
+a.speak-logo {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 35px;
+    text-decoration: none;
+
+}
+
+
+
+@media (min-width: 768px){
+  .navbar-nav {
+      float: right;
+      margin-right: 10px;
+  }
+
+  div.speak-box {
+    position: absolute;
+    max-width: 200px;
+    margin: 0 0 0 100px;
+    z-index: 1;
+  }
+
+  a.speak-logo {
+      font-family: 'Gloria Hallelujah', cursive;
+      font-size: 35px;
+      text-decoration: none;
+
+  }
+
+  a.dropdown-toggle {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 20px;
+  }
+
+
+}
