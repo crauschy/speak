@@ -207,6 +207,8 @@ $(document).ready(function() {
 			data: { phrase: compiled }
 		})
 		.done(function(response) {
+
+			$(".main-populate-me").html(response.html)
 			if(response) {
 				$(".most-recent-populate-me").prepend(response.html)
 				$(".most-recent-populate-me .most-row").last().remove()
