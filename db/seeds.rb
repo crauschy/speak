@@ -1,24 +1,24 @@
 
 Category.create(name: "Common", img_src: "common.png")
-Category.create(name: "Little Words", img_src: "$.png")
-Category.create(name: "Question Words", img_src: "$.png")
+Category.create(name: "Little Words", img_src: "Little_Words.png")
+Category.create(name: "Question Words", img_src: "question_mark.png")
 Category.create(name: "People", img_src: "People.png")
 Category.create(name: "Actions", img_src: "Actions.png")
 Category.create(name: "Feelings", img_src: "Feelings.png")
-Category.create(name: "Possession", img_src: "$.png")
+Category.create(name: "Possession", img_src: "possession.png")
 Category.create(name: "Describe", img_src: "describe.png")
 Category.create(name: "Animals", img_src: "Animals.png")
-Category.create(name: "Things", img_src: "$.png")
+Category.create(name: "Things", img_src: "things.jpeg")
 Category.create(name: "Nature", img_src: "Nature.png")
 Category.create(name: "Play", img_src: "play.png")
-Category.create(name: "Sense", img_src: "$.png")
+Category.create(name: "Sense", img_src: "sense.png")
 Category.create(name: "Food", img_src: "foody.png")
-Category.create(name: "Places", img_src: "places.png")
+Category.create(name: "Places", img_src: "placey.png")
 Category.create(name: "Colors", img_src: "Colors.png")
-Category.create(name: "Prepositions", img_src: "$.png")
-Category.create(name: "Numbers", img_src: "$.png")
-Category.create(name: "Time", img_src: "$.png")
-Category.create(name: "Chat", img_src: "$.png")
+Category.create(name: "Prepositions", img_src: "preposition.png")
+Category.create(name: "Numbers", img_src: "numbers.png")
+Category.create(name: "Time", img_src: "time.png")
+Category.create(name: "Chat", img_src: "chat.png")
 Category.create(name: "Bathroom", img_src: "bathroom.png")
 Category.create(name: "Keyboard", img_src: "Keyboard.svg")
 
@@ -34,14 +34,14 @@ end
 
 
 words_list = [
-["not", "$.png", "Common"],
+["not", "not.jpeg", "Common"],
 ["me", "I.png", "Common"],
 ["I", "I.png", "Common"],
 ["you", "you.png", "Common"],
 ["us", "us.png", "Common"],
 ["angry", "angry.png", "Feelings"],
 ["banana", "banana.png", "Food"],
-["bathroom", "$.png", "Places"],
+["bathroom", "bathroom.png", "Places"],
 ["big", "big.png", "Describe"],
 ["bird", "bird.png", "Animals"],
 ["black", "black.png", "Colors"],
@@ -150,42 +150,42 @@ words_list = [
 ["yellow", "yellow.png", "Colors"],
 ["you are", "you_are.png", "Little Words"],
 ["you", "you.png", "People"],
-["your", "$.png", "People"],
-["turn", "$.png", "Actions"],
-["look", "$.png", "Actions"],
-["find", "$.png", "Actions"],
-["open", "$.png", "Actions"],
-["want", "$.png", "Actions"],
-["say", "$.png", "Actions"],
-["come", "$.png", "Actions"],
-["like", "$.png", "Actions"],
-["work", "$.png", "Actions"],
-["make", "$.png", "Actions"],
-["color", "$.png", "Actions"],
-["stop", "$.png", "Actions"],
-["see", "$.png", "Actions"],
-["put", "$.png", "Actions"],
-["close", "$.png", "Actions"],
-["drink", "$.png", "Actions"],
+["your", "your.png", "People"],
+["turn", "turn.png", "Actions"],
+["look", "look.png", "Actions"],
+["find", "find.png", "Actions"],
+["open", "open.svg", "Actions"],
+["want", "want.png", "Actions"],
+["say", "speak_keyword.png", "Actions"],
+["come", "come.png", "Actions"],
+["like", "like.svg", "Actions"],
+["work", "work.png", "Actions"],
+["make", "make.jpeg", "Actions"],
+["color", "color.svg", "Actions"],
+["stop", "stop.jpeg", "Actions"],
+["see", "see.png", "Actions"],
+["put", "put.png", "Actions"],
+["close", "close.svg", "Actions"],
+["drink", "drink.png", "Actions"],
 ["help", "help.png", "Actions"],
 ["need", "need.png", "Actions"],
-["tell", "$.png", "Actions"],
-["read", "$.png", "Actions"],
-["feel", "$.png", "Actions"],
-["let's", "$.png", "Actions"],
+["tell", "speak_keyword.png", "Actions"],
+["read", "book.png", "Actions"],
+["feel", "feel.png", "Actions"],
+["let's", "lets.svg", "Actions"],
 ["play", "play.png", "Actions"],
-["on", "$.png", "Prepositions"],
-["off", "$.png", "Prepositions"],
-["in", "$.png", "Prepositions"],
-["out", "$.png", "Prepositions"],
-["up", "$.png", "Prepositions"],
-["to", "$.png", "Prepositions"],
-["under", "$.png", "Prepositions"],
-["out", "$.png", "Prepositions"],
-["down", "$.png", "Prepositions"],
-["with", "$.png", "Prepositions"],
-["this", "$.png", "Common"],
-["that", "$.png", "Common"],
+["on", "on.jpeg", "Prepositions"],
+["off", "off.png", "Prepositions"],
+["in", "in.png", "Prepositions"],
+["out", "out.png", "Prepositions"],
+["up", "up.png", "Prepositions"],
+["to", "to.png", "Prepositions"],
+["under", "under.jpeg", "Prepositions"],
+["out", "out.png", "Prepositions"],
+["down", "down.svg", "Prepositions"],
+["with", "with.svg", "Prepositions"],
+["this", "this.svg", "Common"],
+["that", "that.png", "Common"],
 ["some", "$.png", "Common"],
 ["all", "$.png", "Common"],
 ["the", "$.png", "Little Words"],
@@ -239,11 +239,11 @@ words_list = [
 ["7", "7.png", "Numbers"],
 ["8", "8.png", "Numbers"],
 ["9", "9.png", "Numbers"],
-["first", "$.png", "Numbers"],
-["second", "$.png", "Numbers"],
-["third", "$.png", "Numbers"],
-["fourth", "$.png", "Numbers"],
-["fifth", "$.png", "Numbers"],
+["first", "1.png", "Numbers"],
+["second", "2.png", "Numbers"],
+["third", "3.png", "Numbers"],
+["fourth", "4.png", "Numbers"],
+["fifth", "5.png", "Numbers"],
 ["last", "$.png", "Numbers"],
 ["some", "$.png", "Numbers"],
 ["all", "$.png", "Numbers"],
