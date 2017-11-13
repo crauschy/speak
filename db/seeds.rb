@@ -364,7 +364,7 @@ words_list = [
 ["T", "T.png", "Keyboard"],
 ["Y", "Y.png", "Keyboard"],
 ["U", "U.png", "Keyboard"],
-["I_", "I_.png", "Keyboard"],
+["I", "I_.png", "Keyboard"],
 ["O", "O.png", "Keyboard"],
 ["P", "P.png", "Keyboard"],
 ["%", "%.png", "Keyboard"],
