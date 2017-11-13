@@ -1,24 +1,27 @@
 Category.create(name: "Common", img_src: "common.png")
-Category.create(name: "Little Words", img_src: "white.png")
-Category.create(name: "Question Words", img_src: "white.png")
+Category.create(name: "Little Words", img_src: "Little_Words.png")
+Category.create(name: "Question Words", img_src: "question_mark.png")
 Category.create(name: "People", img_src: "People.png")
 Category.create(name: "Actions", img_src: "Actions.png")
 Category.create(name: "Feelings", img_src: "Feelings.png")
-Category.create(name: "Possession", img_src: "white.png")
+Category.create(name: "Possession", img_src: "possession.png")
 Category.create(name: "Describe", img_src: "describe.png")
 Category.create(name: "Animals", img_src: "Animals.png")
-Category.create(name: "Things", img_src: "white.png")
+Category.create(name: "Things", img_src: "things.jpeg")
 Category.create(name: "Nature", img_src: "Nature.png")
 Category.create(name: "Play", img_src: "play.png")
-Category.create(name: "Sense", img_src: "white.png")
+Category.create(name: "Sense", img_src: "sense.png")
 Category.create(name: "Food", img_src: "foody.png")
-Category.create(name: "Places", img_src: "places.png")
+Category.create(name: "Places", img_src: "placey.png")
 Category.create(name: "Colors", img_src: "Colors.png")
-Category.create(name: "Prepositions", img_src: "white.png")
-Category.create(name: "Numbers", img_src: "white.png")
-Category.create(name: "Time", img_src: "white.png")
-Category.create(name: "Chat", img_src: "white.png")
-Category.create(name: "Bathroom", img_src: "white.png")
+Category.create(name: "Prepositions", img_src: "preposition.png")
+Category.create(name: "Numbers", img_src: "numbers.png")
+Category.create(name: "Time", img_src: "time.png")
+Category.create(name: "Chat", img_src: "chat.png")
+Category.create(name: "Bathroom", img_src: "bathroom.png")
+Category.create(name: "Keyboard", img_src: "Keyboard.svg")
+
+# data = {Food: ["pizza", "banana", "carrot", "burger", "bread", "breakfast", "juice", "hotdog", "water", "milk"], People: ["i", "you", "us", "sister", "teacher", "brother", "mom", "dad", "family", "friends", "grandparents"], Emotions: ["happy", "sad", "angry", "scared", "excited", "sick", "love", "nervous", "sleepy"], Colors: ["yellow", "blue", "red", "green", "orange", "purple", "white", "black", "brown", "pink"], Location_Helpers: ["right", "left", "up", "down", "closed", "far", "under", "there", "here", "inside_of", "outside_of", "on_top_of"], Action: ["see", "hear", "get", "go", "stop", "eat", "drink", "walk", "stop", "wash", "toilet", "play", "open", "close", "touch", "brush", "draw"], places: ["home", "school", "playground", "outside", "hospital", "restaurant", "park", "room", "bathroom"], Animals: ["dog", "cat", "horse", "fish", "turtle", "bird", "bunny", "pig", "chicken", "horse"], Adjectives: ["hot", "cold", "loud", "quiet", "wet", "dry", "hard", "soft", "dirty", "clean", "big", "little"], Nature: ["trees", "flower", "sun", "moon", "cloud", "leaves", "grass", "stars", "rain"], Text: ["want", "help", "need", "I_am", "please", "thank_you", "you_are", "what", "where", "when", "yes", "no"], Keyboard: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "$", "!", "Q", "W", "E", "R", "T", "Y", "U", "I_", "O", "P", "%", "A", "S", "D", "F", "G", "H", "J", "K", "L", "&", "Z", "X", "C", "V", "B", "N", "M"]}
 
 
 def create_keyword(word_data)
@@ -29,14 +32,14 @@ end
 
 
 words_list = [
-["not", "white.png", "Common"],
+["not", "not.jpeg", "Common"],
 ["me", "I.png", "Common"],
 ["I", "I.png", "Common"],
 ["you", "you.png", "Common"],
 ["us", "us.png", "Common"],
 ["angry", "angry.png", "Feelings"],
 ["banana", "banana.png", "Food"],
-["bathroom", "white.png", "Places"],
+["bathroom", "bathroom.png", "Places"],
 ["big", "big.png", "Describe"],
 ["bird", "bird.png", "Animals"],
 ["black", "black.png", "Colors"],
@@ -101,6 +104,7 @@ words_list = [
 ["open", "open.png", "Prepositions"],
 ["orange", "orange.png", "Colors"],
 ["outside", "outside.png", "Places"],
+["favor", "favor.png", "Food"]
 ["outside of", "outside_of.png", "Prepositions"],
 ["parents", "parents.png", "People"],
 ["park", "park.png", "Places"],
@@ -145,43 +149,6 @@ words_list = [
 ["yellow", "yellow.png", "Colors"],
 ["you are", "you_are.png", "Little Words"],
 ["you", "you.png", "People"],
-["your", "white.png", "Possession"],
-["turn", "white.png", "Actions"],
-["look", "white.png", "Actions"],
-["find", "white.png", "Actions"],
-["open", "white.png", "Actions"],
-["want", "white.png", "Actions"],
-["say", "white.png", "Actions"],
-["said", "white.png", "Actions"],
-["come", "white.png", "Actions"],
-["like", "white.png", "Actions"],
-["work", "white.png", "Actions"],
-["make", "white.png", "Actions"],
-["color", "white.png", "Actions"],
-["stop", "white.png", "Actions"],
-["see", "white.png", "Actions"],
-["put", "white.png", "Actions"],
-["close", "white.png", "Actions"],
-["drink", "white.png", "Actions"],
-["help", "help.png", "Actions"],
-["need", "need.png", "Actions"],
-["tell", "white.png", "Actions"],
-["read", "white.png", "Actions"],
-["feel", "white.png", "Actions"],
-["let's", "white.png", "Actions"],
-["play", "play.png", "Actions"],
-["on", "white.png", "Prepositions"],
-["off", "white.png", "Prepositions"],
-["in", "white.png", "Prepositions"],
-["out", "white.png", "Prepositions"],
-["up", "white.png", "Prepositions"],
-["to", "white.png", "Prepositions"],
-["under", "white.png", "Prepositions"],
-["out", "white.png", "Prepositions"],
-["down", "white.png", "Prepositions"],
-["with", "white.png", "Prepositions"],
-["this", "white.png", "Common"],
-["that", "white.png", "Common"],
 ["some", "white.png", "Common"],
 ["all", "white.png", "Common"],
 ["the", "white.png", "Little Words"],
@@ -226,6 +193,42 @@ words_list = [
 ["they", "white.png", "People"],
 ["we", "white.png", "People"],
 ["he", "white.png", "People"],
+["your", "your.png", "People"],
+["turn", "turn.png", "Actions"],
+["look", "look.png", "Actions"],
+["find", "find.png", "Actions"],
+["open", "open.svg", "Actions"],
+["want", "want.png", "Actions"],
+["say", "speak_keyword.png", "Actions"],
+["come", "come.png", "Actions"],
+["like", "like.svg", "Actions"],
+["work", "work.png", "Actions"],
+["make", "make.jpeg", "Actions"],
+["color", "color.svg", "Actions"],
+["stop", "stop.jpeg", "Actions"],
+["see", "see.png", "Actions"],
+["put", "put.png", "Actions"],
+["close", "close.svg", "Actions"],
+["drink", "drink.png", "Actions"],
+["help", "help.png", "Actions"],
+["need", "need.png", "Actions"],
+["tell", "speak_keyword.png", "Actions"],
+["read", "book.png", "Actions"],
+["feel", "feel.png", "Actions"],
+["let's", "lets.svg", "Actions"],
+["play", "play.png", "Actions"],
+["on", "on.jpeg", "Prepositions"],
+["off", "off.png", "Prepositions"],
+["in", "in.png", "Prepositions"],
+["out", "out.png", "Prepositions"],
+["up", "up.png", "Prepositions"],
+["to", "to.png", "Prepositions"],
+["under", "under.jpeg", "Prepositions"],
+["out", "out.png", "Prepositions"],
+["down", "down.svg", "Prepositions"],
+["with", "with.svg", "Prepositions"],
+["this", "this.svg", "Common"],
+["that", "that.png", "Common"],
 ["1", "1.png", "Numbers"],
 ["2", "2.png", "Numbers"],
 ["3", "3.png", "Numbers"],
@@ -373,7 +376,47 @@ words_list = [
 ["sleep", "sleep.png", "Actions"],
 ["pull", "pull.png", "Actions"],
 ["fix", "fix.png", "Actions"],
-["broke", "broke.png", "Actions"]
+["broke", "broke.png", "Actions"],
+["1", "1.png", "Keyboard"],
+["2", "2.png", "Keyboard"],
+["3", "3.png", "Keyboard"],
+["4", "4.png", "Keyboard"],
+["5", "5.png", "Keyboard"],
+["6", "6.png", "Keyboard"],
+["7", "7.png", "Keyboard"],
+["8", "8.png", "Keyboard"],
+["9", "9.png", "Keyboard"],
+["0", "0.png", "Keyboard"],
+["$", "$.png", "Keyboard"],
+["!", "!.png", "Keyboard"],
+["Q", "Q.png", "Keyboard"],
+["W", "W.png", "Keyboard"],
+["E", "E.png", "Keyboard"],
+["R", "R.png", "Keyboard"],
+["T", "T.png", "Keyboard"],
+["Y", "Y.png", "Keyboard"],
+["U", "U.png", "Keyboard"],
+["I", "I_.png", "Keyboard"],
+["O", "O.png", "Keyboard"],
+["P", "P.png", "Keyboard"],
+["%", "%.png", "Keyboard"],
+["A", "A.png", "Keyboard"],
+["S", "S.png", "Keyboard"],
+["D", "D.png", "Keyboard"],
+["F", "F.png", "Keyboard"],
+["G", "G.png", "Keyboard"],
+["H", "H.png", "Keyboard"],
+["J", "J.png", "Keyboard"],
+["K", "K.png", "Keyboard"],
+["L", "L.png", "Keyboard"],
+["&", "&.png", "Keyboard"],
+["Z", "Z.png", "Keyboard"],
+["X", "X.png", "Keyboard"],
+["C", "C.png", "Keyboard"],
+["V", "V.png", "Keyboard"],
+["B", "B.png", "Keyboard"],
+["N", "N.png", "Keyboard"],
+["M", "M.png", "Keyboard"]
 ]
 
 
@@ -402,26 +445,26 @@ end
 
 # end
 
-# vinnie = User.create(name: "Vinnie", username: "VinnieLu", email: "lu.vinnie@gmail.com", password: "password", gender: "male")
-# Phrase.create(sentence: ["home", "school", "playground", "outside", "hospital"], count: 1, user_id: 1)
-# Phrase.create(sentence: ["see", "hear", "get", "go", "stop", "eat"], count: 1, user_id: 1)
-# Phrase.create(sentence: ["yellow", "blue", "red", "green", "orange"], count: 1, user_id: 1)
-# Phrase.create(sentence: ["cloud", "leaves", "grass", "stars", "rain"], count: 1, user_id: 1)
+vinnie = User.create(name: "Vinnie", username: "VinnieLu", email: "lu.vinnie@gmail.com", password: "password", gender: "male")
+Phrase.create(sentence: ["home", "school", "playground", "outside", "hospital"], count: 1, user_id: 1)
+Phrase.create(sentence: ["see", "hear", "get", "go", "stop", "eat"], count: 1, user_id: 1)
+Phrase.create(sentence: ["yellow", "blue", "red", "green", "orange"], count: 1, user_id: 1)
+Phrase.create(sentence: ["cloud", "leaves", "grass", "stars", "rain"], count: 1, user_id: 1)
 
-# chris = User.create(name: "Chris", username: "ChrisFriedman", email: "friedman.chris@gmail.com", password: "password", gender: "male")
-# Phrase.create(sentence: ["pizza", "banana", "carrot", "burger", "bread"], count: 1, user_id: 2)
-# Phrase.create(sentence: ["dad", "family", "friends", "grandparents"], count: 1, user_id: 2)
-# Phrase.create(sentence: ["green", "orange", "purple", "white", "black"], count: 1, user_id: 2)
-# Phrase.create(sentence: ["toilet", "play", "open", "close", "touch"], count: 1, user_id: 2)
+chris = User.create(name: "Chris", username: "ChrisFriedman", email: "friedman.chris@gmail.com", password: "password", gender: "male")
+Phrase.create(sentence: ["pizza", "banana", "carrot", "burger", "bread"], count: 1, user_id: 2)
+Phrase.create(sentence: ["dad", "family", "friends", "grandparents"], count: 1, user_id: 2)
+Phrase.create(sentence: ["green", "orange", "purple", "white", "black"], count: 1, user_id: 2)
+Phrase.create(sentence: ["toilet", "play", "open", "close", "touch"], count: 1, user_id: 2)
 
-# gaby = User.create(name: "Gaby", username: "GabyRamirez", email: "ramirez.gaby@gmail.com", password: "password", gender: "female")
-# Phrase.create(sentence: ["pizza", "banana", "carrot", "burger", "bread"], count: 1, user_id: 3)
-# Phrase.create(sentence: ["dad", "family", "friends", "grandparents"], count: 1, user_id: 3)
-# Phrase.create(sentence: ["green", "orange", "purple", "white", "black"], count: 1, user_id: 3)
-# Phrase.create(sentence: ["pizza", "banana", "carrot", "burger", "bread"], count: 1, user_id: 3)
+gaby = User.create(name: "Gaby", username: "GabyRamirez", email: "ramirez.gaby@gmail.com", password: "password", gender: "female")
+Phrase.create(sentence: ["pizza", "banana", "carrot", "burger", "bread"], count: 1, user_id: 3)
+Phrase.create(sentence: ["dad", "family", "friends", "grandparents"], count: 1, user_id: 3)
+Phrase.create(sentence: ["green", "orange", "purple", "white", "black"], count: 1, user_id: 3)
+Phrase.create(sentence: ["pizza", "banana", "carrot", "burger", "bread"], count: 1, user_id: 3)
 
-# cate = User.create(name: "Cate", username: "CateRauschenberger", email: "rauschenberger.cate@gmail.com", password: "password", gender: "female")
-# Phrase.create(sentence: ["pizza", "banana", "carrot", "burger", "bread"], count: 1, user_id: 3)
-# Phrase.create(sentence: ["dad", "family", "friends", "grandparents"], count: 1, user_id: 3)
-# Phrase.create(sentence: ["green", "orange", "purple", "white", "black"], count: 1, user_id: 3)
-# Phrase.create(sentence: ["bunny", "pig", "chicken", "horse"], count: 1, user_id: 4)
+cate = User.create(name: "Cate", username: "CateRauschenberger", email: "rauschenberger.cate@gmail.com", password: "password", gender: "female")
+Phrase.create(sentence: ["pizza", "banana", "carrot", "burger", "bread"], count: 1, user_id: 4)
+Phrase.create(sentence: ["dad", "family", "friends", "grandparents"], count: 1, user_id: 4)
+Phrase.create(sentence: ["green", "orange", "purple", "white", "black"], count: 1, user_id: 4)
+Phrase.create(sentence: ["bunny", "pig", "chicken", "horse"], count: 1, user_id: 4)

@@ -1,6 +1,4 @@
-.modal-header{
-  padding-bottom: 0;
-}
+/* MOBILE SCREEN */
 
 .modal-title{
   font-family: 'Gloria Hallelujah', cursive;
@@ -8,23 +6,16 @@
   padding-left: 20px;
 }
 
-.gender-field{
-  display: inline-block;
+.form-group>.col-sm-10{
+  margin-bottom: 15px;
 }
 
 .gender-group{
-  max-width: 60%;
-  margin: 0 auto;
+  margin-left: 25px
 }
 
-.gender-label{
-  margin-bottom: 0;
-}
 
-.get-to-login{
-  float: left;
-  margin-left: 15px;
-}
+/* NORMAL SCREEN */
 
 @media (min-width: 768px){
   .modal-title{
@@ -33,13 +24,12 @@
     padding-left: 20px;
   }
 
-  .gender-field{
-  display: inline-block;
+  .form-group>.col-sm-10{
+    margin-bottom: 15px;
   }
 
   .gender-group{
-    max-width: 60%;
-    margin: 0 auto;
+    margin-left: 25px
   }
 
 }
