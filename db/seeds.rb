@@ -1,23 +1,24 @@
 Category.create(name: "Common", img_src: "common.png")
+Category.create(name: "Little Words", img_src: "$.png")
+Category.create(name: "Question Words", img_src: "$.png")
 Category.create(name: "People", img_src: "food.png")
 Category.create(name: "Actions", img_src: "Actions.png")
 Category.create(name: "Feelings", img_src: "Feelings.png")
+Category.create(name: "Possession", img_src: "$.png")
+Category.create(name: "Describe", img_src: "describe.png")
 Category.create(name: "Animals", img_src: "Animals.png")
-Category.create(name: "Bathroom", img_src: "$.png")
+Category.create(name: "Things", img_src: "$.png")
 Category.create(name: "Nature", img_src: "Nature.png")
 Category.create(name: "Play", img_src: "play.png")
-Category.create(name: "Sense", img_src: "common.png")
+Category.create(name: "Sense", img_src: "$.png")
 Category.create(name: "Food", img_src: "food.png")
 Category.create(name: "Places", img_src: "places.png")
-Category.create(name: "Describe", img_src: "describe.png")
 Category.create(name: "Colors", img_src: "Colors.png")
-Category.create(name: "Prepositions", img_src: "common.png")
+Category.create(name: "Prepositions", img_src: "$.png")
 Category.create(name: "Numbers", img_src: "$.png")
 Category.create(name: "Time", img_src: "$.png")
 Category.create(name: "Chat", img_src: "$.png")
-Category.create(name: "Actions", img_src: "food.png")
-Category.create(name: "Little Words", img_src: "Q.png")
-Category.create(name: "Question Words", img_src: "Q.png")
+Category.create(name: "Bathroom", img_src: "$.png")
 
 
 def create_keyword(word_data)
@@ -28,6 +29,7 @@ end
 
 
 words_list = [
+["not", "$.png", "Common"],
 ["me", "I.png", "Common"],
 ["I", "I.png", "Common"],
 ["you", "you.png", "Common"],
@@ -52,7 +54,7 @@ words_list = [
 ["closed", "closed.png", "Common"],
 ["cold", "cold.png", "Common"],
 ["dad", "dad.png", "People"],
-["dirty", "dirty.png", "Common"],
+["dirty", "dirty.png", "Describe"],
 ["dog", "dog.png", "Animals"],
 ["down", "down.png", "Common"],
 ["draw", "draw.png", "Actions"],
@@ -79,7 +81,6 @@ words_list = [
 ["home", "home.png", "Places"],
 ["horse", "horse.png", "Animals"],
 ["hospital", "hospital.png", "Places"],
-["hot", "hot.png", "Common"],
 ["hot", "hot.png", "Describe"],
 ["hotdog", "hotdog.png", "Food"],
 ["juice", "juice.png", "Food"],
@@ -93,6 +94,7 @@ words_list = [
 ["need", "need.png", "Common"],
 ["need", "need.png", "Little Words"],
 ["nervous", "nervous.png", "Feelings"],
+["yes", "yes.png", "Common"],
 ["no", "no.png", "Common"],
 ["on top of", "on_top_of.png", "Prepositions"],
 ["open", "open.png", "Common"],
@@ -116,14 +118,14 @@ words_list = [
 ["scared", "scared.png", "Feelings"],
 ["school", "school.png", "Places"],
 ["see", "see.png", "Sense"],
-["sick", "sick.png", "Sense"],
+["sick", "sick.png", "Feelings"],
 ["sister", "sister.png", "People"],
 ["sleepy", "sleepy.png", "Feelings"],
 ["soft", "soft.png", "Describe"],
 ["stop", "stop.png", "Common"],
 ["teacher", "teacher.png", "People"],
 ["there", "there.png", "Common"],
-["there", "there.png", "Prepositions"],
+["there", "there.png", "Things"],
 ["toilet", "toilet.png", "Bathroom"],
 ["touch", "touch.png", "Sense"],
 ["turtle", "turtle.png", "Animals"],
@@ -143,6 +145,7 @@ words_list = [
 ["yellow", "yellow.png", "Colors"],
 ["you are", "you_are.png", "Little Words"],
 ["you", "you.png", "People"],
+["your", "$.png", "People"],
 ["turn", "$.png", "Actions"],
 ["look", "$.png", "Actions"],
 ["find", "$.png", "Actions"],
@@ -215,8 +218,9 @@ words_list = [
 ["when", "$.png", "Question Words"],
 ["who", "$.png", "Question Words"],
 ["how", "$.png", "Question Words"],
+["question", "$.png", "Question Words"],
 ["me", "$.png", "People"],
-["mine", "$.png", "People"],
+["mine", "$.png", "Possession"],
 ["she", "$.png", "People"],
 ["they", "$.png", "People"],
 ["we", "$.png", "People"],
@@ -236,9 +240,106 @@ words_list = [
 ["fourth", "$.png", "Numbers"],
 ["fifth", "$.png", "Numbers"],
 ["last", "$.png", "Numbers"],
-
-
-
+["some", "$.png", "Numbers"],
+["all", "$.png", "Numbers"],
+["most", "$.png", "Numbers"],
+["none", "$.png", "Numbers"],
+["many", "$.png", "Numbers"],
+["more", "$.png", "Numbers"],
+["less", "$.png", "Numbers"],
+["other", "$.png", "Numbers"], ##
+["other", "$.png", "Little Words"],
+["use", "$.png", "Actions"],
+["hello", "$.png", "Chat"],
+["good-bye", "$.png", "Chat"],
+["yes", "$.png", "Chat"],
+["no", "$.png", "Chat"],
+["good", "$.png", "Chat"],
+["bad", "$.png", "Chat"],
+["okay", "$.png", "Chat"],
+["how are you", "$.png", "Chat"],
+["tired", "$.png", "Feelings"],
+["thirsty", "$.png", "Feelings"],
+["hungry", "$.png", "Feelings"],
+["bored", "$.png", "Feelings"],
+["fine", "$.png", "Feelings"],
+["people", "$.png", "People"],
+["eat", "$.png", "Actions"],
+["their", "$.png", "Possession"],
+["would", "$.png", "Little Words"],
+["her", "$.png", "Possession"],
+["his", "$.png", "Possession"],
+["my", "$.png", "Possession"],
+["about", "$.png", "Prepositions"],
+["know", "$.png", "Actions"],
+["as", "$.png", "Little Words"],
+["now", "$.png", "Time"],
+["later", "$.png", "Time"],
+["soon", "$.png", "Time"],
+["after", "$.png", "Time"],
+["before", "$.png", "Time"],
+["time", "$.png", "Time"],
+["today", "$.png", "Time"],
+["yesterday", "$.png", "Time"],
+["tomorrow", "$.png", "Time"],
+["day", "$.png", "Time"],
+["week", "$.png", "Time"],
+["year", "$.png", "Time"],
+["month", "$.png", "Time"],
+["Sunday", "$.png", "Time"],
+["Monday", "$.png", "Time"],
+["Tuesday", "$.png", "Time"],
+["Wednesday", "$.png", "Time"],
+["Thursday", "$.png", "Time"],
+["Friday", "$.png", "Time"],
+["Saturday", "$.png", "Time"],
+["Sunday", "$.png", "Time"],
+["January", "$.png", "Time"],
+["February", "$.png", "Time"],
+["March", "$.png", "Time"],
+["April", "$.png", "Time"],
+["May", "$.png", "Time"],
+["June", "$.png", "Time"],
+["July", "$.png", "Time"],
+["August", "$.png", "Time"],
+["September", "$.png", "Time"],
+["October", "$.png", "Time"],
+["November", "$.png", "Time"],
+["December", "$.png", "Time"],
+["hour", "$.png", "Time"],
+["minute", "$.png", "Time"],
+["so", "$.png", "Little Words"],
+["think", "$.png", "Actions"],
+["which", "$.png", "Question Words"],
+["them", "$.png", "People"],
+["people", "$.png", "People"],
+["take", "$.png", "Actions"],
+["into", "$.png", "Prepositions"],
+["just", "$.png", "Time"],
+["him", "$.png", "People"],
+["feel", "$.png", "Sense"],
+["smell", "$.png", "Sense"], ##
+["taste", "$.png", "Sense"],
+["feel", "$.png", "Sense"],
+["balance", "$.png", "Sense"],
+["itchy", "$.png", "Sense"],
+["could", "$.png", "Little Words"],
+["than", "$.png", "Little Words"],
+["then", "$.png", "Time"],
+["its", "$.png", "Possession"],
+["it", "$.png", "Things"],
+["our", "$.png", "Possession"],
+["these", "$.png", "Things"],
+["way", "$.png", "Things"],
+["also", "$.png", "Little Words"],
+["new", "$.png", "Describe"]
+# ["because", "$.png", "Common"],
+# ["man", "$.png", "People"],
+# ["find", "$.png", "Actions"],
+# ["here", "$.png", "Things"],
+# ["thing", "$.png", "Things"],
+# ["give", "$.png" "Actions"],
+# ["many", "$.png", "Numbers"]
 ]
 
 
