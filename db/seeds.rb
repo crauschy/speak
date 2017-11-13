@@ -19,7 +19,8 @@ Category.create(name: "Prepositions", img_src: "$.png")
 Category.create(name: "Numbers", img_src: "$.png")
 Category.create(name: "Time", img_src: "$.png")
 Category.create(name: "Chat", img_src: "$.png")
-Category.create(name: "Bathroom", img_src: "$.png")
+Category.create(name: "Bathroom", img_src: "bathroom.png")
+Category.create(name: "Keyboard", img_src: "Keyboard.svg")
 
 # data = {Food: ["pizza", "banana", "carrot", "burger", "bread", "breakfast", "juice", "hotdog", "water", "milk"], People: ["i", "you", "us", "sister", "teacher", "brother", "mom", "dad", "family", "friends", "grandparents"], Emotions: ["happy", "sad", "angry", "scared", "excited", "sick", "love", "nervous", "sleepy"], Colors: ["yellow", "blue", "red", "green", "orange", "purple", "white", "black", "brown", "pink"], Location_Helpers: ["right", "left", "up", "down", "closed", "far", "under", "there", "here", "inside_of", "outside_of", "on_top_of"], Action: ["see", "hear", "get", "go", "stop", "eat", "drink", "walk", "stop", "wash", "toilet", "play", "open", "close", "touch", "brush", "draw"], places: ["home", "school", "playground", "outside", "hospital", "restaurant", "park", "room", "bathroom"], Animals: ["dog", "cat", "horse", "fish", "turtle", "bird", "bunny", "pig", "chicken", "horse"], Adjectives: ["hot", "cold", "loud", "quiet", "wet", "dry", "hard", "soft", "dirty", "clean", "big", "little"], Nature: ["trees", "flower", "sun", "moon", "cloud", "leaves", "grass", "stars", "rain"], Text: ["want", "help", "need", "I_am", "please", "thank_you", "you_are", "what", "where", "when", "yes", "no"], Keyboard: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "$", "!", "Q", "W", "E", "R", "T", "Y", "U", "I_", "O", "P", "%", "A", "S", "D", "F", "G", "H", "J", "K", "L", "&", "Z", "X", "C", "V", "B", "N", "M"]}
 
@@ -336,7 +337,7 @@ words_list = [
 ["these", "$.png", "Things"],
 ["way", "$.png", "Things"],
 ["also", "$.png", "Little Words"],
-["new", "$.png", "Describe"]
+["new", "$.png", "Describe"],
 # ["because", "$.png", "Common"],
 # ["man", "$.png", "People"],
 # ["find", "$.png", "Actions"],
@@ -344,6 +345,46 @@ words_list = [
 # ["thing", "$.png", "Things"],
 # ["give", "$.png" "Actions"],
 # ["many", "$.png", "Numbers"]
+["1", "1.png", "Keyboard"],
+["2", "2.png", "Keyboard"],
+["3", "3.png", "Keyboard"],
+["4", "4.png", "Keyboard"],
+["5", "5.png", "Keyboard"],
+["6", "6.png", "Keyboard"],
+["7", "7.png", "Keyboard"],
+["8", "8.png", "Keyboard"],
+["9", "9.png", "Keyboard"],
+["0", "0.png", "Keyboard"],
+["$", "$.png", "Keyboard"],
+["!", "!.png", "Keyboard"],
+["Q", "Q.png", "Keyboard"],
+["W", "W.png", "Keyboard"],
+["E", "E.png", "Keyboard"],
+["R", "R.png", "Keyboard"],
+["T", "T.png", "Keyboard"],
+["Y", "Y.png", "Keyboard"],
+["U", "U.png", "Keyboard"],
+["I_", "I_.png", "Keyboard"],
+["O", "O.png", "Keyboard"],
+["P", "P.png", "Keyboard"],
+["%", "%.png", "Keyboard"],
+["A", "A.png", "Keyboard"],
+["S", "S.png", "Keyboard"],
+["D", "D.png", "Keyboard"],
+["F", "F.png", "Keyboard"],
+["G", "G.png", "Keyboard"],
+["H", "H.png", "Keyboard"],
+["J", "J.png", "Keyboard"],
+["K", "K.png", "Keyboard"],
+["L", "L.png", "Keyboard"],
+["&", "&.png", "Keyboard"],
+["Z", "Z.png", "Keyboard"],
+["X", "X.png", "Keyboard"],
+["C", "C.png", "Keyboard"],
+["V", "V.png", "Keyboard"],
+["B", "B.png", "Keyboard"],
+["N", "N.png", "Keyboard"],
+["M", "M.png", "Keyboard"]
 ]
 
 
