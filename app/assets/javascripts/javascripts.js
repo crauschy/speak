@@ -9,15 +9,9 @@ var creds = new AWS.CognitoIdentityCredentials({
 });
 
 
-
 AWS.config.credentials = creds;
 
-
-
-
-
 //////////CONTROLLER FUNCTIONS//////
-
  function callBack(err, data){
     if (err) console.log(err, err.stack);
     else
@@ -26,8 +20,6 @@ AWS.config.credentials = creds;
 
 
 // ///////////VIEW FUNCTIONS///////
-
-
 
 function showSpeech(audioStream) {
   var arrayBuffer = audioStream.buffer;
@@ -40,48 +32,3 @@ function showSpeech(audioStream) {
  }
 
 
-////////////////Test Functions//////////
-
-
-// var cognitoUser = userPool.getCurrentUser();
-
-// if (cognitoUser != null) {
-//   cognitoUser.getSession(function(err, result) {
-//     if (result) {
-//       console.log('You are now logged in.');
-
-
-
-
-// var poolData = {
-//     UserPoolId : 'us-east-1_Cp7WDLCqS', // your user pool id here
-//     ClientId : '7h12v8aqg6j23j00b3ocg54vss' // your app client id here
-// };
-// var userPool =
-// new AWSCognito.CognitoIdentityServiceProvider.CognitoUserPool(poolData);
-// var userData = {
-//     Username : 'Speak-Test1-User2', // your username here
-//     Pool : userPool
-// };
-
-
-
-////// Add the User's Id Token to the Cognito credentials login map.
-//       AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-//         IdentityPoolId: 'us-east-1:1666f9f4-9298-4444-8b27-aac0ce62ce2d',
-//         Logins: {
-//           'cognito-idp.us-east-1.amazonaws.com/us-east-1_Cp7WDLCqS': result.getIdToken().getJwtToken()
-//         }
-//       });
-
-
-
-// Make the call to obtain credentials
-// AWS.config.credentials.get(function(){
-
-//     // Credentials will be available when this function is called.
-//     var accessKeyId = AWS.config.credentials.accessKeyId;
-//     var secretAccessKey = AWS.config.credentials.secretAccessKey;
-//     var sessionToken = AWS.config.credentials.sessionToken;
-
-// });
