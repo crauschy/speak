@@ -2,6 +2,8 @@
 Rails.application.routes.draw do
 
 
+resources :keywords
+
 	get "/sessions/keys", to: "sessions#keys"
 
   resources :speak

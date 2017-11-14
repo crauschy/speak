@@ -7,6 +7,21 @@ class KeywordsController < ApplicationController
 		render json: { html: @html }
 	end
 
+  def new
+    @keyword = Keyword.new
+  end
+
+  def create
+    new_word = Keyword.create(word: params[:keyword][:word], user_id: session[:user_id])
+    Cloudinary::Uploader.upload(params[:keyword][:img_src], :public_id => "#{session[:user_id]}-#{new_word.id}")
+    new_word.img_src = "#{session[:user_id]}-#{new_word.id}"
+    category = Category.find_by(name: "Nature")
+    new_word.save
+    new_word.categories << category
+    binding.pry
+    redirect_to root_path
+  end
+
   def show
   	@html = ""
   	words = params[:id].split(",")
