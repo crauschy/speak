@@ -114,6 +114,18 @@ div {
     background-color: #FFDC9C;
 }
 
+.delete-button-keywords {
+	border: 1px solid black;
+	background-color:red;
+	color: white;
+}
+
+.delete-button-categories {
+	border: 1px solid black;
+	background-color:red;
+	color: white;
+}
+
 
 /*---------------------keyboard page------------------*/
 .keyboard-grid {

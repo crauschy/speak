@@ -19,5 +19,10 @@ class CategoriesController < ApplicationController
     redirect_to root_path
   end
 
+  def destroy
+    @category = Category.find_by(name: params[:data], user_id: session[:user_id])
+    @category.destroy
+  end
+
 
 end

@@ -149,6 +149,32 @@ $(document).ready(function() {
 		keyEvents(e, 72, 2, 5)
 	})
 
+	$(".delete-button-keywords").on("click", function(event) {
+		var column = $(this).closest(".words-col")
+		var word = $(this).closest(".words-col").find("p").text()
+		$.ajax({
+			url: "/keywords/2",
+			type: "DELETE",
+			data: {data: word}
+		})
+		.done(function(response) {
+			column.remove()
+		})
+	})
+
+	$(".delete-button-categories").on("click", function(event) {
+		var column = $(this).closest(".words-col")
+		var word = $(this).closest(".words-col").find("p").text()
+		$.ajax({
+			url: "/categories/2",
+			type: "DELETE",
+			data: {data: word}
+		})
+		.done(function(response) {
+			column.remove()
+		})
+	})
+
 
 
 // $(".speak").on("click", function(event) {
