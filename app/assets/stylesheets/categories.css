@@ -1,11 +1,17 @@
 /*-----------------entire file--------------------------*/
+div {
+	/*border: 1px solid red;*/
+}
+
 
 * {
 	font-family: 'Open Sans', sans-serif;
+	/*color: #3B4457;*/
+	color: #494F60
 }
 
 	body {
-		background-color: #D9F3F7;
+		background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 	}
 
 /*----------------head container---------------------*/
@@ -13,7 +19,7 @@
 	#container{
 		width: 90%;
 		margin: auto;
-		border: 3px solid #37445B;
+		/*border: 3px solid #37445B;*/
 		padding: 4px 40px 4px 40px;
 		text-align: center;
 	}
@@ -23,7 +29,7 @@
 
 	.navbar-item {
 		height: 40px;
-		border: 3px solid #37445B;
+		border: 3px solid #494F60;
 		border-radius: 10px;
 		margin: 0 2px 0 2px;
 	}
@@ -33,9 +39,10 @@
 	}
 
 	.navbar-keyboard {
-		margin-top: -20px;
+		margin-top: -10px;
 		margin-right: -80px;
 		color: rgba(0, 0, 0, 0);
+		width: 200px;
 	}
 
 	.navbar-controls-text {
@@ -45,24 +52,42 @@
 		/*border: 2px solid red;*/
 	}
 
-/*----------------------grid system-----------------*/
-
-/*this is the empty row above the first row of icons*/
-	.empty-row {
-		height: 50px;
-		border-radius: 10px;
+	.navbar-home-button button{
+		text-align: center;
+		font-size: 25px;
+		width: 100px;
+		margin-top: 15%;
 	}
+
+/* button transition hover*/
+
+
+
+
+/*----------------------grid system-----------------*/
+.main-populate-me {
+	/*border: 1px solid red;*/
+	/*width: 800px;*/
+	/*float: right;*/
+	/*padding: 1%;*/
+}
 
 /*each individual tile*/
 	.words-col {
-		border: 2px solid #37445B;
+		border: 2px solid #494F60;
 		min-height: 120px;
 		border-radius: 10px;
 		text-align: center;
-		display: block;
-		margin:auto;
-
+		font-size: 20px;
+		/*background-color: rgba(247,247,255, 0.1);*/
+		background-color: rgba(255,255,255, 0.25);
+		margin: 0.7%;
 	}
+
+.words-col img {
+	height: 70px;
+}
+
 
 /*a row of tiles*/
 	.words-row {
@@ -71,6 +96,20 @@
 			/*height: 100px;*/
 	}
 
+.navbar-keyboard img {
+	margin: 5% ;
+	height: 100px;
+}
+
+.categories-col {
+	border-style: solid;
+	/*box-shadow: 3px 3px 1.5px #494F60;*/
+}
+
+.keywords-col {
+	/*border: 10px solid black;*/
+	/*box-shadow: 3px 3px 1.5px #494F60;*/
+}
 
 
 /*---------------------keyboard page------------------*/
@@ -85,10 +124,12 @@
 
 	.sentence {
 		display: flex;
+		/*border: 1px solid red;*/
 	}
 
 	.sentence-bar {
-		border: 3px solid #37445B;
+		border: 3px solid #494F60;
+		background-color: rgba(255,255,255, 0.7);
 		min-height: 95px;
 		border-radius: 10px;
 		margin: .5%;
@@ -102,20 +143,26 @@
 		/*border: 2px solid red;*/
 	}
 
-	.delete-button {
+.speak img {
+	height: 100px;
+	/*border: 2px solid red;*/
+}
+
+	.delete-button img {
 		display:block;
-		margin:auto;
+		margin: 8px 0 0 0;
+		/*border: 2px solid red;*/
 	}
 
 	/*sentence columns*/
 	.sentence-col {
 		/*border: 2px solid red;*/
-		/*height: 10px;*/
-		width: 70px;
+		height: 10px;
+		width: 100px;
 		margin: 12px 5px 0 0;
 	}
 
 	/*images in the sentence bar*/
 	.sentence-col img {
-		height: 30px;
+		height: 70px;
 	}
