@@ -1,6 +1,6 @@
 class CategoriesController < ApplicationController
 	def index
-		@categories = Category.where.not(name: 'Keyboard')
+		@categories = Category.all
 		if session[:user_id]
 			# @user = User.find_by(id: session[:user_id])
 			# @most_used = @user.phrases.order(count: :desc)[0..2]

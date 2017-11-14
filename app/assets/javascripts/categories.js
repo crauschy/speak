@@ -86,7 +86,7 @@ $(document).ready(function() {
 	///////////CONTROLLER///////////
 
 
-	$(".navbar-home-button").on("click", function(event) {
+	$(".speak-logo").on("click", function(event) {
 		event.preventDefault()
 		toHome()
 	})
