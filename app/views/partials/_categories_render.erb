@@ -9,7 +9,7 @@
       <% elsif category.user_id == session[:user_id] %>
         <div class='col-md-2 words-col categories-col' data-category="<%= category.name %>">
           <p><%= category.name %></p>
-          <%= image_tag 'icons/white.png' %>
+          <%= cl_image_tag(category.img_src) %>
         </div>
       <% end %>
     <% end %>
