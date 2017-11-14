@@ -33,8 +33,8 @@ end
 
 words_list = [
 ["not", "not.jpeg", "Common"],
-["me", "I.png", "Common"],
-["I", "I.png", "Common"],
+["me", "I_new.png", "Common"],
+["I", "I_new.png", "Common"],
 ["you", "you.png", "Common"],
 ["us", "us.png", "Common"],
 ["angry", "angry.png", "Feelings"],
