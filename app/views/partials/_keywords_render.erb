@@ -1,17 +1,10 @@
 <% @keywords.in_groups_of(6, false).each do |group| %>
   <div class='row words-row keywords-row'>
     <% group.each_with_index do |keyword, index| %>
-      <!-- <% if @category.name == "Keyboard" %>
-        <div class='col-md-2 words-col keywords-col keyboard-grid' data-category="<%= keyword.word %>">
-          <p><%= keyword.word %></p>
-          <%= image_tag 'icons/'+ keyword.img_src %>
-        </div>
-      <% else %> -->
         <div class='col-md-2 words-col keywords-col' data-category="<%= keyword.word %>">
           <p><%= keyword.word %></p>
            <%= image_tag 'icons/'+ keyword.img_src %>
         </div>
-      <!-- <% end %> -->
     <% end %>
   </div>
 <% end %>
