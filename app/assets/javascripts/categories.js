@@ -50,19 +50,21 @@ $(document).ready(function() {
 	}
 
 	var keyEvents = function(e, key, row, column) {
-		if (e.keyCode === 27) {
-			toHome()
-		}
-		else if (e.keyCode === key) {
-			if ($(".populate-me.last").find(".categories-row").length > 0) {
-				var text = $($($(".populate-me.last").find(".categories-row")[row]).find(".categories-col")[column]).find("p").text()
-				openCategories(text)
+		if ($(".modal-open").length === 0) {
+			if (e.keyCode === 27) {
+				toHome()
 			}
-			else if($(".populate-me.last").find(".keywords-row").length > 0) {
-				var text = $($($(".populate-me.last").find(".keywords-row")[row]).find(".keywords-col")[column]).find("p").text()
-				populateSentenceBar(text)
+			else if (e.keyCode === key) {
+				if ($(".populate-me.last").find(".categories-row").length > 0) {
+					var text = $($($(".populate-me.last").find(".categories-row")[row]).find(".categories-col")[column]).find("p").text()
+					openCategories(text)
+				}
+				else if($(".populate-me.last").find(".keywords-row").length > 0) {
+					var text = $($($(".populate-me.last").find(".keywords-row")[row]).find(".keywords-col")[column]).find("p").text()
+					populateSentenceBar(text)
+				}
+				return false
 			}
-			return false
 		}
 	}
 
@@ -84,7 +86,7 @@ $(document).ready(function() {
 	///////////CONTROLLER///////////
 
 
-	$(".navbar-home-button").on("click", function(event) {
+	$(".speak-logo").on("click", function(event) {
 		event.preventDefault()
 		toHome()
 	})
