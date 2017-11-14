@@ -12,15 +12,19 @@ class KeywordsController < ApplicationController
     @keyword = Keyword.new
   end
 
+
   def create
-    new_word = Keyword.create(word: params[:keyword][:word], user_id: session[:user_id])
-    Cloudinary::Uploader.upload(params[:keyword][:img_src], :public_id => "#{session[:user_id]}-#{new_word.id}")
-    new_word.img_src = "#{session[:user_id]}-#{new_word.id}"
-    category = Category.find_by(name: "Nature")
-    new_word.save
-    new_word.categories << category
+    @keyword = Keyword.create(keyword_params)
+    @keyword.user_id = session[:user_id]
+    if cloudinary_img
+      @keyword.img_src = cloudinary_img
+    end
+    @keyword.categories << update_categories
+    @keyword.save
     redirect_to root_path
   end
+
+
 
   def show
   	@html = ""
@@ -34,6 +38,28 @@ class KeywordsController < ApplicationController
 	render json: { html: @html }
   end
 
-
-
 end
+
+
+
+
+private
+
+def keyword_params
+    params.require(:keyword).permit(:word, :img_src, :category)
+end
+
+def cloudinary_img
+  if params[:keyword][:img_src]
+    Cloudinary::Uploader.upload(params[:keyword][:img_src], :public_id => "#{session[:user_id]}-#{@keyword.id}")
+    return "#{session[:user_id]}-#{@keyword.id}"
+  else
+    return false
+  end
+end
+
+def update_categories
+  return Category.find(params[:keyword][:categories])
+end
+
+
