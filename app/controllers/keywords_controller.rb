@@ -13,7 +13,6 @@ class KeywordsController < ApplicationController
   end
 
   def create
-    binding.pry
     new_word = Keyword.create(word: params[:keyword][:word], user_id: session[:user_id])
     Cloudinary::Uploader.upload(params[:keyword][:img_src], :public_id => "#{session[:user_id]}-#{new_word.id}")
     new_word.img_src = "#{session[:user_id]}-#{new_word.id}"
