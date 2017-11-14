@@ -6,6 +6,6 @@
 <% elsif @keyword.user_id == session[:user_id] %>
   <div class='col-md-1 words-col keywords-col sentence-col'>
     <p><%= @keyword.word %></p>
-    <%= cl_image_tag(keyword.img_src) %>
+    <%= cl_image_tag(@keyword.img_src) %>
   </div>
 <% end %>

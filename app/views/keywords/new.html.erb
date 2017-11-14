@@ -10,10 +10,10 @@
       <%= f.label :img_src, "Picture" %>
     </div>
 
-    <!-- <div> -->
-      <%#= f.label :category %>
-      <%#= f.collection_select(:category_id, Category.all, :id, :name) %>
-    <!-- </div> -->
+    <div>
+      <%= f.label :category %>
+      <%= f.collection_select(:category_id, Category.all, :id, :name) %>
+    </div>
 
     <div class="#">
       <%= f.submit "Submit" %>
