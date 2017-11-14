@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20171109215536) do
   create_table "categories", force: :cascade do |t|
     t.string "name", null: false
     t.string "img_src"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -31,7 +32,7 @@ ActiveRecord::Schema.define(version: 20171109215536) do
 
   create_table "keywords", force: :cascade do |t|
     t.string "word", null: false
-    t.string "img_src"
+    t.string "img_src", default: "default"
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

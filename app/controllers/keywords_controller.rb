@@ -1,6 +1,7 @@
 class KeywordsController < ApplicationController
 
 	def index
+    # binding.pry
 		@category = Category.find_by(name: params[:category_id])
 		@keywords = @category.keywords
 		@html = render_to_string("partials/_keywords_render", layout: false)
@@ -18,7 +19,6 @@ class KeywordsController < ApplicationController
     category = Category.find_by(name: "Nature")
     new_word.save
     new_word.categories << category
-    binding.pry
     redirect_to root_path
   end
 
