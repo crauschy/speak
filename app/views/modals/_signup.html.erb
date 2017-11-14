@@ -6,22 +6,10 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-
+      <div class="form-errors"></div>
       <div class="modal-body">
         <% @user = User.new %> <!-- TODO I know this shouldn't be here... but where?-->
-        <%= form_for @user, class: 'form-horizontal' do |f| %>
-
-        <% if @user.errors.any? %>
-        <div id="error_explanation">
-          <h4><%=pluralize(@user.errors.count, "error") %> prohibited you from signing up:</h4>
-
-          <ul>
-            <% @user.errors.full_messages.each do |msg| %>
-            <li><%= msg  %></li>
-            <% end %>
-          </ul>
-        </div>
-        <% end %>
+        <%= form_for @user, class: 'form-horizontal modal-form' do |f| %>
 
         <!-- START OF FORM FIELDS -->
 
@@ -83,10 +71,10 @@
 
       <div class="modal-footer">
         <div class="get-to-login">
-          <p>Already have an account? <%= link_to "Log in", new_user_path %></p>
+          <p>Already have an account? <a data-dismiss="modal" data-toggle="modal" href="#loginModal">Log in!</a></p>
         </div>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <%= f.submit "Submit", class: "btn btn-primary" %>
+        <%= f.submit "Submit", class: "sign-up-btn btn btn-primary" %>
 
         <% end %> <!-- end of form_for -->
       </div> <!-- end of modal-footer -->

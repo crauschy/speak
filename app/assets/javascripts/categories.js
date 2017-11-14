@@ -17,13 +17,18 @@ $(document).ready(function() {
 	}
 
 	var toHome = function() {
-		$.ajax({
-			url: "/categories",
-			type: "GET"
-		})
-		.done(function(response) {
-			$(".main-populate-me").html(response.html)
-		})
+		if ($("#profile").length === 0) {
+				$.ajax({
+				url: "/categories",
+				type: "GET"
+			})
+			.done(function(response) {
+				$(".main-populate-me").html(response.html)
+			})
+		}
+		else {
+			window.location.replace("/")
+		}
 	}
 
 	var populateSentenceBar = function(text) {
@@ -203,23 +208,21 @@ $(document).ready(function() {
 
 		callPolly(compiled)
 
-		$.ajax({
-			url: "/phrases",
-			type: "POST",
-			data: { phrase: compiled }
-		})
-		.done(function(response) {
-
-			$(".main-populate-me").html(response.html)
-			if(response) {
-				$(".most-recent-populate-me").prepend(response.html)
-				$(".most-recent-populate-me .most-row").last().remove()
-			}
-		})
-
-
-
-  });
+		if ($(".logged-in").length > 0) {
+				$.ajax({
+				url: "/phrases",
+				type: "POST",
+				data: { phrase: compiled }
+			})
+			.done(function(response) {
+				$(".main-populate-me").html(response.html)
+				if(response) {
+					$(".most-recent-populate-me").prepend(response.html)
+					$(".most-recent-populate-me .most-row").last().remove()
+				}
+			})
+		}
+  	});
 
 
 		///////////VIEW///////////
