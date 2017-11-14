@@ -6,23 +6,11 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-
+      <div class="form-errors"></div>
       <div class="modal-body">
         <% @user = User.new %> <!-- TODO I know this shouldn't be here... but where?-->
-        <%= form_with url: '/login', class: 'form-horizontal', local: true do |f| %>
+        <%= form_with url: '/login', class: 'form-horizontal modal-form', local: true do |f| %>
 
-        <% if @user.errors.any? %>
-        <div class="#">
-          <h4>
-            <%=pluralize(@user.errors.count, "error") %> prohibited you from signing up:
-          </h4>
-          <ul>
-            <% @user.errors.full_messages.each do |msg| %>
-            <li><%= msg  %></li>
-            <% end %>
-          </ul>
-        </div>
-        <% end %>
 
         <!-- START OF FORM FIELDS -->
 
@@ -47,7 +35,7 @@
         <p>Don't have an account? <a data-dismiss="modal" data-toggle="modal" href="#signUpModal">Sign up!</a></p>
         </div>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <%= f.submit "Submit", class: "btn btn-primary" %>
+        <%= f.submit "Submit", class: "btn btn-primary login-btn" %>
 
         <% end %> <!-- end of form_for -->
       </div> <!-- end of modal-footer -->

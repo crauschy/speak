@@ -1,22 +1,31 @@
-// $(document).ready(function() {
-//   var signUp = function() {
-//     $.ajax({
-//       url: "/users",
-//       type: "POST",
+$(document).ready(function() {
 
-//     })
-//     .done(function(response) {
-//       console.log(response)
-//       // $(".modal-body").append(response.html);
-//     })
-//   }
+  $('.sign-up-btn').on('click', function(event){
+    event.preventDefault();
+    var form = $(this).parent().parent().find("form")
+    $.ajax({
+      url: '/users',
+      type: 'POST',
+      data: form.serialize()
+    })
+    .done(function(response){
+      $('div.form-errors').html(response);
+    })
+  })
+
+  $('.login-btn').on('click', function(event){
+    event.preventDefault();
+    var form = $(this).parent().parent().find("form")
+    $.ajax({
+      url: '/login',
+      type: 'POST',
+      data: form.serialize()
+    })
+    .done(function(response){
+      $('div.form-errors').html(response);
+    })
+  })
+
+})
 
 
-//   $('form#new_user').on('submit', function(){
-
-//     event.preventDefault()
-//     console.log("submitted")
-//     signUp()
-//     console.log("testing")
-//   })
-// })
