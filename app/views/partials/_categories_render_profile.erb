@@ -1,0 +1,20 @@
+<% @categories.in_groups_of(6, false).each do |group| %>
+  <div class='row words-row categories-row'>
+    <% group.each_with_index do |category, index| %>
+      <% if category.user_id == nil %>
+        <div class='col-md-2 words-col categories-col' data-category="<%= category.name %>">
+          <p><%= category.name %></p>
+          <%= image_tag 'icons/'+ category.img_src %>
+        </div>
+      <% elsif category.user_id == session[:user_id] %>
+        <div class='col-md-2 words-col categories-col' data-category="<%= category.name %>">
+          <p><%= category.name %></p>
+          <%= cl_image_tag(category.img_src) %>
+            <div class="delete-button-categories">
+              Delete
+            </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+<% end %>
