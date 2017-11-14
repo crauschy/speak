@@ -29,7 +29,7 @@
           </ul>
           <% else %>
           <li><a data-toggle="modal" href="#signUpModal">Sign Up</a></li>
-          <li><%= link_to "Login", login_path %></li>
+          <li><a data-toggle="modal" href="#loginModal">Login</a></li>
           <% end %>
 
         </ul>
@@ -39,6 +39,10 @@
 
   <!-- MODALS -->
 
-  <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal fade " id="signUpModal" tabindex="-1" role="dialog" aria-hidden="true">
     <%= render partial: "modals/signup"%>
+  </div>
+
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <%= render partial: "modals/login"%>
   </div>
