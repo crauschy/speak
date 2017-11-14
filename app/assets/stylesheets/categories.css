@@ -49,7 +49,6 @@ div {
 		text-align: right;
 		margin-top: -35px;
 		margin-right: 10px;
-		/*border: 2px solid red;*/
 	}
 
 	.navbar-home-button button{
@@ -59,7 +58,9 @@ div {
 		margin-top: 15%;
 	}
 
-/* button transition hover*/
+ li {
+	 font-size: 20px;
+ }
 
 
 
@@ -103,13 +104,25 @@ div {
 
 .categories-col {
 	border-style: solid;
-	/*box-shadow: 3px 3px 1.5px #494F60;*/
+	transition: background-color 0.5s ease;
+	box-shadow: 3px 3px 1.5px #494F60;
 }
+
+.categories-col:hover {
+    background-color: #FFDC9C;
+}
+
 
 .keywords-col {
 	/*border: 10px solid black;*/
-	/*box-shadow: 3px 3px 1.5px #494F60;*/
+	transition: background-color 0.5s ease;
+	box-shadow: 3px 3px 1.5px #494F60;
 }
+
+.keywords-col:hover {
+    background-color: #FFDC9C;
+}
+
 
 
 /*---------------------keyboard page------------------*/
@@ -156,11 +169,12 @@ div {
 
 	/*sentence columns*/
 	.sentence-col {
-		/*border: 2px solid red;*/
 		height: 10px;
 		width: 100px;
 		margin: 12px 5px 0 0;
 	}
+
+
 
 	/*images in the sentence bar*/
 	.sentence-col img {
