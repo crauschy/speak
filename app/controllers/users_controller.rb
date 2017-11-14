@@ -21,6 +21,8 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @categories = Category.where(user_id: session[:user_id])
+    @keywords = @user.keywords
   end
 
   def edit
