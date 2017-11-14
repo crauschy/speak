@@ -1,0 +1,18 @@
+
+<%= form_for @keyword do |f| %>
+
+   <div class="#">
+      <%= f.text_field :word  %>
+      <%= f.label :word, "Word" %>
+    </div>
+
+    <div class="#">
+      <%= f.file_field :img_src  %>
+      <%= f.label :img_src, "Picture" %>
+    </div>
+
+      <div class="#">
+      <%= f.submit "Submit" %>
+    </div>
+
+<% end %>
