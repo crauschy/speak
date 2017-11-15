@@ -4,6 +4,13 @@ class SessionsController < ApplicationController
     @user = User.new
   end
 
+  def voice
+
+    @user = User.find_by(id: session[:user_id])
+    @gender = @user.gender
+    render json: { gender: @gender }
+  end
+
   def create
     @user = User.find_by(username: params[:username]) || User.new(username:"whatever", password:"whatever")
     if @user && @user.authenticate(params[:password])

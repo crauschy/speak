@@ -1,6 +1,20 @@
 $(document).ready(function() {
+var voice = "Kendra";
 
-
+				$.ajax({
+				url: "/sessions/voice",
+				type: "GET"
+			})
+				.done(function(response) {
+					console.log(response)
+					if (response.gender == "male"){
+						voice = "Justin";
+					} else if (response.gender == "female") {
+           	voice = "Ivy";
+           }
+				})
+// var userName = $(cookie("user_id"));
+// console.log(userName);
 	///////////MODEL///////////
 
 	var callPolly = function(text) {
@@ -9,7 +23,7 @@ $(document).ready(function() {
 			var params = {
 	        OutputFormat: 'mp3', /* required */
 	        Text: text, /* required */
-	        VoiceId: 'Justin', /* required */
+	        VoiceId: voice, /* required */
 	        SampleRate: '22050',
 	        TextType: 'text'
 	    };
