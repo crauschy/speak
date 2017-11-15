@@ -9,17 +9,20 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
+
     if @user.save
       session[:user_id] = @user.id
       flash[:success] = "Your account has been created!"
       redirect_to @user
     else
-      render 'new'
+      render partial: 'modals/errors'
     end
   end
 
   def show
     @user = User.find(params[:id])
+    @categories = Category.where(user_id: session[:user_id])
+    @keywords = @user.keywords
   end
 
   def edit

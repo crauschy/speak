@@ -5,15 +5,14 @@ class SessionsController < ApplicationController
   end
 
   def create
-    @user = User.find_by username: params[:username] || User.new
-
+    @user = User.find_by(username: params[:username]) || User.new(username:"whatever", password:"whatever")
     if @user && @user.authenticate(params[:password])
       session[:user_id] = @user.id
       redirect_to root_path
     else
-      @user.invalid_login
-      flash[:danger] = "Invalid username or password"
-      render "new"
+      # @user.invalid_login
+      @login_errors = "Please enter a valid username and password."
+      render partial: "modals/login_errors"
     end
   end
 
@@ -22,9 +21,6 @@ class SessionsController < ApplicationController
     redirect_to root_path
   end
 
-  # def keys
-  #   render json: {AWS_ACCESS_KEY_ID: ENV["AWS_accessKeyID"], AWS_SECRET_ACCESS_KEY: ENV["AWS_secretAccessKey"]}
-  # end
 
 
 end

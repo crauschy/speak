@@ -1,21 +1,28 @@
 class CategoriesController < ApplicationController
 	def index
 		@categories = Category.all
-		if session[:user_id]
-			# @user = User.find_by(id: session[:user_id])
-			# @most_used = @user.phrases.order(count: :desc)[0..2]
-			# @most_recent = @user.phrases.order(updated_at: :desc)[0..2]
-		end
-		# @categories.each do |category|
-		# 	# p category
-		# 	# p category.img_src
-		# 	# p ActionController::Base.helpers.image_tag('icons/'+ category.img_src, height: "40px")
-		# 	# p "==================================="
-		# 	# p ''
-		# 	# p ''
-		# end
 		if request.xhr?
 			render json: { html: render_to_string("partials/_categories_render", layout: false) }
 		end
 	end
+
+
+  def new
+   @category = Category.new
+  end
+
+  def create
+    new_category = Category.create(name: params[:category][:name], user_id: session[:user_id])
+    Cloudinary::Uploader.upload(params[:category][:img_src], :public_id => "#{session[:user_id]}-#{new_category.id}-Category")
+    new_category.img_src = "#{session[:user_id]}-#{new_category.id}-Category"
+    new_category.save
+    redirect_to root_path
+  end
+
+  def destroy
+    @category = Category.find_by(name: params[:data], user_id: session[:user_id])
+    @category.destroy
+  end
+
+
 end

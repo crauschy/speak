@@ -10,6 +10,9 @@
           <div class='col-md-2 words-col keywords-col' data-category="<%= keyword.word %>">
              <p><%= keyword.word %></p>
              <%= cl_image_tag(keyword.img_src) %>
+              <div class="delete-button-keywords">
+                Delete
+              </div>
           </div>
       <% end %>
     <% end %>

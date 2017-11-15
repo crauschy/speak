@@ -37,6 +37,7 @@ end
 words_list = [
 
 
+
 # Little_Words
 ["need", "need.png", "Little Words"],
 ["the", "the.png", "Little Words"],
@@ -89,6 +90,7 @@ words_list = [
 ["not", "no.png", "Common"],
 ["me", "me.png", "Common"],
 ["I", "i.png", "Common"],
+
 ["you", "you.png", "Common"],
 ["us", "us.png", "Common"],
 ["closed", "closed.png", "Common"],
