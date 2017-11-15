@@ -17,7 +17,7 @@ $(document).ready(function() {
 	}
 
 	var toHome = function() {
-		if ($("#profile").length === 0) {
+		if ($(".delete-button").length > 0) {
 				$.ajax({
 				url: "/categories",
 				type: "GET"
