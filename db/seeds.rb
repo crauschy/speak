@@ -149,7 +149,7 @@ words_list = [
 ["I", "I_.png", "Keyboard"],
 ["O", "O_.png", "Keyboard"],
 ["P", "P_.png", "Keyboard"],
-["A", "A_.png", "Keyboard"],
+["A", "A_up.png", "Keyboard"],
 ["S", "S_.png", "Keyboard"],
 ["D", "D_.png", "Keyboard"],
 ["F", "F_.png", "Keyboard"],

@@ -81,7 +81,7 @@ div {
 
 .words-col img {
 	height: 70px;
-
+	max-width: 100px;
 }
 
 
@@ -99,6 +99,7 @@ div {
 	border-style: solid;
 	transition: background-color 0.6s ease;
 	box-shadow: 0 .5em 1em rgba(0,0,0,.3);
+	word-wrap: break-word;
 }
 
 .categories-col:hover {
@@ -109,6 +110,7 @@ div {
 .keywords-col {
 	transition: background-color 0.5s ease;
 	box-shadow: 0 .5em 1em rgba(0,0,0,.3);
+	word-wrap: break-word;
 }
 
 .keywords-col:hover {
@@ -167,9 +169,9 @@ div {
 
 	/*sentence columns*/
 	.sentence-col {
-		height: 10px;
-		min-width: 100px;
+		width: 100px;
 		margin: 12px 5px 0 0;
+		word-wrap: break-word;
 	}
 
 	/*images in the sentence bar*/
