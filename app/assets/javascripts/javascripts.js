@@ -15,7 +15,6 @@ AWS.config.credentials = creds;
 function callBack(err, data){
 
   if (err) {
-    console.log('IN CALLBACK')
     console.log(err, err.stack)
   }
   else
@@ -36,12 +35,10 @@ function showSpeech(audioStream) {
   var audioContext = new (window.AudioContext || window.webkitAudioContext);
   console.log(audioContext, 'audio context')
   audioContext.decodeAudioData(arrayBuffer, function(audio){
-    console.log(audio,'in opromise rseaf ')
     var source = audioContext.createBufferSource();
     source.buffer = audio;
     source.connect(audioContext.destination);
     source.start()
-    console.log('FCUK')
   })
 
   // var snd = document.createElement('audio'), src = document.createElement('source');
