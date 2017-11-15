@@ -1,12 +1,12 @@
 <% most.each do |word_object| %>
 		<div class="row words-row most-row">
 			<% word_object.each_with_index do |keyword, index| %>
-				<div class='col-md-1 words-col most-col' data-keyword="<%= keyword %>">
+				<div class='col-md-1 words-col most-col sentence-col' data-keyword="<%= keyword %>">
 	 				<p><%= keyword.word %></p>
 	  				<%= image_tag "icons/" + keyword.img_src %>
 				</div>
 			<% end %>
-			<div class='col-md-1 words-col most-col most-click'>
+			<div class='col-md-1 words-col most-col most-click sentence-col'>
 				<%= image_tag "icons/up_arrow.ico" %>
 				<h4>To Sentence</h4>
 			</div>

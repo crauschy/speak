@@ -45,15 +45,15 @@
 		<div class="main-populate-me">
 			<%= render "partials/categories_render" %>
 		</div>
-		<% if session[:user_id] && @most_used %>
-			<h1>Most Used</h1>
-			<div class="most-used-populate-me">
-				<%= render partial: "partials/most", locals: {most: @most_used} %>
-			</div>
-			<h1>Most Recent</h1>
-			<div class="most-recent-populate-me">
-				<%= render partial: "partials/most", locals: {most: @most_recent} %>
-			</div>
+		<% if session[:user_id] && @most_recent %>
+			<h2>Recent Phrases</h2>
+				<div class="most-recent-populate-me">
+					<%= render partial: "partials/most", locals: {most: @most_recent} %>
+				</div>
+			<!-- <h1>Most Used</h1> -->
+				<!-- <div class="most-used-populate-me"> -->
+					<%#= render partial: "partials/most", locals: {most: @most_used} %>
+				<!-- </div> -->
 		<% end %>
 	</div>
 

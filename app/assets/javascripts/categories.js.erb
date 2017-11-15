@@ -210,7 +210,7 @@ var voice = "Kendra";
 			.done(function(response) {
 				if(response) {
 					$(".most-recent-populate-me").prepend(response.html)
-					$(".most-recent-populate-me .most-row").last().remove()
+					$($(".most-recent-populate-me .most-row")[2]).remove()
 				}
 			})
 		}
