@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   has_many :keywords
+  has_many :categories
   has_many :phrases
 
   validates :name, presence: true
