@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).on('turbolinks:load',function() {
 
 
 	///////////MODEL///////////
@@ -17,7 +17,7 @@ $(document).ready(function() {
 	}
 
 	var toHome = function() {
-		if ($("#profile").length === 0) {
+		if ($(".delete-button").length > 0) {
 				$.ajax({
 				url: "/categories",
 				type: "GET"
@@ -114,6 +114,7 @@ $(document).ready(function() {
 
 	$(".populate-me").on("click", ".categories-col", function(event) {
 		event.preventDefault()
+		console.log("category")
 		var category = $(this).data('category');
 		openCategories(category)
 	})
