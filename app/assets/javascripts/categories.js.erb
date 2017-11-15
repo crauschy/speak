@@ -1,5 +1,5 @@
 $(document).on('turbolinks:load',function() {
-var voice = "Kendra";
+var voice = "Justin";
 
 
 				$.ajax({
@@ -7,12 +7,7 @@ var voice = "Kendra";
 				type: "GET"
 			})
 				.done(function(response) {
-					console.log(response)
-					if (response.gender == "male"){
-						voice = "Justin";
-					} else if (response.gender == "female") {
-           	voice = "Ivy";
-           }
+						voice = response.gender;
 				})
 
 	///////////MODEL///////////
@@ -210,7 +205,7 @@ var voice = "Kendra";
 			.done(function(response) {
 				if(response) {
 					$(".most-recent-populate-me").prepend(response.html)
-					$(".most-recent-populate-me .most-row").last().remove()
+					$($(".most-recent-populate-me .most-row")[2]).remove()
 				}
 			})
 		}
