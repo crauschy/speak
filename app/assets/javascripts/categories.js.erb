@@ -14,8 +14,7 @@ var voice = "Kendra";
            	voice = "Ivy";
            }
 				})
-// var userName = $(cookie("user_id"));
-// console.log(userName);
+
 	///////////MODEL///////////
 
 	var callPolly = function(text) {
@@ -191,54 +190,6 @@ var voice = "Kendra";
 		})
 	})
 
-
-
-// $(".speak").on("click", function(event) {
-// 		event.preventDefault()
-// 		$.ajax({
-// 			url: "/speak",
-// 			type: "GET"
-// 		})
-// 		.done(function(response) {
-// 			console.log(response)
-// 			debugger;
-// 		  var sentence = $(".sentence-bar .sentence-col")
-// 		  var compiled= ""
-// 		  for(i=0;i<sentence.length;i++) {
-// 			 compiled = compiled + $(sentence[i]).text() + " "
-// 		}
-// 	  var polly = new AWS.Polly()
-//     var params = {
-//         OutputFormat: 'mp3', /* required */
-//         Text: compiled, /* required */
-//         VoiceId: 'Justin', /* required */
-//         SampleRate: '22050',
-//         TextType: 'text'
-//     };
-
-//      polly.synthesizeSpeech(params, callBack);
-// 		})
-
-// })
-
-
-
-
-	// $.ajax({
-	// 	url: "/sessions/keys",
-	// 	type: "GET"
-	// })
-	// .done(function(response) {
-	// 	console.log(response);
-	// AWS.config.region = 'us-east-2';
-	// AWS.config.accessKeyId = response.AWS_ACCESS_KEY_ID;
-	// AWS.config.secretAccessKey = response.AWS_SECRET_ACCESS_KEY;
-
-	// })
-
-
-
-
 	$(".speak").on("click", function(event) {
 		event.preventDefault()
 
@@ -257,7 +208,6 @@ var voice = "Kendra";
 				data: { phrase: compiled }
 			})
 			.done(function(response) {
-				$(".main-populate-me").html(response.html)
 				if(response) {
 					$(".most-recent-populate-me").prepend(response.html)
 					$(".most-recent-populate-me .most-row").last().remove()
