@@ -173,7 +173,8 @@ div {
 
 	/*images in the sentence bar*/
 	.sentence-col img {
-		height: 70px;
+		max-height: 60px;
+		margin: -5px 0 0 0;
 	}
 
 /*----------------------profile-------------------*/
