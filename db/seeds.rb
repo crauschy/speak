@@ -1,25 +1,30 @@
 Category.create(name: "Little Words", img_src: "Little_Words.png")
 Category.create(name: "Question Words", img_src: "question_mark.png")
+Category.create(name: "Common", img_src: "common.png")
+Category.create(name: "Keyboard", img_src: "Keyboard.png")
+Category.create(name: "Things", img_src: "thing.png")
+Category.create(name: "Possession", img_src: "possession.png")
+
+
 Category.create(name: "People", img_src: "people.png")
 Category.create(name: "Actions", img_src: "Actions.png")
 Category.create(name: "Feelings", img_src: "Feelings.png")
-Category.create(name: "Possession", img_src: "possession.png")
-Category.create(name: "Describe", img_src: "describe.png")
-Category.create(name: "Animals", img_src: "Animals.png")
-Category.create(name: "Things", img_src: "things.jpeg")
-Category.create(name: "Nature", img_src: "Nature.png")
 Category.create(name: "Play", img_src: "play.png")
 Category.create(name: "Sense", img_src: "sense.png")
-Category.create(name: "Food", img_src: "foody.png")
+Category.create(name: "Hygiene", img_src: "bathroom.png")
+
+Category.create(name: "Describe", img_src: "describe.png")
+Category.create(name: "Food", img_src: "Food.png")
 Category.create(name: "Places", img_src: "placey.png")
 Category.create(name: "Colors", img_src: "Colors.png")
-Category.create(name: "Prepositions", img_src: "preposition.png")
-Category.create(name: "Numbers", img_src: "numbers.png")
+Category.create(name: "Nature", img_src: "Nature.png")
+Category.create(name: "Animals", img_src: "Animals.png")
+
 Category.create(name: "Time", img_src: "timecat.png")
+Category.create(name: "Numbers", img_src: "numbers.png")
 Category.create(name: "Chat", img_src: "chat.png")
-Category.create(name: "Hygiene", img_src: "bathroom.png")
-Category.create(name: "Keyboard", img_src: "Keyboard.png")
-Category.create(name: "Common", img_src: "common.png")
+Category.create(name: "Prepositions", img_src: "preposition.png")
+
 
 
 def create_keyword(word_data)
@@ -30,42 +35,7 @@ end
 
 
 words_list = [
-  # common words
-["not", "not.jpeg", "Common"],
-["me", "I.png", "Common"],
-["I", "I.png", "Common"],
-["you", "you.png", "Common"],
-["us", "us.png", "Common"],
-["closed", "closed.png", "Common"],
-["cold", "cold.png", "Common"],
-["down", "down.png", "Common"],
-["drink", "drink.png", "Common"],
-["eat", "eat.png", "Common"],
-["get", "get.png", "Common"],
-["go", "go.png", "Common"],
-["help", "help.png", "Common"],
-["here", "here.png", "Common"],
-["home", "home.png", "Places"],
-["I am", "I_am.png", "Common"],
-["left", "left.png", "Common"],
-["need", "need.png", "Common"],
-["yes", "yes.png", "Common"],
-["no", "no.png", "Common"],
-["open", "open.png", "Common"],
-["please", "please.png", "Common"],
-["thank you", "thank_you.png", "Common"],
-["right", "right.png", "Common"],
-["stop", "stop.png", "Common"],
-["there", "there.png", "Common"],
-["up", "up.png", "Common"],
-["want", "want.png", "Common"],
-["what", "what.png", "Common"],
-["when", "when.png", "Common"],
-["where", "where.png", "Common"],
-["some", "some.png", "Common"],
-["all", "all.png", "Common"],
-["this", "this.svg", "Common"],
-["that", "that.png", "Common"],
+
 
 # Little_Words
 ["need", "need.png", "Little Words"],
@@ -73,7 +43,7 @@ words_list = [
 ["of", "of.png", "Little Words"],
 ["to", "to.png", "Little Words"],
 ["and", "and.png", "Little Words"],
-["a", "a_.png", "Little Words"],
+["a", "_a.png", "Little Words"],
 ["in", "in.png", "Little Words"],
 ["is", "is.png", "Little Words"],
 ["it", "it.png", "Little Words"],
@@ -105,22 +75,151 @@ words_list = [
 ["been", "been.png", "Little Words"],
 
 
+# question words
+["what", "what.png", "Question Words"],
+["where", "where.png", "Question Words"],
+["why", "why.png", "Question Words"],
+["who", "who.png", "Question Words"],
+["how", "how.png", "Question Words"],
+["question", "question.png", "Question Words"],
+["which", "which.png", "Question Words"],
+["when", "when.png", "Question Words"],
 
-#Describe
-["big", "big.png", "Describe"],
-["clean", "clean.png", "Describe"],
-["dirty", "dirty.png", "Describe"],
-["dry", "dry.png", "Describe"],
-["far", "far.png", "Describe"],
-["hard", "hard.png", "Describe"],
-["hot", "hot.png", "Describe"],
-["little", "little.png", "Describe"],
-["loud", "loud.png", "Describe"],
-["quiet", "quiet.png", "Describe"],
-["soft", "soft.png", "Describe"],
-["wet", "wet.png", "Describe"],
-["new", "new.png", "Describe"],
-["free", "free.png", "Describe"],
+# common words
+["not", "no.png", "Common"],
+["me", "me.png", "Common"],
+["I", "i.png", "Common"],
+["you", "you.png", "Common"],
+["us", "us.png", "Common"],
+["closed", "closed.png", "Common"],
+["cold", "cold.png", "Common"],
+["down", "down.png", "Common"],
+["drink", "drink.png", "Common"],
+["eat", "eat.png", "Common"],
+["get", "get.png", "Common"],
+["go", "go.png", "Common"],
+["help", "help.png", "Common"],
+["here", "here.png", "Common"],
+["home", "home.png", "Places"],
+["I am", "i.png", "Common"],
+["left", "left.png", "Common"],
+["need", "need.png", "Common"],
+["yes", "yes.png", "Common"],
+["no", "no.png", "Common"],
+["open", "open.png", "Common"],
+["please", "please.png", "Common"],
+["thank you", "thankyou.png", "Common"],
+["right", "right.png", "Common"],
+["stop", "stop.png", "Common"],
+["there", "there.png", "Common"],
+["up", "up.png", "Common"],
+["want", "want.png", "Common"],
+["what", "what.png", "Common"],
+["when", "when.png", "Common"],
+["where", "where.png", "Common"],
+["some", "some.png", "Common"],
+["all", "all.png", "Common"],
+["this", "this.svg", "Common"],
+["that", "that.png", "Common"],
+
+
+# Keyboard
+["1", "1_.png", "Keyboard"],
+["2", "2_.png", "Keyboard"],
+["3", "3_.png", "Keyboard"],
+["4", "4_.png", "Keyboard"],
+["5", "5_.png", "Keyboard"],
+["6", "6_.png", "Keyboard"],
+["7", "7_.png", "Keyboard"],
+["8", "8_.png", "Keyboard"],
+["9", "9_.png", "Keyboard"],
+["0", "0_.png", "Keyboard"],
+["%", "%_.png", "Keyboard"],
+["!", "!_.png", "Keyboard"],
+["&", "&_.png", "Keyboard"],
+["Q", "Q_.png", "Keyboard"],
+["W", "W_.png", "Keyboard"],
+["E", "E_.png", "Keyboard"],
+["R", "R_.png", "Keyboard"],
+["T", "T_.png", "Keyboard"],
+["Y", "Y_.png", "Keyboard"],
+["U", "U_.png", "Keyboard"],
+["I", "I_.png", "Keyboard"],
+["O", "O_.png", "Keyboard"],
+["P", "P_.png", "Keyboard"],
+["A", "A_.png", "Keyboard"],
+["S", "S_.png", "Keyboard"],
+["D", "D_.png", "Keyboard"],
+["F", "F_.png", "Keyboard"],
+["G", "G_.png", "Keyboard"],
+["H", "H_.png", "Keyboard"],
+["J", "J_.png", "Keyboard"],
+["K", "K_.png", "Keyboard"],
+["L", "L_.png", "Keyboard"],
+["Z", "Z_.png", "Keyboard"],
+["X", "X_.png", "Keyboard"],
+["C", "C_.png", "Keyboard"],
+["V", "V_.png", "Keyboard"],
+["B", "B_.png", "Keyboard"],
+["N", "N_.png", "Keyboard"],
+["M", "M_.png", "Keyboard"],
+
+
+# things
+["it", "postit.png", "Things"],
+["word", "word.png", "Things"],
+["these", "these.png", "Things"],
+["way", "way.png", "Things"],
+["thing", "thing.png", "Things"],
+["page", "page.png", "Things"],
+["information","information.png", "Things"],
+["site","site.png", "Things"],
+["news","news.png", "Things"],
+["contact","contact_lense.png", "Things"],
+["business","business.png", "Things"],
+["web", "web.png", "Things"],
+["price", "price.png", "Things"],
+
+
+# chat
+["hello", "hello.png", "Chat"],
+["good-bye", "goodbye.png", "Chat"],
+["yes", "yes.png", "Chat"],
+["no", "no.png", "Chat"],
+["good", "good.png", "Chat"],
+["bad", "bad.png", "Chat"],
+["okay", "ok.png", "Chat"],
+["how are you", "howareyou.png", "Chat"],
+["sorry", "sorry.png", "Chat"],
+["thank you", "thankyou.png", "Chat"],
+
+
+# people
+["mom", "mom.png", "People"],
+["dad", "dad.png", "People"],
+["brother", "brother.png", "People"],
+["sister", "sister.png", "People"],
+["family", "family.png", "People"],
+["friends", "friends.png", "People"],
+["grandparents", "grandparents.png", "People"],
+["parents", "parents.png", "People"],
+["teacher", "teacher.png", "People"],
+["police", "police.png", "People"],
+["doctor", "doctor.png", "People"],
+["us", "us.png", "People"],
+["you", "you.png", "People"],
+["me", "me.png", "People"],
+["she", "she.png", "People"],
+["they", "they.png", "People"],
+["we", "we.png", "People"],
+["he", "he.png", "People"],
+["your", "your.png", "People"],
+["people", "people.png", "People"],
+["them", "them.png", "People"],
+["him", "him.png", "People"],
+["her", "her.png", "People"],
+["man", "man.png", "People"],
+["woman", "woman.png", "People"],
 
 
 # Actions
@@ -139,9 +238,9 @@ words_list = [
 ["come", "come.png", "Actions"],
 ["like", "like.svg", "Actions"],
 ["work", "work.png", "Actions"],
-["make", "make.jpeg", "Actions"],
+["make", "make.png", "Actions"],
 ["color", "color.svg", "Actions"],
-["stop", "stop.jpeg", "Actions"],
+["stop", "stop.png", "Actions"],
 ["see", "see.png", "Actions"],
 ["put", "put.png", "Actions"],
 ["close", "close.svg", "Actions"],
@@ -175,35 +274,6 @@ words_list = [
 ["view", "view.png", "Actions"],
 
 
-
-
-# people
-["brother", "brother.png", "People"],
-["sister", "sister.png", "People"],
-["mom", "mom.png", "People"],
-["dad", "dad.png", "People"],
-["family", "family.png", "People"],
-["friends", "friends.png", "People"],
-["grandparents", "grandparents.png", "People"],
-["parents", "parents.png", "People"],
-["teacher", "teacher.png", "People"],
-["us", "us.png", "People"],
-["you", "you.png", "People"],
-["me", "me.png", "People"],
-["she", "she.png", "People"],
-["they", "they.png", "People"],
-["we", "we.png", "People"],
-["he", "he.png", "People"],
-["your", "your.png", "People"],
-["people", "people.png", "People"],
-["them", "them.png", "People"],
-["him", "him.png", "People"],
-["her", "her.png", "People"],
-["man", "man.png", "People"],
-["woman", "woman.png", "People"],
-["police", "police.png", "People"],
-["doctor", "doctor.png", "People"],
-
 # Feelings
 ["angry", "angry.png", "Feelings"],
 ["excited", "excited.png", "Feelings"],
@@ -213,13 +283,32 @@ words_list = [
 ["scared", "scared.png", "Feelings"],
 ["sick", "sick.png", "Feelings"],
 ["sleepy", "sleepy.png", "Feelings"],
-# ["tired", "white.png", "Feelings"],
-["thirsty", "thristy.png", "Feelings"],
+["thirsty", "thirsty.png", "Feelings"],
 ["hungry", "hungry.png", "Feelings"],
 ["bored", "bored.png", "Feelings"],
 ["fine", "fine.png", "Feelings"],
 ["sad", "sad.png", "Feelings"],
 
+
+# play
+["music", "music.png", "Play"],
+["soccer", "soccer.png", "Play"],
+["baseball", "baseball.png", "Play"],
+["volleyball", "volleyball.png", "Play"],
+["cards", "cards.png", "Play"],
+["chess", "chess.png", "Play"],
+["pool", "pool.png", "Play"],
+["football", "football.png", "Play"],
+["bowling", "bowling.png", "Play"],
+["dominos", "dominos.png", "Play"],
+["darts", "darts.png", "Play"],
+["kite", "kite.png", "Play"],
+["tennis", "tennis.png", "Play"],
+["golf", "golf.png", "Play"],
+["pingpong", "pingpong.png", "Play"],
+["checkers", "checkers.png", "Play"],
+["video game", "videogame.png", "Play"],
+["reading", "read.png", "Play"],
 
 
 # Sense
@@ -233,6 +322,38 @@ words_list = [
 ["taste", "taste.png", "Sense"],
 
 
+# Bathroom
+["toilet", "toilet.png", "Hygiene"],
+["wash", "wash.png", "Hygiene"],
+["toilet paper", "toiletpaper.png", "Hygiene"],
+["shower", "shower.png", "Hygiene"],
+["shampoo", "shampoo.png", "Hygiene"],
+["conditioner", "conditioner.png", "Hygiene"],
+["soap", "soap.png", "Hygiene"],
+["tub", "tub.png", "Hygiene"],
+["hairbrush", "hairbrush.png", "Hygiene"],
+["toothbrush", "toothbrush.png", "Hygiene"],
+["toothpaste", "toothpaste.png", "Hygiene"],
+["mirror", "mirror.png", "Hygiene"],
+
+
+#Describe
+["clean", "clean.png", "Describe"],
+["dirty", "dirty.png", "Describe"],
+["dry", "dry.png", "Describe"],
+["wet", "wet.png", "Describe"],
+["far", "far.png", "Describe"],
+["hard", "hard.png", "Describe"],
+["soft", "soft.png", "Describe"],
+["hot", "hot.png", "Describe"],
+["cold", "cold.png", "Describe"],
+["little", "little.png", "Describe"],
+["big", "big.png", "Describe"],
+["loud", "loud.png", "Describe"],
+["quiet", "quiet.png", "Describe"],
+["new", "new.png", "Describe"],
+["free", "free.png", "Describe"],
+
 
 #food
 ["banana", "banana.png", "Food"],
@@ -240,17 +361,15 @@ words_list = [
 ["breakfast", "breakfast.png", "Food"],
 ["burger", "burger.png", "Food"],
 ["carrot", "carrot.png", "Food"],
-["food", "foody.png", "Food"],
 ["hotdog", "hotdog.png", "Food"],
 ["juice", "juice.png", "Food"],
 ["milk", "milk.png", "Food"],
-["favor", "favor.png", "Food"],
 ["pizza", "pizza.png", "Food"],
 ["water", "water.png", "Food"],
 ["date", "date_food.png", "Food"],
 ["lollipop", "lollipop.png", "Food"],
 ["popcorn", "popcorn.png", "Food"],
-["sandwhich", "sandwhich.png", "Food"],
+["sandwich", "sandwich.png", "Food"],
 ["tomato", "tomato.png", "Food"],
 ["rice", "rice.png", "Food"],
 ["cupcake", "cupcake.png", "Food"],
@@ -258,7 +377,7 @@ words_list = [
 ["donut", "donut.png", "Food"],
 ["onion", "onion.png", "Food"],
 ["avocado", "avocado.png", "Food"],
-["brocolli", "brocolli.png", "Food"],
+["broccoli", "broccoli.png", "Food"],
 ["pineapple", "pineapple.png", "Food"],
 ["lemon", "lemon.png", "Food"],
 ["strawberry", "strawberry.png", "Food"],
@@ -304,42 +423,33 @@ words_list = [
 ["laundry", "laundry.png", "Places"],
 
 
+# colors
+["black", "black.png", "Colors"],
+["blue", "blue.png", "Colors"],
+["brown", "brown.png", "Colors"],
+["green", "green.png", "Colors"],
+["orange", "orange.png", "Colors"],
+["purple", "purple.png", "Colors"],
+["red", "red.png", "Colors"],
+["white", "white.png", "Colors"],
+["yellow", "yellow.png", "Colors"],
 
-# Bathroom
-["toilet", "toilet.png", "Hygiene"],
-["wash", "wash.png", "Hygiene"],
-["toilet paper", "toiletpaper.png", "Hygiene"],
-["shower", "shower.png", "Hygiene"],
-["shampoo", "shampoo.png", "Hygiene"],
-["conditioner", "conditioner.png", "Hygiene"],
-["soap", "soap.png", "Hygiene"],
-["tub", "tub.png", "Hygiene"],
-["hairbrush", "hairbrush.png", "Hygiene"],
-["toothbrush", "toothbrush.png", "Hygiene"],
-["toothpaste", "toothpaste.png", "Hygiene"],
-["mirror", "mirror.png", "Hygiene"],
+# insert nature words here
+["flower", "flower.png", "Nature"],
+["cloud", "cloud.png", "Nature"],
+["leaves", "leaves.png", "Nature"],
+["grass", "grass.png", "Nature"],
+["stars", "stars.png", "Nature"],
+["rain", "rain.png", "Nature"],
+["cold", "cold.png", "Nature"],
+["hot", "hot.png", "Nature"],
+["dirt", "dirty.png", "Nature"],
+["trees", "trees.png", "Nature"],
+["sun", "sun.png", "Nature"],
 
 
 
-# play
-["music", "music.png", "Play"],
-["soccer", "soccer.png", "Play"],
-["baseball", "baseball.png", "Play"],
-["volleyball", "volleyball.png", "Play"],
-["cards", "cards.png", "Play"],
-["chess", "chess.png", "Play"],
-["pool", "pool.png", "Play"],
-["football", "football.png", "Play"],
-["bowling", "bowling.png", "Play"],
-["dominos", "dominos.png", "Play"],
-["darts", "darts.png", "Play"],
-["kite", "kite.png", "Play"],
-["tennis", "tennis.png", "Play"],
-["golf", "golf.png", "Play"],
-["pingpong", "pingpong.png", "Play"],
-["checkers", "checkers.png", "Play"],
-["video game", "videogame.png", "Play"],
-["reading", "read.png", "Play"],
+
 
 # animals
 ["bird", "bird.png", "Animals"],
@@ -374,101 +484,22 @@ words_list = [
 ["hedgehog", "hedgehog.png", "Animals"],
 
 
-
-
-
-
-
-
-
-# preposition
-["on top of", "on_top_of.png", "Prepositions"],
-["open", "open.png", "Prepositions"],
-["outside of", "outside_of.png", "Prepositions"],
-["under", "under.png", "Prepositions"],
-["on", "on.jpeg", "Prepositions"],
-["off", "off.png", "Prepositions"],
-["in", "in.png", "Prepositions"],
-["out", "out.png", "Prepositions"],
-["up", "up.png", "Prepositions"],
-["to", "to.png", "Prepositions"],
-["under", "under.jpeg", "Prepositions"],
-["out", "out.png", "Prepositions"],
-["down", "down.svg", "Prepositions"],
-["with", "with.svg", "Prepositions"],
-["about", "about.png", "Prepositions"],
-["into", "into.png", "Prepositions"],
-
-# colors
-["black", "black.png", "Colors"],
-["blue", "blue.png", "Colors"],
-["brown", "brown.png", "Colors"],
-["green", "green.png", "Colors"],
-["orange", "orange.png", "Colors"],
-["purple", "purple.png", "Colors"],
-["red", "red.png", "Colors"],
-["white", "white.png", "Colors"],
-["yellow", "yellow.png", "Colors"],
-
-
-
-
-# question words
-["what", "what.png", "Question Words"],
-["where", "where.png", "Question Words"],
-["why", "why.png", "Question Words"],
-["who", "who.png", "Question Words"],
-["how", "how.png", "Question Words"],
-["question", "question.png", "Question Words"],
-["which", "which.png", "Question Words"],
-["when", "when.png", "Question Words"],
-
-# Possession
-["their", "thier.png", "Possession"],
-["hers", "hers.png", "Possession"],
-["his", "his.png", "Possession"],
-["mine", "mine.png", "Possession"],
-["my", "my.png", "Possession"],
-["its", "its.png", "Possession"],
-["ours", "ours.png", "Possession"],
-
-# chat
-["hello", "hello.png", "Chat"],
-["good-bye", "goodbye.png", "Chat"],
-["yes", "yes.png", "Chat"],
-["no", "no.png", "Chat"],
-["good", "good.png", "Chat"],
-["bad", "bad.png", "Chat"],
-["okay", "ok.png", "Chat"],
-["how are you", "howareyou.png", "Chat"],
-["sorry", "sorry.png", "Chat"],
-
-# things
-["it", "postit.png", "Things"],
-["word", "word.png", "Things"],
-["these", "these.png", "Things"],
-["way", "way.png", "Things"],
-["thing", "thing.png", "Things"],
-["page", "page.png", "Things"],
-["information","information.png", "Things"],
-["site","site.png", "Things"],
-["news","news.png", "Things"],
-["contact","contact_lense.png", "Things"],
-["business","business.png", "Things"],
-["web", "web.png", "Things"],
-["price", "price.png", "Things"],
-
 # time
+["time", "timekey.png", "Time"],
 ["now", "now.png", "Time"],
 ["later", "later.png", "Time"],
 ["soon", "soon.png", "Time"],
 ["after", "after.png", "Time"],
 ["before", "before.png", "Time"],
-["time", "timekey.png", "Time"],
+["just", "just.png", "Time"],
+["then", "then.png", "Time"],
+["hour", "hour.png", "Time"],
+["minute", "minute.png", "Time"],
+["day", "day.png", "Time"],
+["date", "date_time.png", "Time"],
 ["today", "today.png", "Time"],
 ["yesterday", "yesterday.png", "Time"],
 ["tomorrow", "tomorrow.png", "Time"],
-["day", "day.png", "Time"],
 ["week", "week.png", "Time"],
 ["year", "year.png", "Time"],
 ["month", "month.png", "Time"],
@@ -479,7 +510,6 @@ words_list = [
 ["Thursday", "thursday.png", "Time"],
 ["Friday", "friday.png", "Time"],
 ["Saturday", "saturday.png", "Time"],
-["Sunday", "sunday.png", "Time"],
 ["January", "january.png", "Time"],
 ["February", "february.png", "Time"],
 ["March", "march.png", "Time"],
@@ -492,12 +522,6 @@ words_list = [
 ["October", "october.png", "Time"],
 ["November", "november.png", "Time"],
 ["December", "december.png", "Time"],
-["hour", "hour.png", "Time"],
-["minute", "minute.png", "Time"],
-["just", "just.png", "Time"],
-["then", "then.png", "Time"],
-["date", "date_time.png", "Time"],
-
 
 
 # numbers
@@ -527,50 +551,40 @@ words_list = [
 ["other", "other.png", "Numbers"], ##
 
 
+# preposition
+["on top of", "on_top_of.png", "Prepositions"],
+["open", "open.png", "Prepositions"],
+["outside of", "outside_of.png", "Prepositions"],
+["under", "under.png", "Prepositions"],
+["on", "on.png", "Prepositions"],
+["off", "off.png", "Prepositions"],
+["in", "in.png", "Prepositions"],
+["out", "out.png", "Prepositions"],
+["up", "up.png", "Prepositions"],
+["to", "to.png", "Prepositions"],
+["out", "out.png", "Prepositions"],
+["down", "down.svg", "Prepositions"],
+["with", "with.svg", "Prepositions"],
+["about", "about.png", "Prepositions"],
+["into", "into.png", "Prepositions"],
 
 
-# Keyboard
-["1", "1.png", "Keyboard"],
-["2", "2.png", "Keyboard"],
-["3", "3.png", "Keyboard"],
-["4", "4.png", "Keyboard"],
-["5", "5.png", "Keyboard"],
-["6", "6.png", "Keyboard"],
-["7", "7.png", "Keyboard"],
-["8", "8.png", "Keyboard"],
-["9", "9.png", "Keyboard"],
-["0", "0.png", "Keyboard"],
-["$", "$.png", "Keyboard"],
-["!", "!.png", "Keyboard"],
-["Q", "Q.png", "Keyboard"],
-["W", "W.png", "Keyboard"],
-["E", "E.png", "Keyboard"],
-["R", "R.png", "Keyboard"],
-["T", "T.png", "Keyboard"],
-["Y", "Y.png", "Keyboard"],
-["U", "U.png", "Keyboard"],
-["I", "I_.png", "Keyboard"],
-["O", "O.png", "Keyboard"],
-["P", "P.png", "Keyboard"],
-["%", "%.png", "Keyboard"],
-["A", "A.png", "Keyboard"],
-["S", "S.png", "Keyboard"],
-["D", "D.png", "Keyboard"],
-["F", "F.png", "Keyboard"],
-["G", "G.png", "Keyboard"],
-["H", "H.png", "Keyboard"],
-["J", "J.png", "Keyboard"],
-["K", "K.png", "Keyboard"],
-["L", "L.png", "Keyboard"],
-["&", "&.png", "Keyboard"],
-["Z", "Z.png", "Keyboard"],
-["X", "X.png", "Keyboard"],
-["C", "C.png", "Keyboard"],
-["V", "V.png", "Keyboard"],
-["B", "B.png", "Keyboard"],
-["N", "N.png", "Keyboard"],
-["M", "M.png", "Keyboard"]
+
+# Possession
+["their", "their.png", "Possession"],
+["hers", "hers.png", "Possession"],
+["his", "his.png", "Possession"],
+["mine", "mine.png", "Possession"],
+["my", "my.png", "Possession"],
+["its", "its.png", "Possession"],
+["ours", "ours.png", "Possession"]
 ]
+
+
+
+
+
+
 
 
 
