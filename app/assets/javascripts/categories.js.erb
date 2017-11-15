@@ -1,5 +1,5 @@
 $(document).on('turbolinks:load',function() {
-var voice = "Kendra";
+var voice = "Justin";
 
 
 				$.ajax({
@@ -7,12 +7,7 @@ var voice = "Kendra";
 				type: "GET"
 			})
 				.done(function(response) {
-					console.log(response)
-					if (response.gender == "male"){
-						voice = "Justin";
-					} else if (response.gender == "female") {
-           	voice = "Ivy";
-           }
+						voice = response.gender;
 				})
 
 	///////////MODEL///////////

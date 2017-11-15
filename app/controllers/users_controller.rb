@@ -47,8 +47,21 @@ class UsersController < ApplicationController
     redirect_to users_url
   end
 
+  def voice
+    @user = User.find(session[:user_id])
+  end
+
+  def voice_update
+
+    @user = User.find(session[:user_id])
+    @user.gender = params[:user][:gender]
+    @user.save!
+    redirect_to @user
+  end
+
 
   private
+
     def user_params
       params.require(:user).permit(:name, :username, :email, :password, :gender)
     end
