@@ -2,6 +2,7 @@
 Rails.application.routes.draw do
 
 
+get "sessions/voice", to: "sessions#voice"
 resources :keywords
 
 	get "/sessions/keys", to: "sessions#keys"

@@ -48,13 +48,11 @@
 		<% if session[:user_id] && @most_used %>
 			<h1>Most Used</h1>
 			<div class="most-used-populate-me">
-				<% @most = @most_used %>
-				<%= render "partials/most" %>
+				<%= render partial: "partials/most", locals: {most: @most_used} %>
 			</div>
 			<h1>Most Recent</h1>
 			<div class="most-recent-populate-me">
-				<% @most = @most_recent %>
-				<%= render "partials/most" %>
+				<%= render partial: "partials/most", locals: {most: @most_recent} %>
 			</div>
 		<% end %>
 	</div>
