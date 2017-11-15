@@ -1,17 +1,17 @@
 class CategoriesController < ApplicationController
 	def index
 		@categories = Category.all
-    @most_used_phrases = Phrase.where(user_id: session[:user_id]).order(count: :DESC)[0..2]
-    @most_used = []
-    @most_used_phrases.each do |phrase|
-      @most_used_keywords = []
-      phrase.sentence.each do |word|
-        @most_used_keywords << Keyword.find_by(word: word)
-      end
-      @most_used << @most_used_keywords
-    end
+    # @most_used_phrases = Phrase.where(user_id: session[:user_id]).order(count: :DESC)[0..1]
+    # @most_used = []
+    # @most_used_phrases.each do |phrase|
+    #   @most_used_keywords = []
+    #   phrase.sentence.each do |word|
+    #     @most_used_keywords << Keyword.find_by(word: word)
+    #   end
+    #   @most_used << @most_used_keywords
+    # end
 
-    @most_recent_phrases = Phrase.where(user_id: session[:user_id]).order(count: :DESC)[0..2]
+    @most_recent_phrases = Phrase.where(user_id: session[:user_id]).order(count: :DESC)[0..1]
     @most_recent = []
     @most_recent_phrases.each do |phrase|
       @most_recent_keywords = []
@@ -20,7 +20,7 @@ class CategoriesController < ApplicationController
       end
       @most_recent << @most_recent_keywords
     end
-    
+
 		if request.xhr?
 			render json: { html: render_to_string("partials/_categories_render", layout: false) }
 		end

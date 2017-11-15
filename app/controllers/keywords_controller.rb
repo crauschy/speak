@@ -49,7 +49,7 @@ end
 
 def cloudinary_img
   if params[:keyword][:img_src]
-    Cloudinary::Uploader.upload(params[:keyword][:img_src], :public_id => "#{session[:user_id]}-#{@keyword.id}")
+    Cloudinary::Uploader.upload(params[:keyword][:img_src], :public_id => "#{session[:user_id]}-#{@keyword.id}", :crop => :scale, :height => 70 )
     return "#{session[:user_id]}-#{@keyword.id}"
   else
     return false

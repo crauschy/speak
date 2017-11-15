@@ -1,6 +1,8 @@
 
 Rails.application.routes.draw do
 
+  put "users/voice/update", to: "users#voice_update"
+	get "users/voice", to: "users#voice"
 
 get "sessions/voice", to: "sessions#voice"
 resources :keywords
@@ -10,6 +12,7 @@ resources :keywords
   resources :speak
 	resources :users
   	get "/signup", to: "users#new"
+
 	get "/login", to: "sessions#new"
 	post "/login", to: "sessions#create"
 	delete "/logout", to: "sessions#destroy"
