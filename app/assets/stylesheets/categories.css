@@ -1,9 +1,4 @@
 /*-----------------entire file--------------------------*/
-/*div {
-	border: 1px solid red;
-}*/
-
-
 * {
 	font-family: 'Open Sans', sans-serif;
 	color: #494F60
@@ -14,14 +9,12 @@ body {
 }
 
 /*----------------head container---------------------*/
-
 #container{
 	width: 90%;
 	margin: auto;
 	padding: 4px 40px 4px 40px;
 	text-align: center;
 }
-
 
 /*--------------------top navigation bar-----------------*/
 
@@ -61,13 +54,7 @@ li {
 }
 
 
-
-
 /*----------------------grid system-----------------*/
-.main-populate-me {
-
-}
-
 /*back button on keywords page*/
 .back-btn {
 	border: 2px solid #494F60;
@@ -106,7 +93,6 @@ a.back-btn-link:hover {
 	max-width: 100px;
 }
 
-
 /*a row of tiles*/
 .words-row {
 	display: flex;
@@ -128,7 +114,6 @@ a.back-btn-link:hover {
 	background-color: #FFDC9C;
 }
 
-
 .keywords-col {
 	transition: background-color 0.5s ease;
 	box-shadow: 0 .5em 1em rgba(0,0,0,.3);
@@ -140,13 +125,13 @@ a.back-btn-link:hover {
 }
 
 
-/*Most Recent Row*/
+/*Most Recent Rows*/
 .most-row:nth-of-type(1) .most-col-word {
-	border: 5px solid #ba3034;
+	border: 2px solid #3A779E;
 }
 
 .most-row:nth-of-type(2) .most-col-word {
-	border: 5px solid blue;
+	border: 2px solid #3A779E;
 }
 
 /*---------------------keyboard page------------------*/
@@ -205,15 +190,6 @@ a.back-btn-link:hover {
 	margin: 5px 0 0 0;
 }
 
-/*.most-row {
-display: flex;
-}*/
-/*
-.most-recent-populate-me {
-	word-wrap: break-word;
-	max-width: 800px;
-	display: flex;
-}*/
 
 .most-col {
 	border-style: solid;
