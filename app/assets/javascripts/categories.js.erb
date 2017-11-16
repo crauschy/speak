@@ -22,6 +22,8 @@ var voice = "Justin";
 	        SampleRate: '22050',
 	        TextType: 'text'
 	    };
+	    console.log(params, 'Params')
+	    console.log(callBack, 'callback')
      	polly.synthesizeSpeech(params, callBack);
 	}
 
@@ -192,7 +194,6 @@ var voice = "Justin";
 		for(i=0;i<sentence.length;i++) {
 			compiled = compiled + $(sentence[i]).find("p").text() + " "
 		}
-
 		callPolly(compiled)
 
 		if ($(".logged-in").length > 0) {
