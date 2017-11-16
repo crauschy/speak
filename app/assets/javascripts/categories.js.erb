@@ -17,16 +17,15 @@ $(document).on('turbolinks:load',function() {
 	var callPolly = function(text) {
 		var polly = new AWS.Polly()
 
-		var params = {
-			OutputFormat: 'mp3', /* required */
-			Text: text, /* required */
-			VoiceId: voice, /* required */
-			SampleRate: '22050',
-			TextType: 'text'
-		};
-		console.log(params, 'Params')
-		console.log(callBack, 'callback')
-		polly.synthesizeSpeech(params, callBack);
+
+			var params = {
+	        OutputFormat: 'mp3', /* required */
+	        Text: text, /* required */
+	        VoiceId: voice, /* required */
+	        SampleRate: '22050',
+	        TextType: 'text'
+	    };
+     	polly.synthesizeSpeech(params, callBack);
 	}
 
 	var toHome = function() {
@@ -143,6 +142,12 @@ $(document).on('turbolinks:load',function() {
 		populateSentenceBar(text)
 	})
 
+	$(".most-recent-populate-me").on("click", ".most-col-word", function(event) {
+		event.preventDefault()
+		text = $(this).data("keyword")
+		populateSentenceBar(text)
+	})
+
 
 	$(document).keydown(function(e) {
 		keyEvents(e, 49, 0, 0)
@@ -213,6 +218,7 @@ $(document).on('turbolinks:load',function() {
 				if(response) {
 					$(".most-recent-populate-me").prepend(response.html)
 					$($(".most-recent-populate-me .most-row")[2]).remove()
+					$(".most-recent-header").html("<h2>Recently Used</h2>")
 				}
 			})
 		}
