@@ -1,17 +1,25 @@
-<% @keywords.in_groups_of(6, false).each do |group| %>
+  <div>
+  <a class="back-btn-link" href="/">
+      <div class="back-btn">
+        Go Back
+      </div>
+    </a>
+  </div>
+
+  <% @keywords.in_groups_of(6, false).each do |group| %>
   <div class='row words-row keywords-row'>
     <% group.each_with_index do |keyword, index| %>
-      <% if keyword.user_id == nil %>
-          <div class='col-md-2 words-col keywords-col' data-category="<%= keyword.word %>">
-            <p><%= keyword.word %></p>
-             <%= image_tag 'icons/'+ keyword.img_src %>
-          </div>
-      <% elsif keyword.user_id == session[:user_id] %>
-          <div class='col-md-2 words-col keywords-col' data-category="<%= keyword.word %>">
-             <p><%= keyword.word %></p>
-             <%= cl_image_tag(keyword.img_src) %>
-          </div>
-      <% end %>
-    <% end %>
-  </div>
-<% end %>
+    <% if keyword.user_id == nil %>
+    <div class='col-md-2 words-col keywords-col' data-category="<%= keyword.word %>">
+      <p><%= keyword.word %></p>
+      <%= image_tag 'icons/'+ keyword.img_src %>
+    </div>
+    <% elsif keyword.user_id == session[:user_id] %>
+    <div class='col-md-2 words-col keywords-col' data-category="<%= keyword.word %>">
+     <p><%= keyword.word %></p>
+     <%= cl_image_tag(keyword.img_src) %>
+   </div>
+   <% end %>
+   <% end %>
+ </div>
+ <% end %>
