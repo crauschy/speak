@@ -165,3 +165,21 @@ label.control-label.choose-voice {
 div.choose-voice {
   margin-left: 20px;
 }
+
+
+/*------edit voice-------*/
+#edit-voice{
+	background-image: url("background.jpg");
+}
+
+#container-edit-voice {
+		margin: 0 auto;
+    text-align: left;
+    width: 500px;
+		height: 300px;
+    padding: 1.5%;
+		background-color: rgba(255,255,255, 0.4);
+		box-shadow: 0 .5em 1em rgba(0,0,0,.3);
+		border-radius: 30px;
+    font-size: 18px;
+}
