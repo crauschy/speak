@@ -108,7 +108,7 @@ $(document).on('turbolinks:load',function() {
 		toHome()
 	})
 
-	$(".back-btn").on("click", function(event) {
+	$("body").on("click", ".back-btn-link", function(event) {
 		event.preventDefault()
 		toHome()
 	})
