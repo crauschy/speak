@@ -1,7 +1,9 @@
-
+div {
+  /*border: 1px solid red;*/
+}
   /*----------------------profile-------------------*/
 
-  #profile{
+#profile{
    background-image: url("background.jpg")
  }
 
@@ -16,6 +18,8 @@
 		border-radius: 30px;
 		color: #1C2330;
 		border-bottom: 100px;
+  
+
 }
 
 h2 {
