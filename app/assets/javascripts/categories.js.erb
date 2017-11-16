@@ -27,10 +27,10 @@ $(".speak").click(function() {
 
 			var params = {
 	        OutputFormat: 'mp3', /* required */
-	        Text: text, /* required */
+	        Text: "<speak><prosody rate='slow'>" + text + "</prosody></speak>", /* required */
 	        VoiceId: voice, /* required */
 	        SampleRate: '22050',
-	        TextType: 'text'
+	        TextType: 'ssml' /* text */
 	    };
      	polly.synthesizeSpeech(params, callBack);
 	}
