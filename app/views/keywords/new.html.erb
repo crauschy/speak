@@ -1,21 +1,39 @@
-<%= form_for @keyword do |f| %>
+<body id='key'>
+  <div id='container-keyword'>
+    <h3>Upload Your Keyword!</h3><br>
 
-   <div class="#">
-      <%= f.text_field :word  %>
-      <%= f.label :word, "Word" %>
-    </div>
+    <%= form_for @keyword do |f| %>
 
-    <div class="#">
-      <%= f.file_field :img_src  %>
-      <%= f.label :img_src, "Picture" %>
-    </div>
-    <div>
-      <%= f.label :category %>
-      <%= f.collection_select(:categories, (Category.programmed + current_user.categories), :id, :name) %>
-    </div>
+    <div id="userinput-key">
 
-    <div class="#">
-      <%= f.submit "Submit" %>
-    </div>
 
-<% end %>
+        <div class="col">
+          <%= f.label :word, "Keyword:" %>
+         <div class="input-key">
+           <%= f.text_field :word,  placeholder: "Enter your keyword", class:"form-control"  %>
+         </div>
+        </div>
+        <br>
+
+        <div class="col">
+          <%= f.label "Category:"%>
+          <%= f.collection_select(:categories, (Category.programmed + current_user.categories), :id, :name, class:"form-control")  %>
+        </div>
+        <br>
+
+
+        <div class="enter-img-key">
+          <%= f.label :img_src, "Picture:" %>
+        <div class="input-img-key">
+          <%= f.file_field :img_src  %>
+        </div>
+        <br><br><br>
+      </div>
+
+        <div class="submit-key">
+          <%= f.submit "Submit", type: "submit", class:"btn btn-primary btn-lg btn-block" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</body>

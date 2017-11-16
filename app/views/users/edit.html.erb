@@ -2,8 +2,4 @@
 
   <%= render partial: 'form', locals: {user:@user} %>
 
-  <% if @user == current_user %>
-        <p>Remove your account? <%= link_to "Delete", @user, method: :delete,data: { confirm: "Are you sure?" }%></p>
-        <% end %>
-
 </div>

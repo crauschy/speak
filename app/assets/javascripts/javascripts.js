@@ -25,7 +25,7 @@ function callBack(err, data){
 // ///////////VIEW FUNCTIONS///////
 
 function showSpeech(audioStream) {
-  console.log('audio', audioStream)
+  // console.log('audio', audioStream)
   var arrayBuffer = audioStream.buffer;
   // console.log(arrayBuffer)
   var blob = new Blob([arrayBuffer]);

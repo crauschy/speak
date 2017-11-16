@@ -1,7 +1,7 @@
 /*-----------------entire file--------------------------*/
-div {
-	/*border: 1px solid red;*/
-}
+/*div {
+	border: 1px solid red;
+}*/
 
 
 * {
@@ -9,56 +9,56 @@ div {
 	color: #494F60
 }
 
-	body {
-		background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-	}
+body {
+	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
 
 /*----------------head container---------------------*/
 
-	#container{
-		width: 90%;
-		margin: auto;
-		padding: 4px 40px 4px 40px;
-		text-align: center;
-	}
+#container{
+	width: 90%;
+	margin: auto;
+	padding: 4px 40px 4px 40px;
+	text-align: center;
+}
 
 
 /*--------------------top navigation bar-----------------*/
 
-	.navbar-item {
-		height: 40px;
-		border: 3px solid #494F60;
-		border-radius: 10px;
-		margin: 0 2px 0 2px;
-	}
+.navbar-item {
+	height: 40px;
+	border: 3px solid #494F60;
+	border-radius: 10px;
+	margin: 0 2px 0 2px;
+}
 
-	.navbar {
-		display: flex;
-	}
+.navbar {
+	display: flex;
+}
 
-	.navbar-keyboard {
-		margin-top: -10px;
-		margin-right: -80px;
-		color: rgba(0, 0, 0, 0);
-		width: 200px;
-	}
+.navbar-keyboard {
+	margin-top: -10px;
+	margin-right: -80px;
+	color: rgba(0, 0, 0, 0);
+	width: 200px;
+}
 
-	.navbar-controls-text {
-		text-align: right;
-		margin-top: -35px;
-		margin-right: 10px;
-	}
+.navbar-controls-text {
+	text-align: right;
+	margin-top: -35px;
+	margin-right: 10px;
+}
 
-	.navbar-home-button button{
-		text-align: center;
-		font-size: 25px;
-		width: 100px;
-		margin-top: 15%;
-	}
+.navbar-home-button button{
+	text-align: center;
+	font-size: 25px;
+	width: 100px;
+	margin-top: 15%;
+}
 
- li {
-	 font-size: 20px;
- }
+li {
+	font-size: 20px;
+}
 
 
 
@@ -68,16 +68,38 @@ div {
 
 }
 
+/*back button on keywords page*/
+.back-btn {
+	border: 2px solid #494F60;
+	border-radius: 10px;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 20px;
+	background-color: rgba(255,255,255, 0.25);
+	margin: 0.7%;
+	padding: 0.7%;
+}
+
+.back-btn:hover {
+	background-color: #FFDC9C;
+}
+
+a.back-btn-link:hover {
+	text-decoration: none;
+}
+
+
 /*each individual tile*/
-	.words-col {
-		border: 2px solid #494F60;
-		min-height: 120px;
-		border-radius: 10px;
-		text-align: center;
-		font-size: 20px;
-		background-color: rgba(255,255,255, 0.25);
-		margin: 0.7%;
-	}
+.words-col {
+	border: 2px solid #494F60;
+	min-height: 120px;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 20px;
+	background-color: rgba(255,255,255, 0.25);
+	margin: 0.7%;
+}
 
 .words-col img {
 	height: 70px;
@@ -86,9 +108,9 @@ div {
 
 
 /*a row of tiles*/
-	.words-row {
-	    display: flex;
-	}
+.words-row {
+	display: flex;
+}
 
 .navbar-keyboard img {
 	margin: 5% ;
@@ -103,7 +125,7 @@ div {
 }
 
 .categories-col:hover {
-    background-color: #FFDC9C;
+	background-color: #FFDC9C;
 }
 
 
@@ -114,21 +136,18 @@ div {
 }
 
 .keywords-col:hover {
-    background-color: #FFDC9C;
+	background-color: #FFDC9C;
 }
 
-.delete-button-keywords {
-	border: 1px solid black;
-	background-color:red;
-	color: white;
+
+/*Most Recent Row*/
+.most-row:nth-of-type(1) .most-col-word {
+	border: 5px solid #ba3034;
 }
 
-.delete-button-categories {
-	border: 1px solid black;
-	background-color:red;
-	color: white;
+.most-row:nth-of-type(2) .most-col-word {
+	border: 5px solid blue;
 }
-
 
 /*---------------------keyboard page------------------*/
 .keyboard-grid {
@@ -136,58 +155,56 @@ div {
 }
 
 /*----------------sentence-bar -------------------------*/
-	#sound{
-		display: none;
-	}
+#sound{
+	display: none;
+}
 
-	.sentence {
-		display: flex;
-	}
+.sentence {
+	display: flex;
+}
 
-	.sentence-bar {
-		border: 3px solid #494F60;
-		background-color: rgba(255,255,255, 0.7);
-		min-height: 95px;
-		border-radius: 10px;
-		margin: .5%;
-		padding: 0 0 15px 34px;
-	}
+.sentence-bar {
+	border: 3px solid #494F60;
+	background-color: rgba(255,255,255, 0.7);
+	min-height: 95px;
+	border-radius: 10px;
+	margin: .5%;
+	padding: 0 0 15px 34px;
+}
 
-	.speak {
-		margin-left: -30px;
-		margin-right: 40px;
-	}
+.speak {
+	margin-left: -30px;
+	margin-right: 40px;
+}
 
 .speak img {
 	height: 100px;
 }
 
-	.delete-button img {
-		display:block;
-		margin: 8px 0 0 0;
-	}
-
-	/*sentence columns*/
-	.sentence-col {
-		min-width: 100px;
-		margin: 12px 5px 0 0;
-		word-wrap: break-word;
-	}
+/*sentence columns*/
+.sentence-col {
+	min-width: 100px;
+	margin: 12px 5px 0 0;
+	word-wrap: break-word;
+}
 
 	.col-md-1.sentence-col {
-			min-width: 200px;
+			min-width: 170px;
+			box-shadow: 0 .5em 1em rgba(0,0,0,.3);
+
 	}
 
-	/*images in the sentence bar*/
-	.sentence-col img {
-		max-height: 60px;
-		max-width: 70px;
-		margin: -5px 0 0 0px;
-	}
+/*images in the sentence bar*/
+.sentence-col img {
+	max-height: 60px;
+	max-width: 70px;
+	margin: -5px 0 0 0px;
+}
 
-	.most-click img {
-		margin: 5px 0 0 0;
-	}
+.most-click img {
+	margin: 5px 0 0 0;
+}
+
 
 
 .most-col {
@@ -197,31 +214,5 @@ div {
 }
 
 .most-col:hover {
-    background-color: #FFDC9C;
-}
-
-
-
-/*----------------------profile-------------------*/
-
-#profile{
-	background-image: url("background.jpg")
-}
-
-#container-profile {
-		margin: 0 auto;
-    text-align: center;
-    width: 800px;
-		height: 600px;
-		padding: 1%;
-		background-color: rgba(255,255,255, 0.4);
-		box-shadow: 0 .5em 1em rgba(0,0,0,.3);
-		border-radius: 30px;
-		color: #1C2330;
-}
-
-h2 {
-	font-family: 'Gloria Hallelujah', cursive;
-	font-size: 40px;
-	color: #1C2330;
+	background-color: #FFDC9C;
 }

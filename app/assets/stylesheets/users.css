@@ -1,0 +1,252 @@
+
+  /*----------------------profile-------------------*/
+
+  #profile{
+   background-image: url("background.jpg")
+ }
+
+#container-profile {
+		margin: 0 auto;
+    text-align: center;
+    width: 900px;
+		min-height: 700px;
+		padding: 2%;
+		background-color: rgba(255,255,255, 0.4);
+		box-shadow: 0 .5em 1em rgba(0,0,0,.3);
+		border-radius: 30px;
+		color: #1C2330;
+		border-bottom: 100px;
+}
+
+h2 {
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 40px;
+	color: #1C2330;
+}
+
+/*-----exit-button----*/
+
+.exit-profile {
+  margin: 20px auto;
+  text-align: center;
+  max-width: 200px;
+  max-height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(255,255,255, 0.4);
+  box-shadow: 0 .5em 1em rgba(0,0,0,.3);
+  border-radius: 30px;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: #1C2330;
+}
+
+.exit-profile:hover {
+  background-color: #FFDC9C;
+}
+
+.exit-profile-link:hover {
+  text-decoration: none;
+}
+
+
+
+/*-----------------------keyword form-----------*/
+#key{
+	background-image: url("background.jpg");
+}
+
+h3 {
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 30px;
+	color: #1C2330;
+}
+
+#container-keyword {
+  margin: 0 auto;
+  text-align: center;
+  width: 400px;
+  height: 400px;
+  padding: 2%;
+  background-color: rgba(255,255,255, 0.4);
+  box-shadow: 0 .5em 1em rgba(0,0,0,.3);
+  border-radius: 30px;
+  font-size: 18px;
+}
+
+label {
+  color: black;
+}
+
+input#keyword_img_src {
+  width: 250px;
+}
+
+div.input-img-key {
+  display: inline-block;
+}
+
+div.input-key {
+  display: inline-block;
+  width: 250px
+}
+
+div#userinput-key {
+  margin-top:auto;
+  margin-bottom:auto;
+  text-align:center;
+}
+
+
+
+/*-----------------------CATEGORY form-----------*/
+#cat{
+	background-image: url("background.jpg");
+}
+
+h3 {
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 30px;
+	color: #1C2330;
+}
+
+#container-category {
+  margin: 0 auto;
+  text-align: center;
+  width: 450px;
+  height: 350px;
+  padding: 2%;
+  background-color: rgba(255,255,255, 0.4);
+  box-shadow: 0 .5em 1em rgba(0,0,0,.3);
+  border-radius: 30px;
+  font-size: 18px;
+}
+
+label {
+  color: black;
+}
+
+input#category_img_src {
+  width: 250px;
+}
+
+div.input-img-cat {
+  display: inline-block;
+}
+
+div.input-cat {
+  display: inline-block;
+  width: 200px
+}
+
+div#userinput-cat {
+  margin-top:auto;
+  margin-bottom:auto;
+  text-align:center;
+}
+
+
+/*--------------------------USER SETTINGS FORM---------------------*/
+#edit-profile{
+	background-image: url("background.jpg");
+}
+
+h3 {
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 30px;
+  text-align: center;
+  color: #1C2330;
+}
+
+#container-edit-profile {
+  margin: 0 auto;
+  text-align: left;
+  width: 650px;
+  height: 600px;
+  padding: 2%;
+  background-color: rgba(255,255,255, 0.4);
+  box-shadow: 0 .5em 1em rgba(0,0,0,.3);
+  border-radius: 30px;
+  font-size: 18px;
+}
+
+
+#footer {
+  margin-top: 2%;
+  text-align: center;
+}
+
+
+div.submit-edit {
+  margin-top: 4%;
+}
+
+label.control-label.choose-voice {
+  margin-left: 18px;
+}
+
+div.choose-voice {
+  margin-left: 20px;
+}
+
+
+/*---------------edit voice---------------*/
+#edit-voice{
+	background-image: url("background.jpg");
+}
+
+#container-edit-voice {
+  margin: 0 auto;
+  text-align: left;
+  width: 500px;
+  height: 300px;
+  padding: 1.5%;
+  background-color: rgba(255,255,255, 0.4);
+  box-shadow: 0 .5em 1em rgba(0,0,0,.3);
+  border-radius: 30px;
+  font-size: 18px;
+}
+
+
+/*-------------------word tiles on profile page----------*/
+#profile-keywords {
+	/*border: 4px solid purple;*/
+	/*background-color: green;*/
+	width: 200px;
+	/*font-size: 15px;*/
+	/*position: relative;*/
+	/*padding-bottom: 1px;*/
+}
+
+#profile-categories {
+	/*background-color: orange;*/
+	width: 200px;
+	/*position: relative;*/
+}
+
+.delete-button img {
+	display:block;
+	margin: 8px 0 0 0;
+}
+
+.delete-button-keywords {
+	/*border: 1px solid black;*/
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size:  15px;
+	border-radius: 8px;
+	background-color: rgba(238, 16, 68, 0.7);
+	color: white;
+	/*position: sticky;*/
+	/*bottom: 20px;*/
+}
+
+.delete-button-categories {
+	/*border: 1px solid black;*/
+	/*margin-top: 8px;*/
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size:  15px;
+	border-radius: 8px;
+	background-color: rgba(238, 16, 68, 0.7);
+	color: white;
+}
