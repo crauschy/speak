@@ -190,6 +190,7 @@ div {
 	}
 
 
+
 .most-col {
 	border-style: solid;
 	transition: background-color 0.6s ease;
@@ -198,30 +199,4 @@ div {
 
 .most-col:hover {
     background-color: #FFDC9C;
-}
-
-
-
-/*----------------------profile-------------------*/
-
-#profile{
-	background-image: url("background.jpg")
-}
-
-#container-profile {
-		margin: 0 auto;
-    text-align: center;
-    width: 800px;
-		height: 600px;
-		padding: 1%;
-		background-color: rgba(255,255,255, 0.4);
-		box-shadow: 0 .5em 1em rgba(0,0,0,.3);
-		border-radius: 30px;
-		color: #1C2330;
-}
-
-h2 {
-	font-family: 'Gloria Hallelujah', cursive;
-	font-size: 40px;
-	color: #1C2330;
 }

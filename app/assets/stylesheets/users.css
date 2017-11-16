@@ -1,0 +1,185 @@
+/*div {
+  border: 1px solid red;
+}*/
+
+
+/*----------------------profile-------------------*/
+
+#profile{
+	background-image: url("background.jpg")
+}
+
+#container-profile {
+		margin: 0 auto;
+    text-align: center;
+    width: 800px;
+		height: 600px;
+		padding: 2%;
+		background-color: rgba(255,255,255, 0.4);
+		box-shadow: 0 .5em 1em rgba(0,0,0,.3);
+		border-radius: 30px;
+		color: #1C2330;
+}
+
+h2 {
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 40px;
+	color: #1C2330;
+}
+
+
+/*-----------------------keyword form-----------*/
+#key{
+	background-image: url("background.jpg");
+}
+
+h3 {
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 30px;
+	color: #1C2330;
+}
+
+#container-keyword {
+		margin: 0 auto;
+    text-align: center;
+    width: 400px;
+		height: 400px;
+    padding: 2%;
+		background-color: rgba(255,255,255, 0.4);
+		box-shadow: 0 .5em 1em rgba(0,0,0,.3);
+		border-radius: 30px;
+    font-size: 18px;
+}
+
+label {
+  color: black;
+}
+
+input#keyword_img_src {
+  width: 250px;
+}
+
+div.input-img-key {
+  display: inline-block;
+}
+
+div.input-key {
+  display: inline-block;
+    width: 250px
+}
+
+div#userinput-key {
+    margin-top:auto;
+    margin-bottom:auto;
+    text-align:center;
+}
+
+
+
+/*-----------------------CATEGORY form-----------*/
+#cat{
+	background-image: url("background.jpg");
+}
+
+h3 {
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 30px;
+	color: #1C2330;
+}
+
+#container-category {
+		margin: 0 auto;
+    text-align: center;
+    width: 450px;
+		height: 350px;
+    padding: 2%;
+		background-color: rgba(255,255,255, 0.4);
+		box-shadow: 0 .5em 1em rgba(0,0,0,.3);
+		border-radius: 30px;
+    font-size: 18px;
+}
+
+label {
+  color: black;
+}
+
+input#category_img_src {
+  width: 250px;
+}
+
+div.input-img-cat {
+  display: inline-block;
+}
+
+div.input-cat {
+  display: inline-block;
+    width: 200px
+}
+
+div#userinput-cat {
+    margin-top:auto;
+    margin-bottom:auto;
+    text-align:center;
+}
+
+
+/*--------------------------USER SETTINGS FORM---------------------*/
+#edit-profile{
+	background-image: url("background.jpg");
+}
+
+h3 {
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 30px;
+  text-align: center;
+	color: #1C2330;
+}
+
+#container-edit-profile {
+		margin: 0 auto;
+    text-align: left;
+    width: 650px;
+		height: 600px;
+    padding: 2%;
+		background-color: rgba(255,255,255, 0.4);
+		box-shadow: 0 .5em 1em rgba(0,0,0,.3);
+		border-radius: 30px;
+    font-size: 18px;
+}
+
+
+#footer {
+  margin-top: 2%;
+  text-align: center;
+}
+
+
+div.submit-edit {
+  margin-top: 4%;
+}
+
+label.control-label.choose-voice {
+  margin-left: 18px;
+}
+
+div.choose-voice {
+  margin-left: 20px;
+}
+
+
+/*------edit voice-------*/
+#edit-voice{
+	background-image: url("background.jpg");
+}
+
+#container-edit-voice {
+		margin: 0 auto;
+    text-align: left;
+    width: 500px;
+		height: 300px;
+    padding: 1.5%;
+		background-color: rgba(255,255,255, 0.4);
+		box-shadow: 0 .5em 1em rgba(0,0,0,.3);
+		border-radius: 30px;
+    font-size: 18px;
+}

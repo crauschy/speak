@@ -1,17 +1,35 @@
-<%= form_for @category do |f| %>
+<body id='cat'>
+  <div id='container-category'>
+    <h3>Upload Your Category!</h3><br>
 
-   <div class="#">
-      <%= f.text_field :name  %>
-      <%= f.label :name, "Name of Category" %>
-    </div>
+    <%= form_for @category do |f| %>
 
-    <div class="#">
-      <%= f.file_field :img_src  %>
-      <%= f.label :img_src, "Picture" %>
-    </div>
+    <div id="userinput-cat">
 
-    <div class="#">
-      <%= f.submit "Submit" %>
-    </div>
 
-<% end %>
+       <div class="col">
+         <%= f.label :name, "Name of Category:" %>
+         <div class="input-cat">
+          <%= f.text_field :name, placeholder: "Enter your category", class:"form-control"  %>
+        </div>
+      </div>
+      <br>
+
+        <div class="enter-img-cat">
+          <%= f.label :img_src, "Picture:" %>
+        <div class="input-img-cat">
+          <%= f.file_field :img_src  %>
+        </div>
+        <br><br><br>
+        </div>
+
+
+
+        <div class="submit-cat">
+          <%= f.submit "Submit",  type: "submit", class:"btn btn-primary btn-lg btn-block" %>
+        </div>
+
+      </div>
+    <% end %>
+  </div>
+</body>
