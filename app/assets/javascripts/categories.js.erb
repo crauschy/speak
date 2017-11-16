@@ -2,6 +2,15 @@ $(document).on('turbolinks:load',function() {
 var voice = "Justin";
 
 
+$(".speak").click(function() {
+  sound = document.getElementById('sound');
+  // $( this ).slideUp();
+  sound.play(); // Play the empty element to get control
+  // sound.src = 'beep-url'; // Set the real audio source
+  // beeper = setInterval(function() { sound.play(); } ,1000 * 60);
+});
+
+
 				$.ajax({
 				url: "/sessions/voice",
 				type: "GET"
@@ -206,6 +215,7 @@ var voice = "Justin";
 			})
 			.done(function(response) {
 				if(response) {
+					// callPolly(compiled)
 					$(".most-recent-populate-me").prepend(response.html)
 					$($(".most-recent-populate-me .most-row")[2]).remove()
 				}

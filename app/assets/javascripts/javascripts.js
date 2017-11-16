@@ -27,11 +27,18 @@ function callBack(err, data){
 function showSpeech(audioStream) {
   console.log('audio', audioStream)
   var arrayBuffer = audioStream.buffer;
+  // console.log(arrayBuffer)
   var blob = new Blob([arrayBuffer]);
+  // console.log(blob)
   var url = URL.createObjectURL(blob);
+  // console.log(url)
+  // var button = document.getElementById('sound')
   var audioElement = document.getElementById('sound')
+  // console.log(audioElement)
   audioElement.src = url;
+  // console.log(audioElement.src)
   audioElement.play();
+
   // var audioContext = new (window.AudioContext || window.webkitAudioContext);
   // console.log(audioContext, 'audio context')
   // audioContext.decodeAudioData(arrayBuffer, function(audio){
