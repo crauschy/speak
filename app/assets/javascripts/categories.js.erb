@@ -2,15 +2,21 @@ $(document).on('turbolinks:load',function() {
 	var voice = "Justin";
 
 
-	$.ajax({
-		url: "/sessions/voice",
-		type: "GET"
-	})
-	.done(function(response) {
-		if (response) {
-			voice = response.gender || "Justin";
-		}
-	})
+$(".speak").click(function() {
+  sound = document.getElementById('sound');
+  sound.play(); // Play the empty element to get control
+});
+
+
+				$.ajax({
+				url: "/sessions/voice",
+				type: "GET"
+			})
+				.done(function(response) {
+					if (response) {
+						voice = response.gender || "Justin";
+					}
+				})
 
 	///////////MODEL///////////
 
@@ -217,6 +223,7 @@ $(document).on('turbolinks:load',function() {
 			})
 			.done(function(response) {
 				if(response) {
+					// callPolly(compiled)
 					$(".most-recent-populate-me").prepend(response.html)
 					$($(".most-recent-populate-me .most-row")[2]).remove()
 					$(".most-recent-header").html("<h2>Recently Used</h2>")
