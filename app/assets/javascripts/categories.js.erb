@@ -213,6 +213,7 @@ $(".speak").click(function() {
 		for(i=0;i<sentence.length;i++) {
 			compiled = compiled + $(sentence[i]).find("p").text() + " "
 		}
+		compiled = compiled + "."
 		callPolly(compiled)
 		$(".sentence-bar").html("")
 
