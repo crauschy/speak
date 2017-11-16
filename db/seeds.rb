@@ -136,7 +136,7 @@ words_list = [
 ["eight", "8_.png", "Keyboard"],
 ["nine", "9_.png", "Keyboard"],
 ["zero", "0_.png", "Keyboard"],
-["%", "%_.png", "Keyboard"],
+["%", "percent.png", "Keyboard"],
 ["!", "!_.png", "Keyboard"],
 ["&", "&_.png", "Keyboard"],
 ["Q", "Q_.png", "Keyboard"],
