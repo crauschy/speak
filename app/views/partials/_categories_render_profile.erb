@@ -2,12 +2,12 @@
   <div class='row words-row categories-row'>
     <% group.each_with_index do |category, index| %>
       <% if category.user_id == nil %>
-        <div class='col-md-2 words-col categories-col' data-category="<%= category.name %>">
+        <div class='col-md-2 words-col categories-col' id='profile-categories' data-category="<%= category.name %>">
           <p><%= category.name %></p>
           <%= image_tag 'icons/'+ category.img_src %>
         </div>
       <% elsif category.user_id == session[:user_id] %>
-        <div class='col-md-2 words-col categories-col' data-category="<%= category.name %>">
+        <div class='col-md-2 words-col categories-col' id='profile-categories' data-category="<%= category.name %>">
           <p><%= category.name %></p>
           <%= cl_image_tag(category.img_src) %>
             <div class="delete-button-categories">

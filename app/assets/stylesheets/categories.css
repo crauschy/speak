@@ -1,7 +1,7 @@
 /*-----------------entire file--------------------------*/
-div {
-	/*border: 1px solid red;*/
-}
+/*div {
+	border: 1px solid red;
+}*/
 
 
 * {
@@ -139,25 +139,6 @@ a.back-btn-link:hover {
 	background-color: #FFDC9C;
 }
 
-.delete-button-keywords {
-	/*border: 1px solid black;*/
-	margin-top: 8px;
-	margin-bottom: 8px;
-	font-size:  15px;
-	border-radius: 8px;
-	background-color: rgba(238, 16, 68, 0.7);
-	color: white;
-}
-
-.delete-button-categories {
-	/*border: 1px solid black;*/
-	margin-top: 8px;
-	margin-bottom: 8px;
-	font-size:  15px;
-	border-radius: 8px;
-	background-color: rgba(238, 16, 68, 0.7);
-	color: white;
-}
 
 /*Most Recent Row*/
 .most-row:nth-of-type(1) .most-col-word {
@@ -200,11 +181,6 @@ a.back-btn-link:hover {
 	height: 100px;
 }
 
-.delete-button img {
-	display:block;
-	margin: 8px 0 0 0;
-}
-
 /*sentence columns*/
 .sentence-col {
 	min-width: 100px;
@@ -212,9 +188,11 @@ a.back-btn-link:hover {
 	word-wrap: break-word;
 }
 
-.col-md-1.sentence-col {
-	min-width: 200px;
-}
+	.col-md-1.sentence-col {
+			min-width: 170px;
+			box-shadow: 0 .5em 1em rgba(0,0,0,.3);
+
+	}
 
 /*images in the sentence bar*/
 .sentence-col img {

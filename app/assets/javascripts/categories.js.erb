@@ -207,6 +207,7 @@ $(document).on('turbolinks:load',function() {
 			compiled = compiled + $(sentence[i]).find("p").text() + " "
 		}
 		callPolly(compiled)
+		$(".sentence-bar").html("")
 
 		if ($(".logged-in").length > 0) {
 			$.ajax({
