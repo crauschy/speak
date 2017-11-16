@@ -416,7 +416,7 @@ words_list = [
 ["church", "church.png", "Places"],
 ["temple", "temple.png", "Places"],
 ["downtown", "downtown.png", "Places"],
-["nieghborhood", "nieghborhood.png", "Places"],
+["neighborhood", "nieghborhood.png", "Places"],
 ["work", "work.png", "Places"],
 ["movies", "movies.png", "Places"],
 ["coffee shop", "coffee-shop.png", "Places"],

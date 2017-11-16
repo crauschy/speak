@@ -27,19 +27,19 @@ function callBack(err, data){
 function showSpeech(audioStream) {
   console.log('audio', audioStream)
   var arrayBuffer = audioStream.buffer;
-  // var blob = new Blob([arrayBuffer]);
-  // var url = URL.createObjectURL(blob);
-  // var audioElement = document.getElementById('sound')
-  // audioElement.src = url;
-  // audioElement.play();
-  var audioContext = new (window.AudioContext || window.webkitAudioContext);
-  console.log(audioContext, 'audio context')
-  audioContext.decodeAudioData(arrayBuffer, function(audio){
-    var source = audioContext.createBufferSource();
-    source.buffer = audio;
-    source.connect(audioContext.destination);
-    source.start()
-  })
+  var blob = new Blob([arrayBuffer]);
+  var url = URL.createObjectURL(blob);
+  var audioElement = document.getElementById('sound')
+  audioElement.src = url;
+  audioElement.play();
+  // var audioContext = new (window.AudioContext || window.webkitAudioContext);
+  // console.log(audioContext, 'audio context')
+  // audioContext.decodeAudioData(arrayBuffer, function(audio){
+  //   var source = audioContext.createBufferSource();
+  //   source.buffer = audio;
+  //   source.connect(audioContext.destination);
+  //   source.start()
+  // })
 
   // var snd = document.createElement('audio'), src = document.createElement('source');
   // src.src =  url;
