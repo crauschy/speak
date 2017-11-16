@@ -1,21 +1,22 @@
 $(document).on('turbolinks:load',function() {
-var voice = "Justin";
+	var voice = "Justin";
 
 
-				$.ajax({
-				url: "/sessions/voice",
-				type: "GET"
-			})
-				.done(function(response) {
-					if (response) {
-						voice = response.gender || "Justin";
-					}
-				})
+	$.ajax({
+		url: "/sessions/voice",
+		type: "GET"
+	})
+	.done(function(response) {
+		if (response) {
+			voice = response.gender || "Justin";
+		}
+	})
 
 	///////////MODEL///////////
 
 	var callPolly = function(text) {
 		var polly = new AWS.Polly()
+
 
 			var params = {
 	        OutputFormat: 'mp3', /* required */
@@ -29,7 +30,7 @@ var voice = "Justin";
 
 	var toHome = function() {
 		if ($(".delete-button").length > 0) {
-				$.ajax({
+			$.ajax({
 				url: "/categories",
 				type: "GET"
 			})
@@ -103,6 +104,11 @@ var voice = "Justin";
 
 
 	$(".speak-logo").on("click", function(event) {
+		event.preventDefault()
+		toHome()
+	})
+
+	$(".back-btn").on("click", function(event) {
 		event.preventDefault()
 		toHome()
 	})
@@ -203,7 +209,7 @@ var voice = "Justin";
 		callPolly(compiled)
 
 		if ($(".logged-in").length > 0) {
-				$.ajax({
+			$.ajax({
 				url: "/phrases",
 				type: "POST",
 				data: { phrase: compiled }
@@ -216,9 +222,9 @@ var voice = "Justin";
 				}
 			})
 		}
-  	});
+	});
 
 
 		///////////VIEW///////////
 
-})
+	})
