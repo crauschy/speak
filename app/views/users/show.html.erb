@@ -7,16 +7,17 @@
 
 
     <h3>Custom Keywords</h3>
+      <h4><%= link_to "Create Keyword", "/keywords/new" %></h4>
       <% if @keywords %>
         <%= render partial: "partials/keywords_render_profile" %>
       <% end %>
-    <h4><%= link_to "Create Keyword", "/keywords/new" %></h4>
+
 
 
     <h3>Custom Categories</h3>
+      <h4><%= link_to "Create Category", "/categories/new" %></h4>
       <% if @categories %>
         <%= render partial: "partials/categories_render_profile" %>
       <% end %>
-    <h4><%= link_to "Create Category", "/categories/new" %></h4>
   </div>
 </body>
