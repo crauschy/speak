@@ -214,6 +214,7 @@ var voice = "Justin";
 				if(response) {
 					$(".most-recent-populate-me").prepend(response.html)
 					$($(".most-recent-populate-me .most-row")[2]).remove()
+					$(".most-recent-header").html("<h2>Recently Used</h2>")
 				}
 			})
 		}
