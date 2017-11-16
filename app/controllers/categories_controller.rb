@@ -62,8 +62,8 @@ end
 
 def cat_cloudinary_img
   if params[:category][:img_src]
-    Cloudinary::Uploader.upload(params[:category][:img_src], :public_id => "D2#{session[:user_id]}-#{@category.id}-Category")
-    return "D2#{session[:user_id]}-#{@category.id}-Category"
+    Cloudinary::Uploader.upload(params[:category][:img_src], :public_id => "D3#{session[:user_id]}-#{@category.id}-Category")
+    return "D3#{session[:user_id]}-#{@category.id}-Category"
   else
     return false
   end
