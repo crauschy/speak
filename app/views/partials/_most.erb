@@ -1,18 +1,20 @@
 <% most.each do |word_object| %>
-		<div class="row most-row">
-			<% word_object.each_with_index do |keyword, index| %>
-				<div class='col-md-1 words-col most-col sentence-col most-col-word' data-keyword="<%= keyword.word %>">
-					<% if keyword != nil %>
-	 				<p><%= keyword.word %></p>
-	 					<% if !keyword.user_id %>
-	  					<%= image_tag "icons/" + keyword.img_src %>
-	  				<% end %>
-	  			<% end %>
-				</div>
-			<% end %>
-			<div class='col-md-1 words-col most-col most-click sentence-col'>
-				<%= image_tag "icons/up_arrow.ico" %>
-				<h4>To Sentence</h4>
+<div class="row most-row">
+	<% word_object.each_with_index do |keyword, index| %>
+		<% if keyword != nil %>
+			<div class='col-md-1 words-col most-col sentence-col most-col-word' data-keyword="<%= keyword.word %>">
+				<p><%= keyword.word %></p>
+				<% if !keyword.user_id %>
+					<%= image_tag "icons/" + keyword.img_src %>
+				<% else %>
+					<%= cl_image_tag(keyword.img_src) %>
+				<% end %>
 			</div>
-		</div>
+		<% end %>
+	<% end %>
+	<div class='col-md-1 words-col most-col most-click sentence-col'>
+		<%= image_tag "icons/up_arrow.ico" %>
+		<h4>To Sentence</h4>
+	</div>
+</div>
 <% end %>
