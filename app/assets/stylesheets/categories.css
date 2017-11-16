@@ -169,9 +169,13 @@ div {
 
 	/*sentence columns*/
 	.sentence-col {
-		width: 100px;
+		min-width: 100px;
 		margin: 12px 5px 0 0;
 		word-wrap: break-word;
+	}
+
+	.col-md-1.sentence-col {
+			min-width: 200px;
 	}
 
 	/*images in the sentence bar*/

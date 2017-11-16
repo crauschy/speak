@@ -1,10 +1,10 @@
 <% if @keyword.user_id == nil %>
-  <div class='col-md-1 words-col keywords-col sentence-col'>
+  <div class='col-md-1 words-col sentence-col'>
     <p><%= @keyword.word %></p>
     <%= image_tag "icons/" + @keyword.img_src %>
   </div>
 <% elsif @keyword.user_id == session[:user_id] %>
-  <div class='col-md-1 words-col keywords-col sentence-col'>
+  <div class='col-md-1 words-col sentence-col'>
     <p><%= @keyword.word %></p>
     <%= cl_image_tag(@keyword.img_src) %>
   </div>
