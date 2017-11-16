@@ -5,10 +5,11 @@ class SessionsController < ApplicationController
   end
 
   def voice
-
-    @user = User.find_by(id: session[:user_id])
-    @gender = @user.gender
-    render json: { gender: @gender }
+    if session[:user_id]
+      @user = User.find_by(id: session[:user_id])
+      @gender = @user.gender
+      render json: { gender: @gender }
+    end
   end
 
   def create
