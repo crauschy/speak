@@ -138,6 +138,12 @@ var voice = "Justin";
 		populateSentenceBar(text)
 	})
 
+	$(".most-recent-populate-me").on("click", ".most-col-word", function(event) {
+		event.preventDefault()
+		text = $(this).data("keyword")
+		populateSentenceBar(text)
+	})
+
 
 	$(document).keydown(function(e) {
 		keyEvents(e, 49, 0, 0)

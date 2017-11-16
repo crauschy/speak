@@ -1,7 +1,7 @@
 <% most.each do |word_object| %>
 		<div class="row words-row most-row">
 			<% word_object.each_with_index do |keyword, index| %>
-				<div class='col-md-1 words-col most-col sentence-col' data-keyword="<%= keyword %>">
+				<div class='col-md-1 words-col most-col sentence-col most-col-word' data-keyword="<%= keyword.word %>">
 					<% if keyword != nil %>
 	 				<p><%= keyword.word %></p>
 	 					<% if !keyword.user_id %>
