@@ -1,67 +1,94 @@
-<div class="#">
-    <%= form_for @user do |f| %>
+<body id='edit-profile'>
+  <div id="container-edit-profile">
+    <h3>Edit Your Profile!</h3>
+      <%= form_for @user do |f| %>
 
-      <% if @user.errors.any? %>
-        <div class="#">
-          <h4>
-            <%=pluralize(@user.errors.count, "error") %> prohibited you from signing up:
-          </h4>
-          <ul>
-            <% @user.errors.full_messages.each do |msg| %>
-              <li><%= msg  %></li>
-            <% end %>
-          </ul>
+        <% if @user.errors.any? %>
+          <div class="#">
+            <h4>
+              <%=pluralize(@user.errors.count, "error") %> prohibited you from signing up:
+            </h4>
+            <ul>
+              <% @user.errors.full_messages.each do |msg| %>
+                <li><%= msg  %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+
+        <div class="field form-group">
+          <%= f.label :name, "Name:", class: "control-label col-sm-2" %>
+          <div class="col-sm-10">
+            <%= f.text_field :name, class: "form-control"  %>
+          </div>
         </div>
+
+        <div class="field form-group">
+          <%= f.label :email, "Email:", class: "control-label col-sm-2" %>
+          <div class="col-sm-10">
+            <%= f.text_field :email, class: "form-control"    %>
+          </div>
+        </div>
+
+        <div class="field form-group">
+          <%= f.label :username, "Username:", class: "control-label col-sm-2" %>
+          <div class="col-sm-10">
+            <%= f.text_field :username, class: "form-control"    %>
+          </div>
+        </div>
+
+        <div class="field form-group">
+          <%= f.label :password, "Password:", class: "control-label col-sm-2" %>
+          <div class="col-sm-10">
+            <%= f.password_field :password, class: "form-control"   %>
+          </div>
+        </div>
+
+        <div class="field form-group">
+          <%= f.label :password_confirmation, "Confirm:", class: "control-label col-sm-2" %>
+          <div class="col-sm-10">
+            <%= f.password_field :password_confirmation, class: "form-control"   %>
+          </div>
+        </div>
+
+
+
+
+      <%= f.label :gender, "Voice:", class: "control-label choose-voice" %>
+
+      <div class="field form-group form-inline row choose-voice">
+          <div class="field form-group-1  col-sm-6">
+            <%= f.radio_button(:gender, "Ivy") %>
+            <%= f.label(:gender, "Girl", class: "radio-inline ") %><br>
+            <%= f.radio_button(:gender, "Justin") %>
+            <%= f.label(:gender, "Boy", class: "radio-inline") %><br>
+            <%= f.radio_button(:gender, "Kendra") %>
+            <%= f.label(:gender, "Young Woman", class: "radio-inline") %><br>
+          </div>
+
+          <div class="field form-group-2 col-sm-6">
+            <%= f.radio_button(:gender, "Joey") %>
+            <%= f.label(:gender, "Young Man", class: "radio-inline") %><br>
+            <%= f.radio_button(:gender, "Joanna") %>
+            <%= f.label(:gender, "Woman", class: "radio-inline") %><br>
+            <%= f.radio_button(:gender, "Matthew") %>
+            <%= f.label(:gender, "Man", class: "radio-inline") %><br>
+          </div>
+        </div>
+
+
+      <div class="submit-edit">
+        <%= f.submit "Submit", type: "submit", class:"btn btn-primary btn-lg btn-block" %>
+      </div>
+
+<div id="footer">
+      <p>Already have an account? <%= link_to "Log in", new_user_path %></p>
       <% end %>
 
-    <div class="#">
-      <%= f.text_field :name  %>
-      <%= f.label :name, "Name" %>
+      <% if @user == current_user %>
+            <p>Remove your account? <%= link_to "Delete", @user, method: :delete,data: { confirm: "Are you sure?" }%></p>
+            <% end %>
+      </div>
     </div>
 
-
-    <div class="#">
-      <%= f.text_field :email  %>
-      <%= f.label :email, "Email" %>
-    </div>
-
-    <div class="#">
-      <%= f.text_field :username  %>
-      <%= f.label :username, "Username" %>
-    </div>
-
-    <div class="#">
-      <%= f.password_field :password %>
-      <%= f.label :password, "Password" %>
-    </div>
-
-    <div class="#">
-      <%= f.password_field :password_confirmation %>
-      <%= f.label :password_confirmation, "Confirm password" %>
-    </div>
-
-    <div class="#">
-      <%= f.label :gender, "Select a voice: " %>
-      <br>
-      <%= f.radio_button(:gender, "Ivy") %>
-      <%= f.label(:gender, "Young girl") %><br>
-      <%= f.radio_button(:gender, "Justin") %>
-      <%= f.label(:gender, "Young boy") %><br>
-      <%= f.radio_button(:gender, "Matthew") %>
-      <%= f.label(:gender, "Man") %><br>
-      <%= f.radio_button(:gender, "Joanna") %>
-      <%= f.label(:gender, "Woman") %><br>
-      <%= f.radio_button(:gender, "Joey") %>
-      <%= f.label(:gender, "Man 2") %><br>
-      <%= f.radio_button(:gender, "Kendra") %>
-      <%= f.label(:gender, "Woman") %>
-    </div>
-
-    <div class="#">
-      <%= f.submit "Submit" %>
-    </div>
-
-    <p>Already have an account? <%= link_to "Log in", new_user_path %></p>
-
-    <% end %>
-  </div>
+  </body>
