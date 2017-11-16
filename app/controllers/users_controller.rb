@@ -42,9 +42,10 @@ class UsersController < ApplicationController
   end
 
   def destroy
+    session[:user_id] = nil
     User.find(params[:id]).destroy
     flash[:success] = "User deleted"
-    redirect_to users_url
+    redirect_to root_path
   end
 
   def voice
@@ -56,7 +57,7 @@ class UsersController < ApplicationController
     @user = User.find(session[:user_id])
     @user.gender = params[:user][:gender]
     @user.save!
-    redirect_to @user
+    redirect_to root_path
   end
 
 

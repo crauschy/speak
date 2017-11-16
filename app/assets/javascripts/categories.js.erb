@@ -13,6 +13,7 @@ $(".speak").click(function() {
 				type: "GET"
 			})
 				.done(function(response) {
+					console.log(response)
 					if (response) {
 						voice = response.gender || "Justin";
 					}
