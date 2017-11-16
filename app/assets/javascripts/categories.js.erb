@@ -1,21 +1,22 @@
 $(document).on('turbolinks:load',function() {
-var voice = "Justin";
+	var voice = "Justin";
 
 
-				$.ajax({
-				url: "/sessions/voice",
-				type: "GET"
-			})
-				.done(function(response) {
-					if (response) {
-						voice = response.gender || "Justin";
-					}
-				})
+	$.ajax({
+		url: "/sessions/voice",
+		type: "GET"
+	})
+	.done(function(response) {
+		if (response) {
+			voice = response.gender || "Justin";
+		}
+	})
 
 	///////////MODEL///////////
 
 	var callPolly = function(text) {
 		var polly = new AWS.Polly()
+
 
 			var params = {
 	        OutputFormat: 'mp3', /* required */
@@ -24,14 +25,12 @@ var voice = "Justin";
 	        SampleRate: '22050',
 	        TextType: 'text'
 	    };
-	    console.log(params, 'Params')
-	    console.log(callBack, 'callback')
      	polly.synthesizeSpeech(params, callBack);
 	}
 
 	var toHome = function() {
 		if ($(".delete-button").length > 0) {
-				$.ajax({
+			$.ajax({
 				url: "/categories",
 				type: "GET"
 			})
@@ -109,6 +108,11 @@ var voice = "Justin";
 		toHome()
 	})
 
+	$(".back-btn").on("click", function(event) {
+		event.preventDefault()
+		toHome()
+	})
+
 	$(".populate-me.last").on("click", ".most-click", function(event) {
 		event.preventDefault()
 		var phrase = $(this).closest(".most-row").children(".most-col")
@@ -135,6 +139,12 @@ var voice = "Justin";
 	$(".populate-me").on("click", ".keywords-col", function(event) {
 		event.preventDefault()
 		var text = $(this).data('category')
+		populateSentenceBar(text)
+	})
+
+	$(".most-recent-populate-me").on("click", ".most-col-word", function(event) {
+		event.preventDefault()
+		text = $(this).data("keyword")
 		populateSentenceBar(text)
 	})
 
@@ -200,7 +210,7 @@ var voice = "Justin";
 		$(".sentence-bar").html("")
 
 		if ($(".logged-in").length > 0) {
-				$.ajax({
+			$.ajax({
 				url: "/phrases",
 				type: "POST",
 				data: { phrase: compiled }
@@ -209,12 +219,13 @@ var voice = "Justin";
 				if(response) {
 					$(".most-recent-populate-me").prepend(response.html)
 					$($(".most-recent-populate-me .most-row")[2]).remove()
+					$(".most-recent-header").html("<h2>Recently Used</h2>")
 				}
 			})
 		}
-  	});
+	});
 
 
 		///////////VIEW///////////
 
-})
+	})

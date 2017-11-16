@@ -1,5 +1,5 @@
 <body id='profile'>
-  <div id="container-profile">
+  <div class="container-profile">
     <h2>
       Welcome to your profile, <%= @user.username %>.
     </h2>
@@ -20,4 +20,13 @@
         <%= render partial: "partials/categories_render_profile" %>
       <% end %>
   </div>
+
+  <div>
+    <a class="exit-profile-link" href="/">
+      <div class="exit-profile">
+        Go Back
+      </div>
+    </a>
+  </div>
+
 </body>
