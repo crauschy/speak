@@ -1,23 +1,23 @@
 <div id="container">
 
 	<audio id="sound" controls>
-  	<source id="sound-src" src="" type="audio/mpeg">
-	</audio>
+		<source id="sound-src" src="" type="audio/mpeg">
+		</audio>
 
 
 
-	<div class="row sentence">
+		<div class="row sentence">
 
-		<div class="col-md-1 speak">
-			<%= image_tag 'icons/speak.png'%>
+			<div class="col-md-1 speak">
+				<%= image_tag 'icons/speak.png'%>
+			</div>
+
+			<div class="col-md-10 sentence-bar"></div>
+
+			<div class="col-md-1 delete-button">
+				<img src="/assets/icons/backspace.png", alt="Backspace", height="75px">
+			</div>
 		</div>
-
-		<div class="col-md-10 sentence-bar"></div>
-
-		<div class="col-md-1 delete-button">
-			<img src="/assets/icons/backspace.png", alt="Backspace", height="75px">
-		</div>
-	</div>
 
 
 
@@ -40,20 +40,21 @@
 	</div> -->
 	<!-- <div class="row empty-row"></div> -->
 
+
 	<div class="populate-me last">
 
 		<div class="main-populate-me">
 			<%= render "partials/categories_render" %>
 		</div>
 		<% if session[:user_id] && @most_recent %>
-			<h2>Recent Phrases</h2>
-				<div class="most-recent-populate-me">
-					<%= render partial: "partials/most", locals: {most: @most_recent} %>
-				</div>
-			<!-- <h1>Most Used</h1> -->
-				<!-- <div class="most-used-populate-me"> -->
-					<%#= render partial: "partials/most", locals: {most: @most_used} %>
-				<!-- </div> -->
+		<h2>Recent Phrases</h2>
+		<div class="most-recent-populate-me">
+			<%= render partial: "partials/most", locals: {most: @most_recent} %>
+		</div>
+		<!-- <h1>Most Used</h1> -->
+		<!-- <div class="most-used-populate-me"> -->
+		<%#= render partial: "partials/most", locals: {most: @most_used} %>
+		<!-- </div> -->
 		<% end %>
 	</div>
 

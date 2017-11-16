@@ -68,6 +68,24 @@ div {
 
 }
 
+/*back button on keywords page*/
+	.back-btn {
+		border: 2px solid #494F60;
+		border-radius: 10px;
+		text-align: center;
+		text-decoration: none;
+		font-family: 'Gloria Hallelujah', cursive;
+		font-size: 20px;
+		background-color: rgba(255,255,255, 0.25);
+		margin: 0.7%;
+		padding: 0.7%;
+	}
+
+	a.back-btn-link:hover {
+		text-decoration: none;
+	}
+
+
 /*each individual tile*/
 	.words-col {
 		border: 2px solid #494F60;
