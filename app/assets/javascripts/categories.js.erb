@@ -7,7 +7,9 @@ var voice = "Justin";
 				type: "GET"
 			})
 				.done(function(response) {
-						voice = response.gender;
+					if (response) {
+						voice = response.gender || "Justin";
+					}
 				})
 
 	///////////MODEL///////////

@@ -6,7 +6,7 @@ Category.create(name: "Things", img_src: "thing.png")
 Category.create(name: "Possession", img_src: "possession.png")
 
 
-Category.create(name: "People", img_src: "people.png")
+Category.create(name: "People", img_src: "peeps.png")
 Category.create(name: "Actions", img_src: "Actions.png")
 Category.create(name: "Feelings", img_src: "Feelings.png")
 Category.create(name: "Play", img_src: "play.png")
@@ -216,7 +216,7 @@ words_list = [
 ["we", "we.png", "People"],
 ["he", "he.png", "People"],
 ["your", "your.png", "People"],
-["people", "people.png", "People"],
+["people", "peeps.png", "People"],
 ["them", "them.png", "People"],
 ["him", "him.png", "People"],
 ["her", "her.png", "People"],
