@@ -205,7 +205,15 @@ a.back-btn-link:hover {
 	margin: 5px 0 0 0;
 }
 
-
+/*.most-row {
+display: flex;
+}*/
+/*
+.most-recent-populate-me {
+	word-wrap: break-word;
+	max-width: 800px;
+	display: flex;
+}*/
 
 .most-col {
 	border-style: solid;
