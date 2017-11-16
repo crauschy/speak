@@ -1,24 +1,24 @@
 /*div {
   border: 1px solid red;
-}*/
+  }*/
 
 
-/*----------------------profile-------------------*/
+  /*----------------------profile-------------------*/
 
-#profile{
-	background-image: url("background.jpg")
-}
+  #profile{
+   background-image: url("background.jpg")
+ }
 
-#container-profile {
-		margin: 0 auto;
-    text-align: center;
-    width: 800px;
-		height: 600px;
-		padding: 2%;
-		background-color: rgba(255,255,255, 0.4);
-		box-shadow: 0 .5em 1em rgba(0,0,0,.3);
-		border-radius: 30px;
-		color: #1C2330;
+ .container-profile {
+  margin: 0 auto;
+  text-align: center;
+  width: 800px;
+  height: 600px;
+  padding: 2%;
+  background-color: rgba(255,255,255, 0.4);
+  box-shadow: 0 .5em 1em rgba(0,0,0,.3);
+  border-radius: 30px;
+  color: #1C2330;
 }
 
 h2 {
@@ -26,6 +26,31 @@ h2 {
 	font-size: 40px;
 	color: #1C2330;
 }
+
+/*-----exit-button----*/
+
+.exit-profile {
+  margin: 20px auto;
+  text-align: center;
+  max-width: 200px;
+  max-height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(255,255,255, 0.4);
+  box-shadow: 0 .5em 1em rgba(0,0,0,.3);
+  border-radius: 30px;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: #1C2330;
+}
+
+.exit-profile:hover {
+  background-color: #FFDC9C;
+}
+
+.exit-profile-link:hover {
+  text-decoration: none;
+}
+
 
 
 /*-----------------------keyword form-----------*/
@@ -40,15 +65,15 @@ h3 {
 }
 
 #container-keyword {
-		margin: 0 auto;
-    text-align: center;
-    width: 400px;
-		height: 400px;
-    padding: 2%;
-		background-color: rgba(255,255,255, 0.4);
-		box-shadow: 0 .5em 1em rgba(0,0,0,.3);
-		border-radius: 30px;
-    font-size: 18px;
+  margin: 0 auto;
+  text-align: center;
+  width: 400px;
+  height: 400px;
+  padding: 2%;
+  background-color: rgba(255,255,255, 0.4);
+  box-shadow: 0 .5em 1em rgba(0,0,0,.3);
+  border-radius: 30px;
+  font-size: 18px;
 }
 
 label {
@@ -65,13 +90,13 @@ div.input-img-key {
 
 div.input-key {
   display: inline-block;
-    width: 250px
+  width: 250px
 }
 
 div#userinput-key {
-    margin-top:auto;
-    margin-bottom:auto;
-    text-align:center;
+  margin-top:auto;
+  margin-bottom:auto;
+  text-align:center;
 }
 
 
@@ -88,15 +113,15 @@ h3 {
 }
 
 #container-category {
-		margin: 0 auto;
-    text-align: center;
-    width: 450px;
-		height: 350px;
-    padding: 2%;
-		background-color: rgba(255,255,255, 0.4);
-		box-shadow: 0 .5em 1em rgba(0,0,0,.3);
-		border-radius: 30px;
-    font-size: 18px;
+  margin: 0 auto;
+  text-align: center;
+  width: 450px;
+  height: 350px;
+  padding: 2%;
+  background-color: rgba(255,255,255, 0.4);
+  box-shadow: 0 .5em 1em rgba(0,0,0,.3);
+  border-radius: 30px;
+  font-size: 18px;
 }
 
 label {
@@ -113,13 +138,13 @@ div.input-img-cat {
 
 div.input-cat {
   display: inline-block;
-    width: 200px
+  width: 200px
 }
 
 div#userinput-cat {
-    margin-top:auto;
-    margin-bottom:auto;
-    text-align:center;
+  margin-top:auto;
+  margin-bottom:auto;
+  text-align:center;
 }
 
 
@@ -132,19 +157,19 @@ h3 {
 	font-family: 'Gloria Hallelujah', cursive;
 	font-size: 30px;
   text-align: center;
-	color: #1C2330;
+  color: #1C2330;
 }
 
 #container-edit-profile {
-		margin: 0 auto;
-    text-align: left;
-    width: 650px;
-		height: 600px;
-    padding: 2%;
-		background-color: rgba(255,255,255, 0.4);
-		box-shadow: 0 .5em 1em rgba(0,0,0,.3);
-		border-radius: 30px;
-    font-size: 18px;
+  margin: 0 auto;
+  text-align: left;
+  width: 650px;
+  height: 600px;
+  padding: 2%;
+  background-color: rgba(255,255,255, 0.4);
+  box-shadow: 0 .5em 1em rgba(0,0,0,.3);
+  border-radius: 30px;
+  font-size: 18px;
 }
 
 
@@ -173,13 +198,13 @@ div.choose-voice {
 }
 
 #container-edit-voice {
-		margin: 0 auto;
-    text-align: left;
-    width: 500px;
-		height: 300px;
-    padding: 1.5%;
-		background-color: rgba(255,255,255, 0.4);
-		box-shadow: 0 .5em 1em rgba(0,0,0,.3);
-		border-radius: 30px;
-    font-size: 18px;
+  margin: 0 auto;
+  text-align: left;
+  width: 500px;
+  height: 300px;
+  padding: 1.5%;
+  background-color: rgba(255,255,255, 0.4);
+  box-shadow: 0 .5em 1em rgba(0,0,0,.3);
+  border-radius: 30px;
+  font-size: 18px;
 }
