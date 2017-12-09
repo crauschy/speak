@@ -8,12 +8,12 @@ Speak -- Augmentative and Alternative Communication(AAC) application for non-ver
 
 ## Tech:
 
-Ruby on Rails
-PostgreSQL
-Javascript / jQuery
-AJAX
-Bootstrap
-Google Maps API, Cloudinary, AWS Polly
+- Ruby on Rails
+- PostgreSQL
+- Javascript / jQuery
+- AJAX
+- Bootstrap
+- Google Maps API, Cloudinary, AWS Polly
 
 ## Developers:
 
