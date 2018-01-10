@@ -1,10 +1,11 @@
 # Speak App
 
+Speak is an Augmentative and Alternative Communication(AAC) application for non-verbal individuals.
 Check out the site [here](http://dbc-speak.herokuapp.com/)!
 
 ## Description:
 
-Speak -- Augmentative and Alternative Communication(AAC) application for non-verbal people.
+We created a free alternative to the sometimes prohibitively expensive Augmentative and Alternative Communication devices that allow nonverbal individuals to express themselves. This non-traditional web app relies on Amazon Polly (a text-to-speech service), click event handling, UX design, and user customizability.
 
 ## Tech:
 
@@ -13,7 +14,7 @@ Speak -- Augmentative and Alternative Communication(AAC) application for non-ver
 - Javascript / jQuery
 - AJAX
 - Bootstrap
-- Google Maps API, Cloudinary, AWS Polly
+- AWS Polly and Cloudinary
 
 ## Developers:
 
